@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portada',
-  templateUrl: './portada.component.html',
-  styleUrls: ['./portada.component.css']
+  templateUrl: './portada.component.html'
 })
 export class PortadaComponent implements OnInit {
 

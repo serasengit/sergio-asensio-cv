@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/css/custom.css'; 
+.navbar-nav > li{
+  margin-left:20px;
+  margin-right:20px;
+}
+.navbar-nav > li{
+    padding-left:15px;
+    padding-right:15px;
+  }
