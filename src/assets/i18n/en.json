@@ -1,0 +1,9 @@
+{
+    "mainPage": {
+        "home": "Home",
+        "cv": "Curriculum Vitae",
+        "skills": "Skills",
+        "programmingArea": "Programming Area",
+        "contact": "Contact"
+    }
+}
