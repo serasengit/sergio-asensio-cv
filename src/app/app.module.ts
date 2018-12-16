@@ -7,11 +7,19 @@ import { SharedModule } from 'src/app/components/shared/shared.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CurriculumComponent } from './components/curriculum/curriculum.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProgrammingAreaComponent } from './components/programming-area/programming-area.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortadaComponent
+    PortadaComponent,
+    CurriculumComponent,
+    SkillsComponent,
+    ProgrammingAreaComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

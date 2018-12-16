@@ -9,40 +9,36 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
       <ul class="navbar-nav mx-auto my-2 order-0 order-md-1 position-center">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">{{ 'mainPage.home' | translate }}
+        <li class="nav-item">
+          <a class="{{section == '' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('')">{{
+            'mainPage.home' | translate }}
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ 'mainPage.cv' | translate }}</a>
+          <a class="{{section == 'cv' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('cv')">{{
+            'mainPage.cv' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ 'mainPage.skills' | translate }}</a>
+          <a class="{{section == 'skills' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('skills')">{{
+            'mainPage.skills' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{ 'mainPage.programmingArea' | translate }}</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <a class="{{section == 'programmingArea' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('programmingArea')">{{
+            'mainPage.programmingArea' |
+            translate }}</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">{{ 'mainPage.contact' | translate }}</a>
+          <a class="{{section == 'contact' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('contact')">{{
+            'mainPage.contact' | translate }}</a>
         </li>
 
       </ul>
     </div>
-    <a href="#">
+    <a role="button">
       <img src="assets/img/english_flag.png" alt="English" width="40" (click)="useLanguage('en')">
     </a>
-    <a href="#">
+    <a role="button">
       <img src="assets/img/spanish_flag.png" alt="Español" width="35" (click)="useLanguage('es')">
     </a>
   </nav>
