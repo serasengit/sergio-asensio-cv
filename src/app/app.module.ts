@@ -11,6 +11,9 @@ import { CurriculumComponent } from './components/curriculum/curriculum.componen
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProgrammingAreaComponent } from './components/programming-area/programming-area.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MenuCvComponent } from './components/curriculum/menu-cv/menu-cv.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 
 @NgModule({
   declarations: [
@@ -19,13 +22,15 @@ import { ContactComponent } from './components/contact/contact.component';
     CurriculumComponent,
     SkillsComponent,
     ProgrammingAreaComponent,
-    ContactComponent
+    ContactComponent,
+    MenuCvComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
+    AngularFontAwesomeModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
