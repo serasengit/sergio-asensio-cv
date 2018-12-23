@@ -5,5 +5,14 @@
         "skills": "Skills",
         "programmingArea": "Programming Area",
         "contact": "Contact"
+    },
+    "curriculumPage": {
+        "personalData": "Personal Data",
+        "profile": "Technical Profile",
+        "education": "Education",
+        "workExperience": "Work Experience",
+        "trainingCourses": "Training Courses",
+        "certifications": "Certifications",
+        "worksPresentations": "Works and Presentations"
     }
 }

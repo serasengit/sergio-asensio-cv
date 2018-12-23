@@ -3,19 +3,30 @@
   <nav id="sidebar">
     <ul class="list-unstyled components">
       <li class="active">
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-dashboard"></i><span class="d-none d-md-inline">Home</span></a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-address-card"></i><span class="d-none d-md-inline">{{'curriculumPage.personalData' | translate }}</span></a>
       </li>
       <li>
-        <a href="#">About</a>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-user-circle"></i><span class="d-none d-md-inline">{{'curriculumPage.profile' | translate }}</span></a>
       </li>
       <li>
-        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-dashboard"></i><span class="d-none d-md-inline">Pages</span></a>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-user-graduate"></i><span class="d-none d-md-inline">{{'curriculumPage.education' | translate }}</span></a>
       </li>
       <li>
-        <a href="#">Portfolio</a>
+        <a href="#" data-toggle="collapse" data-target="#service" aria-expanded="false"><i class="fas fa-chart-line"></i><span class="d-none d-md-inline">{{'curriculumPage.workExperience' | translate }}</span></a>
+      </li>
+      <ul class="list-unstyled sub-menu collapse" id="service">
+        <li><a href="#" class="collapsed" data-toggle="collapse">About</a></li>
+        <li><a href="#" class="collapsed" data-toggle="collapse">About</a></li>
+        <li><a href="#" class="collapsed" data-toggle="collapse">About</a></li>
+      </ul>
+      <li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fa fa-dashboard"></i><span class="d-none d-md-inline">{{'curriculumPage.trainingCourses' | translate }}</span></a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-certificate"></i><span class="d-none d-md-inline">{{'curriculumPage.certifications' | translate }}</span></a>
+      </li>
+      <li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.worksPresentations' | translate }}</span></a>
       </li>
     </ul>
   </nav>

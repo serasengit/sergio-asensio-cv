@@ -63,7 +63,7 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #343a40;
+    background: rgb(66, 23, 10);
     color: #fff;
     transition: all 0.3s;
 }
@@ -75,7 +75,7 @@ a, a:hover, a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid black;
 }
 
 #sidebar ul p {
@@ -89,19 +89,42 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: black;
     background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+    color: #d19b3d;
 }
 ul ul a {
     font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
+}
+#sidebar ul .sub-menu li.active,
+#sidebar li .sub-menu li.active {
+  color: #d19b3d;
+}
+#sidebarul .sub-menu li.active a,
+#sidebar li .sub-menu li.active a {
+  color: #d19b3d;
+}
+#sidebar ul .sub-menu li,
+#sidebar li .sub-menu li {
+  border: none;
+  line-height: 28px;
+  margin-left: 0px;
+  background: rgb(77, 27, 12);
+
+}
+
+#sidebar ul .sub-menu li a:before,
+#sidebar li .sub-menu li a:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
 }
 .fa-navicon {
-    color:grey
+    color:#343a40
 }

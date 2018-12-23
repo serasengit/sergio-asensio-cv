@@ -5,5 +5,14 @@
         "skills": "Habilidades",
         "programmingArea": "Espacio de Programación",
         "contact": "Contacto"
+    },
+    "curriculumPage": {
+        "personalData": "Datos Personales",
+        "profile": "Perfil técnico",
+        "education": "Educación",
+        "workExperience": "Experiencia Profesional",
+        "trainingCourses": "Cursos de Formación",
+        "certifications": "Certificaciones",
+        "worksPresentations": "Trabajos y Presentaciones"
     }
 }

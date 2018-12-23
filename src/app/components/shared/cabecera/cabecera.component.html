@@ -2,45 +2,39 @@
 <header id="banner" role="banner">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-justify-content-center fixed-top">
     <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
       <ul class="navbar-nav mx-auto my-2 order-0 order-md-1 position-center">
         <li class="nav-item">
-          <a class="{{section == '' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('')">{{
-            'mainPage.home' | translate }}
+          <a class="{{section == '' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('')">{{'mainPage.home' | translate }}
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="{{section == 'cv' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('cv')">{{
-            'mainPage.cv' | translate }}</a>
+          <a class="{{section == 'cv' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('cv')">{{'mainPage.cv' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="{{section == 'skills' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('skills')">{{
-            'mainPage.skills' | translate }}</a>
+          <a class="{{section == 'skills' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('skills')">{{'mainPage.skills' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="{{section == 'programmingArea' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('programmingArea')">{{
-            'mainPage.programmingArea' |
-            translate }}</a>
+          <a class="{{section == 'programmingArea' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('programmingArea')">{{'mainPage.programmingArea' | translate }}</a>
         </li>
         <li class="nav-item ">
-          <a class="{{section == 'contact' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('contact')">{{
-            'mainPage.contact' | translate }}</a>
+          <a class="{{section == 'contact' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('contact')">{{ 'mainPage.contact' | translate }}</a>
         </li>
-
       </ul>
     </div>
-    <a role="button">
-      <img src="assets/img/english_flag.png" alt="English" width="40" (click)="useLanguage('en')">
-    </a>
-    <a role="button">
-      <img src="assets/img/spanish_flag.png" alt="Español" width="35" (click)="useLanguage('es')">
-    </a>
+    <ul class=" position-right">
+      <a role="button">
+        <img src="assets/img/english_flag.png" alt="English" width="40" (click)="useLanguage('en')">
+      </a>
+      <a role="button">
+        <img src="assets/img/spanish_flag.png" alt="Español" width="35" (click)="useLanguage('es')">
+      </a>
+    </ul>
   </nav>
 </header>
 <!--/END CABECERA-->
