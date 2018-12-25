@@ -15,6 +15,7 @@ import { MenuCvComponent } from './components/curriculum/menu-cv/menu-cv.compone
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -8,13 +9,27 @@ import * as $ from 'jquery';
   styleUrls: ['./menu-cv.component.scss']
 })
 export class MenuCvComponent implements OnInit {
+  section: string;
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    this.section = 'personalData';
+  }
 
   ngOnInit() {
   }
   showHideSideVar() {
     $('#sidebar').toggleClass('active');
+  }
+  // Menu Section Changing
+  changeSection(sectionClicked: string) {
+    if (sectionClicked !== this.section) {
+      this.section = sectionClicked;
+      console.log($(('#' + sectionClicked)));
+      this.scrollTo(sectionClicked);
+    }
+  }
+  scrollTo(sectionClicked: string) {
+    $('main').animate({ scrollTop: ($('main').scrollTop() + $('#' + sectionClicked).position().top) }, 500);
   }
 
 }
