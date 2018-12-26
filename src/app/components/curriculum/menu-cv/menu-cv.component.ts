@@ -24,7 +24,6 @@ export class MenuCvComponent implements OnInit {
   changeSection(sectionClicked: string) {
     if (sectionClicked !== this.section) {
       this.section = sectionClicked;
-      console.log($(('#' + sectionClicked)));
       this.scrollTo(sectionClicked);
     }
   }

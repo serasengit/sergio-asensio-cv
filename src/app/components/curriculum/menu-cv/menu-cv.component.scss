@@ -28,9 +28,13 @@ a[data-toggle="collapse"] {
     right: 20px;
     transform: translateY(-50%);
 }
-@media (max-width: 768px) {
+//Moviles Styles
+@media (max-width: 767px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -75px;
+        min-width: 75px;
+        max-width: 75px;
+        min-height: 100vh;
     }
     #sidebar.active {
         margin-left: 0;
