@@ -14,6 +14,10 @@
     cursor: pointer;
   }
   @mixin masthead{
+    // Movil Style
+    @media (max-width: 767px) {
+      padding-top: calc(2rem + 52px);
+    }
     position: relative;
     overflow: hidden;
     padding-top: calc(10rem + 72px);
@@ -25,6 +29,7 @@
     max-width: 100%;
     height: auto;
   }
+
 
   header.mastheadPortada {
     background-image:url('/assets/img/headerMain.jpg');
