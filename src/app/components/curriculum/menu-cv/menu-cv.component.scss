@@ -127,5 +127,15 @@ ul ul a {
     -ms-overflow-style: none;  //Hide Main ScrollBar in IE 10+
     overflow: -moz-scrollbars-none; //Hide Main ScrollBar in Firefox
 }
-
 ::-webkit-scrollbar {display:none;} //Hide Main ScrollBar in Chome and Safari
+.section{
+    color: rgb(77, 27, 12);
+
+}
+.card{
+    background:rgba(219, 173, 87,0.65);
+    border: 1px solid rgb(77, 27, 12);
+    width: 55%
+
+
+}

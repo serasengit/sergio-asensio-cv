@@ -13,6 +13,10 @@ import { ProgrammingAreaComponent } from './components/programming-area/programm
 import { ContactComponent } from './components/contact/contact.component';
 import { MenuCvComponent } from './components/curriculum/menu-cv/menu-cv.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { NoComma } from './pipes/noComma.pipe';
+
+
+
 
 
 
@@ -24,7 +28,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     SkillsComponent,
     ProgrammingAreaComponent,
     ContactComponent,
-    MenuCvComponent
+    MenuCvComponent,
+    NoComma
   ],
   imports: [
     BrowserModule,

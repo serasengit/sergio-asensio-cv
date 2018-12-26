@@ -33,53 +33,49 @@
   <div id="sidebarActivator">
     <a (click)="showHideSideVar()" role="button"><i class="fas fa-caret-right fa-2x py-2 p-1"></i></a>
   </div>
-
-
+  <!-- Curriculum -->
   <main id="main" class="pl-md-2 pt-2 ">
-
     <div class="page-header">
       <h2>Curriculum Vitae</h2>
     </div>
     <br>
+    <!--  Personal Data -->
     <p id="personalData" class="lead">{{'curriculumPage.personalData' | translate }}</p>
     <hr>
-    <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+    <div class="card">
+      <div class="card-body">
+        <dl class="row">
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.name' | translate }} </dt>
+          <dd class="col-sm-9">Sergio Asensio Puyuelo</dd>
 
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.address' | translate }}</dt>
+          <dd class="col-sm-9">Avenida Pablo Gargallo 110 6E</dd>
+
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.city' | translate }}</dt>
+          <dd class="col-sm-9">Zaragoza</dd>
+
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.phone' | translate }}</dt>
+          <dd class="col-sm-9">678-154-765</dd>
+
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.birthdate' | translate }}</dt>
+          <dd class="col-sm-9">12-2-1992</dd>
+
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.postalCode' | translate }}</dt>
+          <dd class="col-sm-9">50003</dd>
+
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.age' | translate }}</dt>
+          <dd class="col-sm-9">25</dd>
+
+          <dt class="col-sm-3">{{'curriculumPage.personalDataSection.email' | translate }}</dt>
+          <dd class="col-sm-9">maserasen@gmail.com</dd>
+        </dl>
+      </div>
     </div>
+
     <br>
     <p id="profile" class="lead">{{'curriculumPage.profile' | translate }}</p>
     <hr>
-    <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+    <div [innerHTML]="'curriculumPage.profileSection.content'| translate | noComma">
     </div>
     <br>
     <p id="education" class="lead">{{'curriculumPage.education' | translate }}</p>

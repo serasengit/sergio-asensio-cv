@@ -13,6 +13,28 @@
         "workExperience": "Experiencia Profesional",
         "trainingCourses": "Cursos de Formación",
         "certifications": "Certificaciones",
-        "worksPresentations": "Trabajos y Presentaciones"
+        "worksPresentations": "Trabajos y Presentaciones",
+        "personalDataSection": {
+            "name": "Nombre y Apellidos",
+            "address": "Dirección",
+            "city": "Localidad",
+            "phone": "Teléfono",
+            "birthdate": "Fecha de nacimiento",
+            "postalCode": "C.P",
+            "age": "Edad",
+            "email": "Correo Electrónico"
+        },
+        "profileSection": {
+            "content": [
+                "Tras iniciarme en el mundo de la programación en Marzo del 2016 he asistido a tres cursos de formación de las competencias SAP (modalidad ABAP), Java y Salesforce.<br><br>",
+                "Durante mis dos años de experiencia, he estado envuelto en diversos proyectos de mantenimiento y desarrollo en Salesforce en los cuales he podido formarme tanto a nivel de desarrollador de codigo como de administrador de la plataforma.<br><br>",
+                "En Junio de 2016   formé parte de un proyecto de energía focalizado en la creación de una aplicación Java  Web que replicase ciertas funcionalidades de Salesforce como la creación de casos de emergencias. La aplicación fue desarrollada en Java,Spring MVC,Hibernate y publicada en la plataforma Heroku junto con la ayuda de PostgresSQL y HerokuConnect (herramienta encargada de volcar la BBDD de Salesforce en el Postgres de Heroku).<br><br> ",
+                "Gracias a este proyecto y al equipo que me rodeaba pude aprender y navegar por el abanico de herramientas que ofrece el diseño de una aplicación Java Web tales como: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX...,el estudio de la plataforma Heroku y su sincronización con Salesforce y el manejo de la herramienta Talend para la migración masiva de datos (ETL).<br><br>",
+                "En Octubre del 2017, estuve a cargo del desarrollo y publicación en Heroku de un servicio web en una aplicación NodeJS cuya finalidad era el envío masivo de datos de usuarios a una companía de envío de SMS´es así como la recuperación y almacenamiento de las respuestas en PostgresSQL. <br><br>",
+                "Este fue mi primer proyecto en solitario el cual supuso un reto muy importante para mí debido al desconocimiento de la tecnología, sin embargo mi experiencia anterior en Java y la búsqueda constante de información me sirvió para aprender cada día un poco más de NodeJS y así adquirir experiencia en el desarrollo de funciones asíncronas y creación de servicios REST.<br><br>",
+                "En Marzo de 2018, inicié una nueva aventura profesional como programador senior en la empresa IA SOFT en Zaragoza, entrando de cabeza en el desarrollo de una aplicación de gestión de calidad ambiental y de residuos en Angular 5 y Java(JPA) . <br><br>",
+                "En Junio de 2018 la empresa me destinó a trabajar como externo en el Seminario de Zaragoza en un proyecto Java(Primefaces)  en solitario consistente en el desarrollo de una serie de evolutivos de la aplicación de personal del funcionariado<br><br>"
+            ]
+        }
     }
 }

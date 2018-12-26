@@ -13,6 +13,26 @@
         "workExperience": "Work Experience",
         "trainingCourses": "Training Courses",
         "certifications": "Certifications",
-        "worksPresentations": "Works and Presentations"
+        "worksPresentations": "Works and Presentations",
+        "personalDataSection": {
+            "name": "Name",
+            "address": "Address",
+            "city": "City",
+            "phone": "Phone Number",
+            "birthdate": "Birthdate",
+            "postalCode": "Postal Code",
+            "age": "Age",
+            "email": "Email"
+        },
+        "profileSection": {
+            "content": [
+                "After joining Deloitte in March (2016), I have attended three courses related to the following competences: SAP (ABAP modality), Java and Salesforce.<br><br>",
+                "During my work experience, I have been involved in several maintenance and development Salesforce projects where I could grow up as code developer and platform admin.<br><br>",
+                "In June of 2016, I was involved in a project for energy market. In there, we developed an aplication to help salesforce to create cases in emergency peaks.This app was developed in Java, Spring, Hibernate and published in Heroku, with Postgres and HerokuConnect(tool to connect SFDC and fill the data in Postgres).<br><br>",
+                "Thanks to this project and my work team, I could learn and explore the set of tools that a Java Web application offer as: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX..., the study of the Heroku platform and its synchronization with Salesforce and the use of Talend tool for massive data migration (ETL)<br><br>",
+                "In October of 2017, I was in charge of the development and publishment in Heroku of a NodeJS Web service app which purpose was massive user data sending to a SMS sending data Company and recovery and storage of responses received in PostgresSQL.<br><br>",
+                "This was the first time I carried out a project on my own, and it became an important challenge due to my lack of knowledge about this particular technology. However, my previous experience in Java and constant search for information helped me to learn more about NodeJS, thus gaining experience about asynchronous development methods and creation of REST services "
+            ]
+        }
     }
 }
