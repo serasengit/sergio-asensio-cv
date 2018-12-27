@@ -16,11 +16,11 @@
   @mixin masthead{
     // Movil Style
     @media (max-width: 767px) {
-      padding-top: calc(2rem + 52px);
+      padding-top: calc(3.5rem + 52px);
     }
     position: relative;
     overflow: hidden;
-    padding-top: calc(10rem + 72px);
+    padding-top: calc(7.5rem + 72px);
     padding-bottom: 10rem;
     background-repeat: no-repeat;
     background-position: center center;

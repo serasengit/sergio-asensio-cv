@@ -11,6 +11,12 @@
       <li class="{{section == 'education' ? 'active' : '' }}">
         <a (click)="changeSection('education')" role="button"><i class="fas fa-user-graduate"></i><span class="d-none d-md-inline">{{'curriculumPage.education' | translate }}</span></a>
       </li>
+      <li class="{{section == 'languages' ? 'active' : '' }}">
+        <a (click)="changeSection('languages')" role="button"><i class="fas fa-globe-europe"></i><span class="d-none d-md-inline">{{'curriculumPage.languages' | translate }}</span></a>
+      </li>
+      <li class="{{section == 'softwareTools' ? 'active' : '' }}">
+        <a (click)="changeSection('softwareTools')" role="button"><i class="fab fa-java"></i><span class="d-none d-md-inline">{{'curriculumPage.softwareTools' | translate }}</span></a>
+      </li>
       <li class="{{section == 'workExperience' ? 'active' : '' }}">
         <a href="#workExperience" (click)="changeSection('workExperience')" data-toggle="collapse" data-target="#service" aria-expanded="false"><i class="fas fa-chart-line"></i><span class="d-none d-md-inline">{{'curriculumPage.workExperience' | translate }}</span></a>
       </li>
@@ -25,8 +31,8 @@
       <li class="{{section == 'certifications' ? 'active' : '' }}">
         <a (click)="changeSection('certifications')" role="button"><i class="fas fa-certificate"></i><span class="d-none d-md-inline">{{'curriculumPage.certifications' | translate }}</span></a>
       </li>
-      <li class="{{section == 'worksPresentations' ? 'active' : '' }}">
-        <a (click)="changeSection('worksPresentations')" role="button"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.worksPresentations' | translate }}</span></a>
+      <li class="{{section == 'publications' ? 'active' : '' }}">
+        <a (click)="changeSection('publications')" role="button"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.publications' | translate }}</span></a>
       </li>
     </ul>
   </nav>
@@ -35,10 +41,7 @@
   </div>
   <!-- Curriculum -->
   <main id="main" class="pl-md-2 pt-2 ">
-    <div class="page-header">
-      <h2>Curriculum Vitae</h2>
-    </div>
-    <br>
+
     <!--  Personal Data -->
     <p id="personalData" class="lead">{{'curriculumPage.personalData' | translate }}</p>
     <hr>
@@ -64,40 +67,87 @@
           <dd class="col-sm-9">50003</dd>
 
           <dt class="col-sm-3">{{'curriculumPage.personalDataSection.age' | translate }}</dt>
-          <dd class="col-sm-9">25</dd>
+          <dd class="col-sm-9">26</dd>
 
           <dt class="col-sm-3">{{'curriculumPage.personalDataSection.email' | translate }}</dt>
           <dd class="col-sm-9">maserasen@gmail.com</dd>
         </dl>
       </div>
     </div>
-
+    <!--Profile-->
     <br>
     <p id="profile" class="lead">{{'curriculumPage.profile' | translate }}</p>
     <hr>
     <div [innerHTML]="'curriculumPage.profileSection.content'| translate | noComma">
     </div>
     <br>
-    <p id="education" class="lead">{{'curriculumPage.education' | translate }}</p>
+    <!--Education-->
+    <p id=" education" class="lead">{{'curriculumPage.education' | translate }}</p>
     <hr>
     <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+      <dl class="row">
+        <dt class="col-sm-2">{{'curriculumPage.educationSection.degree' | translate }} </dt>
+        <dd class="col-sm-9">{{'curriculumPage.educationSection.university' | translate }}</dd>
+      </dl>
     </div>
     <br>
+    <!--Languages-->
+    <p id="languages" class="lead">{{'curriculumPage.languages' | translate }}</p>
+    <hr>
+    <div>
+      <dl class="row">
+        <dt class="col-sm-2">{{'curriculumPage.languageSection.spanish' | translate }} </dt>
+        <dd class="col-sm-9">{{'curriculumPage.languageSection.spanish_s1' | translate }}</dd>
+      </dl>
+      <dl class="row">
+        <dt class="col-sm-2">{{'curriculumPage.languageSection.english' | translate }} </dt>
+        <dd class="col-sm-9">
+          {{'curriculumPage.languageSection.english_s1' | translate }}
+          <br><br>
+          {{'curriculumPage.languageSection.english_s2' | translate }}
+        </dd>
+      </dl>
+    </div>
+    <br>
+    <!--Software Tools-->
+    <p id="softwareTools" class="lead">{{'curriculumPage.softwareTools' | translate }}</p>
+    <hr>
+    <dl class="row">
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.java' | translate }} </dt>
+      <dd class="col-sm-9">Spring MVC, Hibernate, Maven, JSF, JPA, jQuery, AJAX, Javascript , Quarz , Apache Tomcat. </dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.salesforce' | translate }} </dt>
+      <dd class="col-sm-9">Apex, Visualforce, Heroku, Marketing Cloud , Schedule Jobs.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.angular' | translate }} </dt>
+      <dd class="col-sm-9">Angular 7, npm.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.nodejs' | translate }} </dt>
+      <dd class="col-sm-9">Express.js, Nodemon, Babel-Node, Knex.js, Objection.js.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.webDesign' | translate }} </dt>
+      <dd class="col-sm-9"> HTML, HTML5, JSP, JSPX, CSS, SCSS, Bootstrap 4, Font-Awesome 4.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.webServices' | translate }} </dt>
+      <dd class="col-sm-9"> REST, SOAP.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.bbdd' | translate }}</dt>
+      <dd class="col-sm-9">PostgresSQL, Oracle.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.etl' | translate }}</dt>
+      <dd class="col-sm-9">Talend.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.codeEditor' | translate }} </dt>
+      <dd class="col-sm-9">Developer Console, Eclipse, The Welkin Suite, Visua Studio Code.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.versionControl' | translate }} </dt>
+      <dd class="col-sm-9"> Git, Github, Bitbucket, SVN, CVS.</dd>
+
+      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.continuousIntegration' | translate }} </dt>
+      <dd class="col-sm-9">Jenkins.</dd>
+    </dl>
+    <br>
+    <!--Work Experience-->
     <p id="workExperience" class="lead">{{'curriculumPage.workExperience' | translate }}</p>
     <hr>
     <div>
@@ -116,264 +166,131 @@
       multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
       responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
       accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
+      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.
+      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
+      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
+      accordion.
     </div>
     <br>
+    <!--Training Courses-->
     <p id="trainingCourses" class="lead">{{'curriculumPage.trainingCourses' | translate }}</p>
     <hr>
     <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+      <div>
+        <dl class="row">
+          <dt class="col-sm-2">{{'curriculumPage.trainingCoursesSection.courses' | translate }} </dt>
+          <dd class="col-sm-9">
+            {{'curriculumPage.trainingCoursesSection.course_1' | translate }}<br><br>
+            {{'curriculumPage.trainingCoursesSection.course_2' | translate }}<br><br>
+            {{'curriculumPage.trainingCoursesSection.course_3' | translate }}<br><br>
+            {{'curriculumPage.trainingCoursesSection.course_4' | translate }}<br><br>
+          </dd>
+        </dl>
+        <dl class="row">
+          <dt class="col-sm-2">{{'curriculumPage.trainingCoursesSection.presentations' | translate }} </dt>
+          <dd class="col-sm-9">
+            {{'curriculumPage.trainingCoursesSection.presentation_1' | translate }}<br><br>
+            {{'curriculumPage.trainingCoursesSection.presentation_2' | translate }}
+          </dd>
+        </dl>
+      </div>
     </div>
     <br>
+    <!--Certifications-->
     <p id="certifications" class="lead">{{'curriculumPage.certifications' | translate }}</p>
     <hr>
     <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+      <li>{{'curriculumPage.certificationsSection.oracleCert' | translate }}</li>
     </div>
     <br>
-    <p id="worksPresentations" class="lead">{{'curriculumPage.worksPresentations' | translate }}</p>
+    <!--Publications-->
+    <p id="publications" class="lead">{{'curriculumPage.publications' | translate }}</p>
     <hr>
     <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+      <li>
+        <i class="fas fa-paperclip"></i><a href="https://zaguan.unizar.es/record/36919/files/TAZ-TFG-2015-4450.pdf "> {{'curriculumPage.publicationsSection.tfg' | translate }}</a>
+      </li>
     </div>
-
   </main>
-
-
 </body>
