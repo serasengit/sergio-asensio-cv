@@ -10,6 +10,9 @@
     padding-left:15px;
     padding-right:15px;
   }
+  .languages{
+    margin-left:30px;
+  }
   [role="button"] { 
     cursor: pointer;
   }
@@ -50,4 +53,4 @@
   header.mastheadContact{
     background: url("/assets/img/headerContact.jpg") center center no-repeat;
     @include masthead;
-  } 
+  }
