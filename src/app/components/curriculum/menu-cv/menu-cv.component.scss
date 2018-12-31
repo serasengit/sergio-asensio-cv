@@ -56,7 +56,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 80px 0;
+    padding: 150px 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
@@ -124,22 +124,29 @@ ul ul a {
 
 }
 .card{
-    background:rgb(248, 245, 238);
-    border: 2px transparent #343a40;
-    width: 55%
+    border: transparent 1px rgb(77, 27, 12);;
+    background-color: rgba(0, 0, 0, 0.015);
 }
 .lead{
-    color:slategrey;
+    color:rgba(77, 27, 12, 0.850);
     font-weight: 800;
+    text-align: center;
 
 }
+.workSection{
+    font-weight: 800;
+    color:slategrey;
+    font-size: 17px;
+
+}
+
 
 //Movil Styles
 @media (max-width: 767px) {
     #sidebar {
-        margin-left: -75px;
-        min-width: 75px;
-        max-width: 75px;
+        margin-left: -45px;
+        min-width: 45px;
+        max-width: 45px;
         min-height: 100vh;
     }
     #sidebar.active {

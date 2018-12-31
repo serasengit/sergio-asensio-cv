@@ -4,7 +4,8 @@ import { TranslateService } from '@ngx-translate/core';
 import {
   SECTION_PERSONAL_DATA, SECTION_PROFILE, SECTION_EDUCATION,
   SECTION_LANGUAGES, SECTION_SOFTWARE_TOOLS,
-  SECTION_WORK_EXPERIENCE, SECTION_TRAINING_COURSES, SECTION_CERTIFICATIONS, SECTION_PUBLICATIONS
+  SECTION_WORK_EXPERIENCE, SECTION_TRAINING_COURSES, SECTION_CERTIFICATIONS, SECTION_PUBLICATIONS,
+  SECTION_WORK_EXPERIENCE_DEVELOPER, SECTION_WORK_EXPERIENCE_SENIOR_DEVELOPER
 } from 'src/app/config/config.constants';
 
 
@@ -35,8 +36,7 @@ export class MenuCvComponent implements OnInit {
   }
   // Scroll to CV Section Function
   scrollTo(sectionClicked: string) {
-    if (sectionClicked === SECTION_TRAINING_COURSES ||
-      sectionClicked === SECTION_CERTIFICATIONS ||
+    if (sectionClicked === SECTION_CERTIFICATIONS ||
       sectionClicked === SECTION_PUBLICATIONS ||
       this.sectionNumber(sectionClicked) <= this.sectionNumber(this.section)) {
       $('html').animate({ scrollTop: ($('html').scrollTop() + $('#' + sectionClicked).position().top) }, 500);
@@ -58,12 +58,16 @@ export class MenuCvComponent implements OnInit {
       number = 4;
     } else if (section === SECTION_WORK_EXPERIENCE) {
       number = 5;
-    } else if (section === SECTION_TRAINING_COURSES) {
+    } else if (section === SECTION_WORK_EXPERIENCE_SENIOR_DEVELOPER) {
       number = 6;
-    } else if (section === SECTION_CERTIFICATIONS) {
+    } else if (section === SECTION_WORK_EXPERIENCE_DEVELOPER) {
       number = 7;
-    } else if (section === SECTION_PUBLICATIONS) {
+    } else if (section === SECTION_TRAINING_COURSES) {
       number = 8;
+    } else if (section === SECTION_CERTIFICATIONS) {
+      number = 9;
+    } else if (section === SECTION_PUBLICATIONS) {
+      number = 10;
     }
     return number;
   }

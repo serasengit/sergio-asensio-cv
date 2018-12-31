@@ -21,9 +21,8 @@
         <a href="#workExperience" (click)="changeSection('workExperience')" data-toggle="collapse" data-target="#service" aria-expanded="false"><i class="fas fa-chart-line"></i><span class="d-none d-md-inline">{{'curriculumPage.workExperience' | translate }}</span></a>
       </li>
       <ul class="list-unstyled sub-menu collapse" id="service">
-        <li><a href="#" class="collapsed" data-toggle="collapse">About</a></li>
-        <li><a href="#" class="collapsed" data-toggle="collapse">About</a></li>
-        <li><a href="#" class="collapsed" data-toggle="collapse">About</a></li>
+        <li class="{{section == 'seniorDeveloper' ? 'active' : '' }}"><a (click)="changeSection('seniorDeveloper')" role="button">{{'curriculumPage.workExperienceSection.seniorDeveloper' | translate }}</a></li>
+        <li class="{{section == 'developer' ? 'active' : '' }}"><a (click)="changeSection('developer')" role="button">{{'curriculumPage.workExperienceSection.developer' | translate }}</a></li>
       </ul>
       <li class="{{section == 'trainingCourses' ? 'active' : '' }}">
         <a (click)="changeSection('trainingCourses')" role="button"><i class="fas fa-book-reader"></i><span class="d-none d-md-inline">{{'curriculumPage.trainingCourses' | translate }}</span></a>
@@ -43,8 +42,8 @@
   <main id="main" class="pl-md-2 pt-2 ">
 
     <!--  Personal Data -->
-    <p id="personalData" class="lead">{{'curriculumPage.personalData' | translate }}</p>
-    <hr>
+    <h1 id="personalData" class="lead">{{'curriculumPage.personalData' | translate }}</h1>
+    <br>
     <div class="card">
       <div class="card-body">
         <dl class="row">
@@ -76,188 +75,110 @@
     </div>
     <!--Profile-->
     <br>
-    <p id="profile" class="lead">{{'curriculumPage.profile' | translate }}</p>
-    <hr>
-    <div [innerHTML]="'curriculumPage.profileSection.content'| translate | noComma">
+    <h1 id="profile" class="lead">{{'curriculumPage.profile' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body" [innerHTML]="'curriculumPage.profileSection.content'| translate | noComma">
+      </div>
     </div>
     <br>
     <!--Education-->
-    <p id=" education" class="lead">{{'curriculumPage.education' | translate }}</p>
-    <hr>
-    <div>
-      <dl class="row">
-        <dt class="col-sm-2">{{'curriculumPage.educationSection.degree' | translate }} </dt>
-        <dd class="col-sm-9">{{'curriculumPage.educationSection.university' | translate }}</dd>
-      </dl>
+    <h1 id="education" class="lead">{{'curriculumPage.education' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <dl class="row">
+          <dt class="col-sm-2">{{'curriculumPage.educationSection.degree' | translate }} </dt>
+          <dd class="col-sm-9">{{'curriculumPage.educationSection.university' | translate }}</dd>
+        </dl>
+      </div>
     </div>
     <br>
     <!--Languages-->
-    <p id="languages" class="lead">{{'curriculumPage.languages' | translate }}</p>
-    <hr>
-    <div>
-      <dl class="row">
-        <dt class="col-sm-2">{{'curriculumPage.languageSection.spanish' | translate }} </dt>
-        <dd class="col-sm-9">{{'curriculumPage.languageSection.spanish_s1' | translate }}</dd>
-      </dl>
-      <dl class="row">
-        <dt class="col-sm-2">{{'curriculumPage.languageSection.english' | translate }} </dt>
-        <dd class="col-sm-9">
-          {{'curriculumPage.languageSection.english_s1' | translate }}
-          <br><br>
-          {{'curriculumPage.languageSection.english_s2' | translate }}
-        </dd>
-      </dl>
+    <h1 id="languages" class="lead">{{'curriculumPage.languages' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <dl class="row">
+          <dt class="col-sm-2">{{'curriculumPage.languageSection.spanish' | translate }} </dt>
+          <dd class="col-sm-9">{{'curriculumPage.languageSection.spanish_s1' | translate }}</dd>
+        </dl>
+        <dl class="row">
+          <dt class="col-sm-2">{{'curriculumPage.languageSection.english' | translate }} </dt>
+          <dd class="col-sm-9">
+            {{'curriculumPage.languageSection.english_s1' | translate }}
+            <br><br>
+            {{'curriculumPage.languageSection.english_s2' | translate }}
+          </dd>
+        </dl>
+      </div>
     </div>
     <br>
     <!--Software Tools-->
-    <p id="softwareTools" class="lead">{{'curriculumPage.softwareTools' | translate }}</p>
-    <hr>
-    <dl class="row">
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.java' | translate }} </dt>
-      <dd class="col-sm-9">Spring MVC, Hibernate, Maven, JSF, JPA, jQuery, AJAX, Javascript , Quarz , Apache Tomcat. </dd>
+    <h1 id="softwareTools" class="lead">{{'curriculumPage.softwareTools' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <dl class="row">
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.java' | translate }} </dt>
+          <dd class="col-sm-9">Spring MVC, Hibernate, Maven, JSF, JPA, jQuery, AJAX, Javascript , Quarz , Apache Tomcat. </dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.salesforce' | translate }} </dt>
-      <dd class="col-sm-9">Apex, Visualforce, Heroku, Marketing Cloud , Schedule Jobs.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.salesforce' | translate }} </dt>
+          <dd class="col-sm-9">Apex, Visualforce, Heroku, Marketing Cloud , Schedule Jobs.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.angular' | translate }} </dt>
-      <dd class="col-sm-9">Angular 7, npm.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.angular' | translate }} </dt>
+          <dd class="col-sm-9">Angular 7, npm.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.nodejs' | translate }} </dt>
-      <dd class="col-sm-9">Express.js, Nodemon, Babel-Node, Knex.js, Objection.js.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.nodejs' | translate }} </dt>
+          <dd class="col-sm-9">Express.js, Nodemon, Babel-Node, Knex.js, Objection.js.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.webDesign' | translate }} </dt>
-      <dd class="col-sm-9"> HTML, HTML5, JSP, JSPX, CSS, SCSS, Bootstrap 4, Font-Awesome 4.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.webDesign' | translate }} </dt>
+          <dd class="col-sm-9"> HTML, HTML5, JSP, JSPX, CSS, SCSS, Bootstrap 4, Font-Awesome 4.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.webServices' | translate }} </dt>
-      <dd class="col-sm-9"> REST, SOAP.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.webServices' | translate }} </dt>
+          <dd class="col-sm-9"> REST, SOAP.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.bbdd' | translate }}</dt>
-      <dd class="col-sm-9">PostgresSQL, Oracle.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.bbdd' | translate }}</dt>
+          <dd class="col-sm-9">PostgresSQL, Oracle.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.etl' | translate }}</dt>
-      <dd class="col-sm-9">Talend.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.etl' | translate }}</dt>
+          <dd class="col-sm-9">Talend.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.codeEditor' | translate }} </dt>
-      <dd class="col-sm-9">Developer Console, Eclipse, The Welkin Suite, Visua Studio Code.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.codeEditor' | translate }} </dt>
+          <dd class="col-sm-9">Developer Console, Eclipse, The Welkin Suite, Visual Studio Code.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.versionControl' | translate }} </dt>
-      <dd class="col-sm-9"> Git, Github, Bitbucket, SVN, CVS.</dd>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.versionControl' | translate }} </dt>
+          <dd class="col-sm-9"> Git, Github, Bitbucket, SVN, CVS.</dd>
 
-      <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.continuousIntegration' | translate }} </dt>
-      <dd class="col-sm-9">Jenkins.</dd>
-    </dl>
+          <dt class="col-sm-2">{{'curriculumPage.softwareToolsSection.continuousIntegration' | translate }} </dt>
+          <dd class="col-sm-9">Jenkins.</dd>
+        </dl>
+      </div>
+    </div>
     <br>
     <!--Work Experience-->
-    <p id="workExperience" class="lead">{{'curriculumPage.workExperience' | translate }}</p>
+    <h1 id="workExperience" class="lead">{{'curriculumPage.workExperience' | translate }}</h1>
     <hr>
     <div>
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion. A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
-      A responsive, multi-level vertical accordion.A responsive, multi-level vertical accordion.A responsive,
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.
-      multi-level vertical accordion.A responsive, multi-level vertical accordion.multi-level vertical accordion.A
-      responsive, multi-level vertical accordion.multi-level vertical accordion.A responsive, multi-level vertical
-      accordion.
+      <!--Senior Developer Experience-->
+      <br>
+      <p class='workSection' id='seniorDeveloper'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.seniorDeveloper' | translate | uppercase }} )</p>
+      <br>
+      <div [innerHTML]="'curriculumPage.workExperienceSection.contentSeniorDeveloper'| translate | noComma"></div>
+
+      <!--Developer Experience-->
+      <br>
+      <p class='workSection' id='developer'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.developer' | translate | uppercase }} )</p>
+      <br>
+      <div [innerHTML]="'curriculumPage.workExperienceSection.contentDeveloper'| translate | noComma"></div>
+
     </div>
     <br>
     <!--Training Courses-->
-    <p id="trainingCourses" class="lead">{{'curriculumPage.trainingCourses' | translate }}</p>
-    <hr>
-    <div>
-      <div>
+    <h1 id="trainingCourses" class="lead">{{'curriculumPage.trainingCourses' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body">
         <dl class="row">
           <dt class="col-sm-2">{{'curriculumPage.trainingCoursesSection.courses' | translate }} </dt>
           <dd class="col-sm-9">
@@ -278,19 +199,27 @@
     </div>
     <br>
     <!--Certifications-->
-    <p id="certifications" class="lead">{{'curriculumPage.certifications' | translate }}</p>
-    <hr>
-    <div>
-      <li>{{'curriculumPage.certificationsSection.oracleCert' | translate }}</li>
+    <h1 id="certifications" class="lead">{{'curriculumPage.certifications' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <b>
+          <li>{{'curriculumPage.certificationsSection.oracleCert' | translate }}</li>
+        </b>
+      </div>
     </div>
     <br>
     <!--Publications-->
-    <p id="publications" class="lead">{{'curriculumPage.publications' | translate }}</p>
-    <hr>
-    <div>
-      <li>
-        <i class="fas fa-paperclip"></i><a href="https://zaguan.unizar.es/record/36919/files/TAZ-TFG-2015-4450.pdf "> {{'curriculumPage.publicationsSection.tfg' | translate }}</a>
-      </li>
+    <h1 id="publications" class="lead">{{'curriculumPage.publications' | translate }}</h1>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <li>
+          <b>
+            <i class="fas fa-paperclip"></i><a href="https://zaguan.unizar.es/record/36919/files/TAZ-TFG-2015-4450.pdf "> {{'curriculumPage.publicationsSection.tfg' | translate }}</a>
+          </b>
+        </li>
+      </div>
     </div>
   </main>
 </body>
