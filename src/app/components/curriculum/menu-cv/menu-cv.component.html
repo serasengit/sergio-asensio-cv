@@ -157,23 +157,21 @@
     </div>
     <br>
     <!--Work Experience-->
-    <h1 id="workExperience" class="lead">{{'curriculumPage.workExperience' | translate }}</h1>
-    <hr>
-    <div>
+    <div class="workSection">
+      <h1 id="workExperience" class="lead">{{'curriculumPage.workExperience' | translate }}</h1>
+      <hr>
       <!--Senior Developer Experience-->
       <br>
-      <p class='workSection' id='seniorDeveloper'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.seniorDeveloper' | translate | uppercase }} )</p>
+      <p class='workSectionTable' id='seniorDeveloper'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.seniorDeveloper' | translate | uppercase }} )</p>
       <br>
       <div [innerHTML]="'curriculumPage.workExperienceSection.contentSeniorDeveloper'| translate | noComma"></div>
 
       <!--Developer Experience-->
       <br>
-      <p class='workSection' id='developer'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.developer' | translate | uppercase }} )</p>
+      <p class='workSectionTable' id='developer'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.developer' | translate | uppercase }} )</p>
       <br>
       <div [innerHTML]="'curriculumPage.workExperienceSection.contentDeveloper'| translate | noComma"></div>
-
     </div>
-    <br>
     <!--Training Courses-->
     <h1 id="trainingCourses" class="lead">{{'curriculumPage.trainingCourses' | translate }}</h1>
     <br>

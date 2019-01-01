@@ -38,8 +38,11 @@ export class MenuCvComponent implements OnInit {
   scrollTo(sectionClicked: string) {
     if (sectionClicked === SECTION_CERTIFICATIONS ||
       sectionClicked === SECTION_PUBLICATIONS ||
+      sectionClicked === SECTION_TRAINING_COURSES ||
       this.sectionNumber(sectionClicked) <= this.sectionNumber(this.section)) {
       $('html').animate({ scrollTop: ($('html').scrollTop() + $('#' + sectionClicked).position().top) }, 500);
+    } else {
+      $('html,body').animate({ scrollTop: 0 }, 500);
     }
     $('main').animate({ scrollTop: ($('main').scrollTop() + $('#' + sectionClicked).position().top) }, 500);
   }

@@ -2,6 +2,7 @@
   html body {
     background-color:aliceblue;
   }
+  
   .navbar-nav > li{
     margin-left:20px;
     margin-right:20px;
@@ -19,7 +20,7 @@
   @mixin masthead{
     // Movil Style
     @media (max-width: 767px) {
-      padding-top: calc(3.5rem + 52px);
+      padding-top: calc(2rem + 52px);
     }
     position: relative;
     overflow: hidden;
