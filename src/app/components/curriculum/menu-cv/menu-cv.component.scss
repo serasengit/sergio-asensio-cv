@@ -56,7 +56,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 150px 0;
+    padding: 100px 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
@@ -132,7 +132,7 @@ ul ul a {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #343a40; 
+    background: rgb(77, 27, 12); 
     border-radius: 12px;
   }
 .section{
@@ -143,6 +143,10 @@ ul ul a {
     border: transparent 1px rgb(77, 27, 12);
     background-color: rgba(0, 0, 0, 0.04);
     margin-right: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 }
 .lead{
     font-weight: 800;
@@ -152,6 +156,12 @@ ul ul a {
     font-weight: 800;
     color:slategrey;
     font-size: 17px;
+    
+}
+.workTable{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .workSection{
     margin-right: 20px;

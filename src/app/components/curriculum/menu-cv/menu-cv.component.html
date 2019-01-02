@@ -33,6 +33,10 @@
       <li class="{{section == 'publications' ? 'active' : '' }}">
         <a (click)="changeSection('publications')" role="button"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.publications' | translate }}</span></a>
       </li>
+      <li>
+        <a *ngIf="language == 'en'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_EN.pdf" download="Curriculim_Vitae_Sergio_Asensio_EN"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
+        <a *ngIf="language == 'es'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_ES.pdf" download="Curriculim_Vitae_Sergio_Asensio_ES"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
+      </li>
     </ul>
   </nav>
   <div id="sidebarActivator">
@@ -73,15 +77,15 @@
         </dl>
       </div>
     </div>
+    <br> <br>
     <!--Profile-->
-    <br>
     <h1 id="profile" class="lead">{{'curriculumPage.profile' | translate }}</h1>
     <br>
     <div class="card">
       <div class="card-body" [innerHTML]="'curriculumPage.profileSection.content'| translate | noComma">
       </div>
     </div>
-    <br>
+    <br><br>
     <!--Education-->
     <h1 id="education" class="lead">{{'curriculumPage.education' | translate }}</h1>
     <br>
@@ -93,7 +97,7 @@
         </dl>
       </div>
     </div>
-    <br>
+    <br><br>
     <!--Languages-->
     <h1 id="languages" class="lead">{{'curriculumPage.languages' | translate }}</h1>
     <br>
@@ -113,7 +117,7 @@
         </dl>
       </div>
     </div>
-    <br>
+    <br><br>
     <!--Software Tools-->
     <h1 id="softwareTools" class="lead">{{'curriculumPage.softwareTools' | translate }}</h1>
     <br>
@@ -155,7 +159,7 @@
         </dl>
       </div>
     </div>
-    <br>
+    <br><br>
     <!--Work Experience-->
     <div class="workSection">
       <h1 id="workExperience" class="lead">{{'curriculumPage.workExperience' | translate }}</h1>
@@ -164,14 +168,15 @@
       <br>
       <p class='workSectionTable' id='seniorDeveloper'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.seniorDeveloper' | translate | uppercase }} )</p>
       <br>
-      <div [innerHTML]="'curriculumPage.workExperienceSection.contentSeniorDeveloper'| translate | noComma"></div>
+      <div class='workTable' [innerHTML]="'curriculumPage.workExperienceSection.contentSeniorDeveloper'| translate | noComma"></div>
 
       <!--Developer Experience-->
       <br>
       <p class='workSectionTable' id='developer'>IA SOFT GRUPO OESIA ( {{'curriculumPage.workExperienceSection.developer' | translate | uppercase }} )</p>
       <br>
-      <div [innerHTML]="'curriculumPage.workExperienceSection.contentDeveloper'| translate | noComma"></div>
+      <div class='workTable' [innerHTML]="'curriculumPage.workExperienceSection.contentDeveloper'| translate | noComma"></div>
     </div>
+    <br><br>
     <!--Training Courses-->
     <h1 id="trainingCourses" class="lead">{{'curriculumPage.trainingCourses' | translate }}</h1>
     <br>
@@ -195,7 +200,7 @@
         </dl>
       </div>
     </div>
-    <br>
+    <br><br>
     <!--Certifications-->
     <h1 id="certifications" class="lead">{{'curriculumPage.certifications' | translate }}</h1>
     <br>
@@ -206,7 +211,7 @@
         </b>
       </div>
     </div>
-    <br>
+    <br><br>
     <!--Publications-->
     <h1 id="publications" class="lead">{{'curriculumPage.publications' | translate }}</h1>
     <br>
@@ -219,5 +224,6 @@
         </li>
       </div>
     </div>
+    <br>
   </main>
 </body>

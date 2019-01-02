@@ -16,6 +16,7 @@
         "trainingCourses": "Cursos de Formación",
         "certifications": "Certificaciones",
         "publications": "Publicaciones",
+        "downloadPdf": "Descargar PDF",
         "personalDataSection": {
             "name": "Nombre y Apellidos:",
             "address": "Dirección:",
@@ -106,8 +107,7 @@
                 "<b>Equipo de Trabajo: </b> 1 Gerente, 2 Analista Senior, 1 Programador Senior, 1 Programador, 1 Becario. </td>",
                 "</tr>",
                 "</tbody>",
-                "</table>",
-                "<br>"
+                "</table>"
             ],
             "contentDeveloper": [
                 "<table class='table table-condensed table-striped table-bordered'>",
@@ -249,8 +249,7 @@
                 "<b>Equipo de Trabajo: </b> 1 Analista Senior, 1 Programador. </td>",
                 "</tr>",
                 "</tbody>",
-                "</table>",
-                "<br>"
+                "</table>"
             ]
         },
         "trainingCoursesSection": {

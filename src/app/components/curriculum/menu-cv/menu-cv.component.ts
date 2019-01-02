@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterContentChecked } from '@angular/core';
 import * as $ from 'jquery';
 import { TranslateService } from '@ngx-translate/core';
 import {
@@ -14,14 +14,20 @@ import {
   templateUrl: './menu-cv.component.html',
   styleUrls: ['./menu-cv.component.scss']
 })
-export class MenuCvComponent implements OnInit {
+export class MenuCvComponent implements OnInit, AfterContentChecked {
   section: string;
-
+  language: string;
   constructor(private translate: TranslateService) {
     this.section = SECTION_PERSONAL_DATA;
-  }
+    this.language = this.translate.currentLang != null && this.translate.currentLang !== undefined
+      ? this.translate.currentLang : this.translate.getDefaultLang();
 
+  }
   ngOnInit() {
+  }
+  ngAfterContentChecked() {
+    this.language = this.translate.currentLang != null && this.translate.currentLang !== undefined
+      ? this.translate.currentLang : this.translate.getDefaultLang();
   }
   // Activate and Deactivate Sidebar
   showHideSideVar() {
@@ -74,5 +80,7 @@ export class MenuCvComponent implements OnInit {
     }
     return number;
   }
+
+
 
 }
