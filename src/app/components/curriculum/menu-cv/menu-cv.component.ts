@@ -26,6 +26,7 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
   ngOnInit() {
   }
   ngAfterContentChecked() {
+    //  Save language app changed
     this.language = this.translate.currentLang != null && this.translate.currentLang !== undefined
       ? this.translate.currentLang : this.translate.getDefaultLang();
   }
@@ -42,9 +43,14 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
   }
   // Scroll to CV Section Function
   scrollTo(sectionClicked: string) {
-    if (sectionClicked === SECTION_CERTIFICATIONS ||
+    if (sectionClicked === SECTION_TRAINING_COURSES) {
+      if ($(window).width() > 768) {
+        $('html').animate({ scrollTop: ($('html').scrollTop() + $('#' + sectionClicked).position().top) }, 500);
+      } else {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+      }
+    } else if (sectionClicked === SECTION_CERTIFICATIONS ||
       sectionClicked === SECTION_PUBLICATIONS ||
-      sectionClicked === SECTION_TRAINING_COURSES ||
       this.sectionNumber(sectionClicked) <= this.sectionNumber(this.section)) {
       $('html').animate({ scrollTop: ($('html').scrollTop() + $('#' + sectionClicked).position().top) }, 500);
     } else {
