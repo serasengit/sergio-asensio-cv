@@ -14,10 +14,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MenuCvComponent } from './components/curriculum/menu-cv/menu-cv.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NoComma } from './config/pipes/noComma.pipe';
-
-
-
-
+import { FormsModule } from '@angular/forms';
+import { EmailService } from './services/email.service';
 
 
 @NgModule({
@@ -43,9 +41,10 @@ import { NoComma } from './config/pipes/noComma.pipe';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    FormsModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

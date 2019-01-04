@@ -7,6 +7,7 @@ import {
   SECTION_WORK_EXPERIENCE, SECTION_TRAINING_COURSES, SECTION_CERTIFICATIONS, SECTION_PUBLICATIONS,
   SECTION_WORK_EXPERIENCE_DEVELOPER, SECTION_WORK_EXPERIENCE_SENIOR_DEVELOPER
 } from 'src/app/config/config.constants';
+import { UtilsService } from 'src/utils/utils.service';
 
 
 @Component({
@@ -17,9 +18,9 @@ import {
 export class MenuCvComponent implements OnInit, AfterContentChecked {
   section: string;
   language: string;
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private _UtilsService: UtilsService) {
     this.section = SECTION_PERSONAL_DATA;
-    this.language = this.translate.currentLang != null && this.translate.currentLang !== undefined
+    this.language = !this._UtilsService.isNullOrUndefinedOrBlank(this.translate.currentLang)
       ? this.translate.currentLang : this.translate.getDefaultLang();
 
   }
@@ -27,7 +28,7 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
   }
   ngAfterContentChecked() {
     //  Save language app changed
-    this.language = this.translate.currentLang != null && this.translate.currentLang !== undefined
+    this.language = !this._UtilsService.isNullOrUndefinedOrBlank(this.translate.currentLang)
       ? this.translate.currentLang : this.translate.getDefaultLang();
   }
   // Activate and Deactivate Sidebar

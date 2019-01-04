@@ -1,18 +1,29 @@
-// Install express server
-console.log('b');
+// Import express
 const express = require('express');
 const path = require('path');
+// Import Body parser
+const bodyParser = require('body-parser');
+// Import Mongoose
+// let mongoose = require('mongoose');
+// Email sending variables
+const cors = require('cors');
+const configMensaje = require('./modules/configMensaje');
+// Initialize the app
+let app = express();
+// Import routes
+let apiRoutes = require('./api-routes');
 
-const app = express();
+// Configure bodyparser to handle post requests
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(bodyParser.json());
 
-// Serve only the static files form the dist directory
-app.use(express.static('./dist/sergio-asensio-cv'));
-
-app.get('/', function (req, res) {
-
-    res.sendFile(path.join(__dirname, '/dist/sergio-asensio-cv/index.html'));
-});
-
+// Connect to Mongoose and set connection variable
+// mongoose.connect('mongodb://localhost/resthub');
+// let db = mongoose.connection;
+// Setup server port
+const port = process.env.PORT || 4201;
 // Allow any method from any host and log requests
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -25,12 +36,15 @@ app.use((req, res, next) => {
         next();
     }
 });
-// Handle POST requests that come in formatted as JSON
-app.use(express.json());
-// A default hello word route
-app.get('/hello', (req, res) => {
-    res.send({ hello: 'world' });
+// Use Api routes in the App
+app.use('/api', apiRoutes);
+// Launch app to listen to specified port
+app.listen(port, function () {
+    console.log('Running RestHub on port ' + port);
 });
-
-// Start the app by listening on the default Heroku port or locally
-app.listen(process.env.PORT || 4201);
+// Heroku configuration
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/sergio-asensio-cv'));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '/dist/sergio-asensio-cv/index.html'));
+});
