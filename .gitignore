@@ -42,5 +42,5 @@ testem.log
 .DS_Store
 Thumbs.db
 # Migrations and Seeds
-server/db/knex/migrations
-server/db/knex/seeds
+server/db/knex/migrations/*
+server/db/knex/seeds/*
