@@ -8,7 +8,7 @@ const middlewares = {
         // Check credentials
         // The "check" function will typically be against your user store
         if (!credentials || !check(credentials.name, credentials.pass)) {
-            return res.status(401).send(' HTTP Request Unauthorized!');
+            return res.status(401).send('HTTP Request Unauthorized!');
         } else {
             next();
         }

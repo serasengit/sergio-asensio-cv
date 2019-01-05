@@ -41,5 +41,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-# Migrations and Seeds
+# Knex Seeds
 server/db/knex/seeds
