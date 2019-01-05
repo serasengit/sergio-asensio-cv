@@ -1,14 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
+
 
 @Component({
   selector: 'app-portada',
   templateUrl: './portada.component.html'
 })
-export class PortadaComponent implements OnInit {
+export class PortadaComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(private spinnerService: Ng4LoadingSpinnerService) { }
 
   ngOnInit() {
+    this.spinnerService.show(); // To show the spinner
+  }
+  ngAfterViewInit() {
+    this.spinnerService.hide(); // To hide the spinner
   }
 
 }

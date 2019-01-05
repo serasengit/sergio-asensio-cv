@@ -18,6 +18,8 @@ import { FormsModule } from '@angular/forms';
 import { EmailService } from './services/email.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './TokenInterceptor';
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
+
 
 
 
@@ -45,7 +47,8 @@ import { TokenInterceptor } from './TokenInterceptor';
         deps: [HttpClient]
       }
     }),
-    FormsModule
+    FormsModule,
+    Ng4LoadingSpinnerModule
   ],
   providers: [
     EmailService,
