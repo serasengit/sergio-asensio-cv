@@ -1,6 +1,6 @@
 // Import configMensage module
 const configMensaje = require('../../modules/configMensaje');
-const Config = require('../../db/models/Config');
+const Config = require('../../db/models/config');
 
 
 // Send an email.
