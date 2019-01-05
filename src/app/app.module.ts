@@ -16,6 +16,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NoComma } from './config/pipes/noComma.pipe';
 import { FormsModule } from '@angular/forms';
 import { EmailService } from './services/email.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokenInterceptor } from './TokenInterceptor';
+
 
 
 @NgModule({
@@ -44,7 +47,14 @@ import { EmailService } from './services/email.service';
     }),
     FormsModule
   ],
-  providers: [EmailService],
+  providers: [
+    EmailService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

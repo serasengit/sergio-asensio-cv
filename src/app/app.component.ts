@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, isDevMode, OnInit } from '@angular/core';
 
 
 @Component({
@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-
+export class AppComponent implements OnInit {
+  ngOnInit() {
+    if (isDevMode()) {
+      console.log('👋 Development!');
+    } else {
+      console.log('💪 Production!');
+    }
+  }
 }

@@ -16,7 +16,7 @@ export class UtilsService {
     return swal({
       type: 'error',
       title: 'Oops...',
-      text: text
+      html: text
     });
   }
   /**Show pop-up with Server Api exceptions*/

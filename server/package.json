@@ -10,11 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "api-routes": "^0.2.1",
+    "basic-auth": "^2.0.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "nodemailer": "^5.0.0",
     "routes": "^2.1.0",
-    "save": "^2.3.3"
-  }
+    "save": "^2.3.3",
+    "tsscmp": "^1.0.6"
+  },
+  "devDependencies": {}
 }

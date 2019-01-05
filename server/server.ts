@@ -11,7 +11,7 @@ const configMensaje = require('./modules/configMensaje');
 // Initialize the app
 let app = express();
 // Import routes
-let apiRoutes = require('./api-routes');
+let apiRoutes = require('./routes/api-routes');
 
 // Configure bodyparser to handle post requests
 app.use(bodyParser.urlencoded({
@@ -24,17 +24,12 @@ app.use(bodyParser.json());
 // let db = mongoose.connection;
 // Setup server port
 const port = process.env.PORT || 4201;
-// Allow any method from any host and log requests
+// CORS HTTPP/HTTPS Requests Configuration
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, DELETE');
-    if ('OPTIONS' === req.method) {
-        res.sendStatus(200);
-    } else {
-        console.log(`${req.ip} ${req.method} ${req.url}`);
-        next();
-    }
+    next();
 });
 // Use Api routes in the App
 app.use('/api', apiRoutes);

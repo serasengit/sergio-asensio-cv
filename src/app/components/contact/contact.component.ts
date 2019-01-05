@@ -16,11 +16,12 @@ export class ContactComponent implements OnInit {
 
   contactForm(form) {
     this._EmailService.sendMessage(form).subscribe(
-      (resp) => {
-        swal('Formulario de contacto', 'Mensaje enviado correctamente', 'success');
+      (res) => {
+        if (res) {
+          swal('Formulario de contacto', 'Mensaje enviado correctamente', 'success');
+        }
       },
       (err) => {
-        console.log('DDDDD' + JSON.stringify(err));
         this._UtilsService.handleError(err.status, err.error, '/contact');
       }
     );

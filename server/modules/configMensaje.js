@@ -14,4 +14,4 @@ module.exports = function (formulario) {
         html: '<strong>Nombre:&nbsp;</strong>' + formulario.nombre + '<br/><br/><strong>E-mail:&nbsp;</strong>' + formulario.email + '<br/><br/><strong>Mensaje:&nbsp;</strong><br/><br/>' + formulario.mensaje
 
     };
-}
+} 
