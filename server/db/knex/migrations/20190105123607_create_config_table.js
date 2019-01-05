@@ -10,6 +10,6 @@ exports.up = function (knex, Promise) {
 };
 
 exports.down = function (knex, Promise) {
-    return knex.schema.dropTable('T0001_CONFIGs');
+    return knex.schema.dropTable('T0001_CONFIG');
 
 };
