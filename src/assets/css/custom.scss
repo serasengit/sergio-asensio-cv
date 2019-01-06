@@ -12,7 +12,7 @@
     padding-right:15px;
   }
   .languages{
-    margin-left:30px;
+    margin-left:35px;
   }
   .myspiner /deep/ .black-overlay{
     position: fixed;
@@ -62,3 +62,5 @@
     background: url("/assets/img/headerContact.jpg") center center no-repeat;
     @include masthead;
   }
+  input.novalid {border-color:#f05442;}
+div.novalid {display:block; color:#f05442; margin-top:5px;}

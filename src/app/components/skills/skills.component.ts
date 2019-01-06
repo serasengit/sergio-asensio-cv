@@ -10,10 +10,8 @@ export class SkillsComponent implements OnInit, AfterViewInit {
   constructor(private spinnerService: Ng4LoadingSpinnerService) { }
 
   ngOnInit() {
-    this.spinnerService.show(); // To show the spinner
   }
   ngAfterViewInit() {
-    this.spinnerService.hide(); // To hide the spinner
   }
 
 }

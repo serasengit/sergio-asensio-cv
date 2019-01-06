@@ -14,7 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MenuCvComponent } from './components/curriculum/menu-cv/menu-cv.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NoComma } from './config/pipes/noComma.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from './services/email.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './TokenInterceptor';
@@ -48,6 +48,7 @@ import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
       }
     }),
     FormsModule,
+    ReactiveFormsModule,
     Ng4LoadingSpinnerModule
   ],
   providers: [

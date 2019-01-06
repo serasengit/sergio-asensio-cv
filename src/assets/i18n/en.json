@@ -266,5 +266,13 @@
         "publicationsSection": {
             "tfg": "Ecuaciones Diferenciales Implícitas y Clasificación de sus Singularidades"
         }
+    },
+    "validationMessages": {
+        "contact": {
+            "name": "Invalid name",
+            "subject": "Invalid subject",
+            "email": "Invalid email",
+            "message": "Invalid message"
+        }
     }
 }
