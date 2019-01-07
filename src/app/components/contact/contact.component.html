@@ -19,37 +19,37 @@
   <div>
     <div class="card-body">
       <div class="container mt-5">
-        <h2>Formulario de contacto</h2>
+        <h2>{{'contactSection.contactForm' |translate}}</h2><br>
         <form (ngSubmit)="onSubmit(myForm.value)" [formGroup]="myForm">
           <div class="form-group">
-            <label>Nombre</label>
+            <label>{{'contactSection.name' |translate}}</label>
             <input type="text" class="form-control" name="nombre" formControlName="name" [(ngModel)]="nameValue">
             <div class="novalid" *ngIf="name.value && name.status==='INVALID' && !name.pristine ">
-              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contact.name' |translate}}
+              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.name' |translate}}
             </div>
           </div>
           <div class="form-group">
-            <label>Asunto</label>
+            <label>{{'contactSection.subject' |translate}}</label>
             <input type="text" class="form-control" name="asunto" formControlName="subject" [(ngModel)]="subjectValue">
             <div class="novalid" *ngIf="subject.value && subject.status==='INVALID' && !subject.pristine ">
-              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contact.subject' |translate}}
+              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.subject' |translate}}
             </div>
           </div>
           <div class="form-group">
-            <label>E-mail</label>
+            <label>{{'contactSection.email' |translate}}</label>
             <input type="email" class="form-control" name="email" formControlName="email" [(ngModel)]="emailValue">
             <div class="novalid" *ngIf="email.value && email.status==='INVALID' && !email.pristine ">
-              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contact.email' |translate}}
+              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.email' |translate}}
             </div>
           </div>
           <div class="form-group">
-            <label>Mensaje</label>
+            <label>{{'contactSection.message' |translate}}</label>
             <textarea class="form-control" cols="30" rows="6" name="mensaje" formControlName="message" [(ngModel)]="messageValue"></textarea>
             <div class="novalid" *ngIf="message.value && message.status==='INVALID' && !message.pristine ">
-              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contact.message' |translate}}
+              <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.message' |translate}}
             </div>
           </div>
-          <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Enviar</button>
+          <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">{{'contactSection.send' |translate}}</button>
         </form>
       </div>
     </div>

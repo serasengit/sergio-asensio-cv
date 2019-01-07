@@ -269,12 +269,26 @@
             "tfg": "Ecuaciones Diferenciales Implícitas y Clasificación de sus Singularidades."
         }
     },
+    "contactSection": {
+        "contactForm": "Formulario de contacto",
+        "name": "Nombre",
+        "subject": "Asunto",
+        "email": "E-mail",
+        "message": "Mensaje",
+        "send": "Enviar"
+    },
     "validationMessages": {
         "contact": {
             "name": "Nombre no válido",
             "subject": "Asunto no válido",
             "email": "Email no válido",
             "message": "Mensaje no válido"
+        }
+    },
+    "resultMessages": {
+        "contactSection": {
+            "contactForm": "Formulario de contacto",
+            "mailOK": "Mensaje enviado correctamente!"
         }
     }
 }

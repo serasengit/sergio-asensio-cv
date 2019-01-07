@@ -67,7 +67,8 @@ export class ContactComponent implements OnInit {
       (res) => {
         if (res) {
           this.spinnerService.hide();
-          swal('Formulario de contacto', 'Mensaje enviado correctamente', 'success');
+          swal(this.translate.instant('resultMessages.contactSection.contactForm'),
+            this.translate.instant('resultMessages.contactSection.mailOK'), 'success');
         }
       },
       (err) => {
