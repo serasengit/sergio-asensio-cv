@@ -37,9 +37,7 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
   }
   // Menu Section Changing
   changeSection(sectionClicked: string) {
-    if (sectionClicked !== SECTION_WORK_EXPERIENCE) {
-      this.scrollTo(sectionClicked);
-    }
+    this.scrollTo(sectionClicked);
     this.section = sectionClicked;
   }
   // Scroll to CV Section Function
@@ -86,6 +84,13 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
       number = 10;
     }
     return number;
+  }
+  checkWidth() {
+    if ($(window).width() < 767) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 
