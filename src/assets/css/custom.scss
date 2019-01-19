@@ -45,7 +45,7 @@
   @mixin masthead{
     // Movil Style
     @media (max-width: 767px) {
-      padding-top: calc(2rem + 22px);
+      padding-top: calc(2rem + 12px);
     }
     position: relative;
     overflow: hidden;
@@ -78,5 +78,6 @@
     background: url("/assets/img/headerContact.jpg") center center no-repeat;
     @include masthead;
   }
+  
   input.novalid {border-color:#f05442;}
 div.novalid {display:block; color:#f05442; margin-top:5px;}
