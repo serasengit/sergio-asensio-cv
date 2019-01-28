@@ -16,35 +16,40 @@
 
 <body>
   <header class="mastheadContact text-center"></header>
-  <div>
+  <div class="card bg-light text-dark">
     <div class="card-body">
       <div class="container mt-5">
         <h2>{{'contactSection.contactForm' |translate}}</h2><br>
         <form (ngSubmit)="onSubmit(myForm.value)" [formGroup]="myForm">
           <div class="form-group">
             <label>{{'contactSection.name' |translate}}</label>
-            <input type="text" class="form-control" name="nombre" formControlName="name" [(ngModel)]="nameValue">
+            <input type="text" class="form-control border border-primary" name="nombre" formControlName="name" [(ngModel)]="nameValue">
             <div class="novalid" *ngIf="name.value && name.status==='INVALID' && !name.pristine ">
               <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.name' |translate}}
             </div>
           </div>
           <div class="form-group">
             <label>{{'contactSection.subject' |translate}}</label>
-            <input type="text" class="form-control" name="asunto" formControlName="subject" [(ngModel)]="subjectValue">
+            <input type="text" class="form-control border border-primary" name="asunto" formControlName="subject" [(ngModel)]="subjectValue">
             <div class="novalid" *ngIf="subject.value && subject.status==='INVALID' && !subject.pristine ">
               <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.subject' |translate}}
             </div>
           </div>
           <div class="form-group">
             <label>{{'contactSection.email' |translate}}</label>
-            <input type="email" class="form-control" name="email" formControlName="email" [(ngModel)]="emailValue">
+            <input type="email" class="form-control border border-primary" name="email" formControlName="email" [(ngModel)]="emailValue">
             <div class="novalid" *ngIf="email.value && email.status==='INVALID' && !email.pristine ">
               <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.email' |translate}}
             </div>
           </div>
           <div class="form-group">
+            <label>{{'contactSection.file' |translate}}</label><br>
+            <input id="cin" name="cin" type="file" (change)="fileChangeEvent($event)" enctype="multipart/form-data" placeholder="Upload a file..." multiple />
+          </div>
+
+          <div class="form-group">
             <label>{{'contactSection.message' |translate}}</label>
-            <textarea class="form-control" cols="30" rows="6" name="mensaje" formControlName="message" [(ngModel)]="messageValue"></textarea>
+            <textarea class="form-control border border-primary" cols="30" rows="6" name="mensaje" formControlName="message" [(ngModel)]="messageValue"></textarea>
             <div class="novalid" *ngIf="message.value && message.status==='INVALID' && !message.pristine ">
               <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true"></i> {{'validationMessages.contactSection.message' |translate}}
             </div>

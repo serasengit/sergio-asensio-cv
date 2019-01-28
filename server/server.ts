@@ -1,6 +1,7 @@
 // Import express
 const express = require('express');
 const path = require('path');
+
 // Import Body parser
 const bodyParser = require('body-parser');
 // Import Mongoose
@@ -39,6 +40,10 @@ app.listen(port, function () {
 });
 // Heroku configuration
 // Serve only the static files form the dist directory
+
+// Specify the folder which will contain attached file from Contact Section
+app.use(express.static(path.join(__dirname, './utils/uploads')));
+
 app.use(express.static('./dist/sergio-asensio-cv'));
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/dist/sergio-asensio-cv/index.html'));

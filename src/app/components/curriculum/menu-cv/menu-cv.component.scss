@@ -65,7 +65,7 @@ a, a:hover, a:focus {
     padding: 10px;
 }
 #sidebar ul li a {
-    padding: 10px;
+    padding: 35px;
     font-size: 1em;
     display: block;
 }
@@ -74,8 +74,9 @@ a, a:hover, a:focus {
     background: #fff;
 }
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #d19b3d;
+    color: #FFCA47;
 }
+
 ul ul a {
     font-size: 0.9em !important;
 }
@@ -110,8 +111,9 @@ ul ul a {
 }
 #main{
     overflow-y: scroll;
+    overflow-x: hidden;
     position:relative;
-    height: 150vh;
+    height: 130vh;
     margin-top: 5px;
     margin-bottom: 30px;
     font-size: 15px;
@@ -208,8 +210,14 @@ ul ul a {
         max-width: 60px;
         min-height: 60vh;
     }
+    #sidebar ul li a {
+        padding: 20px;
+    }
     #sidebar.active {
         margin-left: 0;
+    }
+    #main{
+        height: 150vh;
     }
     .lead{
         font-weight: 800;

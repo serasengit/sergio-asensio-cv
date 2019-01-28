@@ -18,8 +18,7 @@ export class TokenInterceptor implements HttpInterceptor {
     let customReq = request.clone();
 
     this.headers = new HttpHeaders({
-      'Authorization': 'Basic ' + btoa(environment.SERVER_USER + ':' + environment.SERVER_PASS),
-      'Content-Type': 'application/json'
+      'Authorization': 'Basic ' + btoa(environment.SERVER_USER + ':' + environment.SERVER_PASS)
     });
 
     customReq = request.clone({

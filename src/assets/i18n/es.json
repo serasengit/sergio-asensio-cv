@@ -202,11 +202,12 @@
         "name": "Nombre",
         "subject": "Asunto",
         "email": "E-mail",
+        "file": "Adjuntar archivo",
         "message": "Mensaje",
         "send": "Enviar"
     },
     "validationMessages": {
-        "contact": {
+        "contactSection": {
             "name": "Nombre no válido",
             "subject": "Asunto no válido",
             "email": "Email no válido",

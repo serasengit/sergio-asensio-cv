@@ -25,6 +25,7 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
 
   }
   ngOnInit() {
+
   }
   ngAfterContentChecked() {
     //  Save language app changed

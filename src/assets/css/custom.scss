@@ -16,6 +16,7 @@
   }
   .languages .english{
     width:28px;
+
   }
 
   .languages .spanish{
@@ -37,9 +38,10 @@
   @media (max-width: 767px) {
     .languages .english{
       width:24.5px;
+
     }
     .languages .spanish{
-    width:26px;
+      width:26px;
     }  
   }
   @mixin masthead{

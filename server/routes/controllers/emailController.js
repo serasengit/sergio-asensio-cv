@@ -16,11 +16,22 @@ exports.send_email = async function (req, res, next) {
                         .where('clave', 'email_pass')
                         .then((emailPass) => {
                             if (emailPass && emailPass[0]) {
-                                const mail = new configMensaje(req.body, emailAddress[0].value, emailPass[0].value);
+                                //Attaching Files
+                                var attachementList = [];
+                                for (i = 0; i < req.files.length; i++) {
+                                    attachementList.push({
+                                        filename: req.files[i].originalname,
+                                        path: req.files[i].path
+                                    });
+                                }
+                                const mail = new configMensaje(req.body, emailAddress[0].value, emailPass[0].value, attachementList);
+
                                 mail.transporter.sendMail(mail.mailOptions, function (err, info) {
                                     if (err) {
+                                        console.log('NOK' + err);
                                         return next(err);
                                     } else {
+                                        console.log('OK' + err);
                                         return res.status(200).send({ result: 'Email was sent succesfully!' });
                                     }
                                 });

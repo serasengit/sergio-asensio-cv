@@ -200,6 +200,7 @@
         "name": "Name",
         "subject": "Subject",
         "email": "E-mail",
+        "file": "Attach file",
         "message": "Message",
         "send": "Send"
     },
