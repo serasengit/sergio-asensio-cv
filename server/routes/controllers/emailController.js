@@ -28,10 +28,8 @@ exports.send_email = async function (req, res, next) {
 
                                 mail.transporter.sendMail(mail.mailOptions, function (err, info) {
                                     if (err) {
-                                        console.log('NOK' + err);
                                         return next(err);
                                     } else {
-                                        console.log('OK' + err);
                                         return res.status(200).send({ result: 'Email was sent succesfully!' });
                                     }
                                 });
