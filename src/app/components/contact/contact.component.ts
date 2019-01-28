@@ -1,10 +1,11 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, AfterContentChecked } from '@angular/core';
 import swal from 'sweetalert';
 import { EmailService } from 'src/app/services/email.service';
 import { UtilsService } from 'src/utils/utils.service';
 import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 import { FormGroup, AbstractControl, Validators, FormBuilder } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -24,10 +25,21 @@ export class ContactComponent implements OnInit {
   message: AbstractControl;
   messageValue: string;
   filesToUpload: Array<File> = [];
+  filesToUploadName: AbstractControl;
+  filesToUploadNameValue: string;
+
+
 
   constructor(public _EmailService: EmailService, public _UtilsService: UtilsService, private spinnerService: Ng4LoadingSpinnerService,
-    private formBuilder: FormBuilder, private translate: TranslateService, private cd: ChangeDetectorRef
-  ) { }
+    private formBuilder: FormBuilder, private translate: TranslateService, private cd: ChangeDetectorRef,
+    private translateService: TranslateService,
+  ) {
+    this.translate.get('contactSection.chooseFiles')
+      .subscribe((resp: any) => {
+        this.filesToUploadNameValue = resp;
+      });
+
+  }
 
   ngOnInit() {
 
@@ -51,7 +63,8 @@ export class ContactComponent implements OnInit {
         '',
         Validators.compose([Validators.required])
       ],
-      filesToUpload: [new Array<File>()]
+      filesToUpload: [new Array<File>()],
+      filesToUploadName: ['']
     });
     this.name = this.myForm.controls['name'];
     this.nameValue = '';
@@ -61,13 +74,28 @@ export class ContactComponent implements OnInit {
     this.emailValue = '';
     this.message = this.myForm.controls['message'];
     this.messageValue = '';
+    this.filesToUploadName = this.myForm.controls['filesToUploadName'];
+    this.filesToUploadName.disable();
   }
+
 
   fileChangeEvent(fileInput: any) {
     this.filesToUpload = <Array<File>>fileInput.target.files;
+    this.filesToUploadNameValue = '';
+    for (let i = 0; i < this.filesToUpload.length; i++) {
+      this.filesToUploadNameValue += this.filesToUpload[i]['name'] + ';';
+    }
+    if (this._UtilsService.isNullOrUndefinedOrBlank(this.filesToUploadNameValue)) {
+      this.deleteFiles();
+    }
   }
-
-
+  deleteFiles(): void {
+    this.filesToUpload = [];
+    this.translate.get('contactSection.chooseFiles')
+      .subscribe((resp: any) => {
+        this.filesToUploadNameValue = resp;
+      });
+  }
 
   onSubmit(form) {
     // Show spinner

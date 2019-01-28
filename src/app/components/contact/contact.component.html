@@ -43,10 +43,14 @@
             </div>
           </div>
           <div class="form-group">
-            <label>{{'contactSection.file' |translate}}</label><br>
-            <input id="cin" name="cin" type="file" (change)="fileChangeEvent($event)" enctype="multipart/form-data" placeholder="Upload a file..." multiple />
+            <label>{{'contactSection.file' |translate}}</label>
+            <div class="input-group mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="file" (change)="fileChangeEvent($event)" multiple />
+                <input type="text" class="form-control custom-file-label border border-primary disabled" name="filesToUploadName" formControlName="filesToUploadName" [(ngModel)]="filesToUploadNameValue" id="fileLabel">
+              </div>
+            </div>
           </div>
-
           <div class="form-group">
             <label>{{'contactSection.message' |translate}}</label>
             <textarea class="form-control border border-primary" cols="30" rows="6" name="mensaje" formControlName="message" [(ngModel)]="messageValue"></textarea>
