@@ -201,7 +201,7 @@
         "subject": "Subject",
         "email": "E-mail",
         "file": "Attach file",
-        "chooseFiles": "Choose files",
+        "chooseFiles": "Choose files...",
         "deleteFiles": "Delete files",
         "message": "Message",
         "send": "Send"

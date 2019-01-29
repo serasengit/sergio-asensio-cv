@@ -203,7 +203,7 @@
         "subject": "Asunto",
         "email": "E-mail",
         "file": "Adjuntar archivo",
-        "chooseFiles": "Choose files",
+        "chooseFiles": "Choose files...",
         "deleteFiles": "Borrar archivos",
         "message": "Mensaje",
         "send": "Enviar"

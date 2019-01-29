@@ -11,16 +11,46 @@
     padding-left:15px;
     padding-right:15px;
   }
-  .languages{
+  .icons .facebook-icon{
+    margin-right:15px;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+  }
+  .icons .linkedin-icon{
+    margin-right:15px;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+
+  }
+  .icons .gmail-icon{
+    margin-right:15px;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+  }
+  .vertical_line{border-left: 2px solid white;height:35px; width:35px;}
+
+  .icons .gmail-icon:hover {
+    color: #dd4b39;
+  }
+  .icons .linkedin-icon:hover {
+    color: #0077b5;
+  }
+  .icons .facebook-icon:hover {
+    color: #3b5998;
+  }
+  .icons{
     margin-left:35px;
   }
-  .languages .english{
-    width:28px;
-
+  .icons .english{
+    width:24px;
+    margin-bottom:5px;
   }
-
-  .languages .spanish{
-  width:30px;
+  .icons .spanish{
+    width:26px;
+    margin-bottom:5px;
   }
   .myspiner /deep/ .black-overlay{
     position: fixed;
@@ -36,13 +66,24 @@
     cursor: default;
   }
   @media (max-width: 767px) {
-    .languages .english{
-      width:24.5px;
+    .icons .english{
+      width:21.5px;
 
     }
-    .languages .spanish{
-      width:26px;
+    .icons .spanish{
+      width:23px;
+      
     }  
+    .icons .gmail-icon{
+
+      font-size:16px;  
+    }
+    .icons .linkedin-icon{
+      font-size:16px;  
+    }
+    .icons .facebook-icon{
+      font-size:16px;  
+    }
   }
   @mixin masthead{
     // Movil Style
