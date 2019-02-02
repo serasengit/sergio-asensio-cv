@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"ng serve\" \"nodemon rs node server/server.ts -e .ts,.js\"",
+    "start": "concurrently \"ng serve\" \"nodemon rs node server/server.ts -e .ts,.js,.css,.scss\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -27,6 +27,7 @@
     "@ngx-translate/http-loader": "^4.0.0",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.1.3",
+    "chart.js": "^2.7.3",
     "concurrently": "^4.1.0",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
