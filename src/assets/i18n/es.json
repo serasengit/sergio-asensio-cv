@@ -202,7 +202,7 @@
         "name": "Nombre",
         "subject": "Asunto",
         "email": "E-mail",
-        "file": "Adjuntar archivo",
+        "file": "Adjuntar archivos",
         "chooseFiles": "Choose files...",
         "deleteFiles": "Borrar archivos",
         "message": "Mensaje",

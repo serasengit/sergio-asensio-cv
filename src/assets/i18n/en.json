@@ -200,7 +200,7 @@
         "name": "Name",
         "subject": "Subject",
         "email": "E-mail",
-        "file": "Attach file",
+        "file": "Attach files",
         "chooseFiles": "Choose files...",
         "deleteFiles": "Delete files",
         "message": "Message",
