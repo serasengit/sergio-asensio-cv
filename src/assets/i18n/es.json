@@ -197,6 +197,21 @@
             "tfg": "Ecuaciones Diferenciales Implícitas y Clasificación de sus Singularidades."
         }
     },
+    "skillsSection": {
+        "personalSkills": {
+            "title": "Habilidades Personales",
+            "analytical": "Analítico",
+            "problemSolving": "Resolutivo",
+            "determinationPersistence": "Determinación y persistencia",
+            "communication": "Comunicativo",
+            "decisionMaking": "Decisivo",
+            "timeManagement": "Gestión del Tiempo",
+            "selfMotivation": "Motivación",
+            "adaptability": "Adaptabilidad",
+            "teamwork": "Trabajo en equipo",
+            "creativity": "Creativo"
+        }
+    },
     "contactSection": {
         "contactForm": "Formulario de contacto",
         "name": "Nombre",
