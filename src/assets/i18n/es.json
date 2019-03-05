@@ -212,6 +212,9 @@
             "creativity": "Creativo"
         }
     },
+    "programmingAreaSection": {
+        "maintenance": "En desarrollo..."
+    },
     "contactSection": {
         "contactForm": "Formulario de contacto",
         "name": "Nombre",

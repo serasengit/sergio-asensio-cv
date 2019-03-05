@@ -210,6 +210,9 @@
             "creativity": "Creativity"
         }
     },
+    "programmingAreaSection": {
+        "maintenance": "In development..."
+    },
     "contactSection": {
         "contactForm": "Contact form",
         "name": "Name",

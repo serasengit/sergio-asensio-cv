@@ -91,7 +91,7 @@ export class SkillsComponent implements OnInit {
                 max: 100
               },
               gridLines: {
-                display: false
+                display: true
               }
             }]
           },
