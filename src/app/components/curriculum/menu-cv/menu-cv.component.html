@@ -1,33 +1,33 @@
-<body class="wrapper" data-target="#sidebar">
+<body class="wrapper" data-spy="scroll" data-target="#sidebar" data-offset="350">
   <!-- Sidebar -->
   <nav id="sidebar">
     <ul class="components">
-      <li class="{{section == 'personalData' ? 'active' : '' }}">
-        <a (click)="changeSection('personalData')" role="button"><i class="fa fa-address-card"></i><span class="d-none d-md-inline">{{'curriculumPage.personalData' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link active" href="#personalData" (click)="changeSection('personalData', $event)"><i class="fa fa-address-card"></i><span class="d-none d-md-inline">{{'curriculumPage.personalData' | translate }}</span></a>
       </li>
-      <li class="{{section == 'profile' ? 'active' : '' }}">
-        <a (click)="changeSection('profile')" role="button"><i class="fas fa-user-circle"></i><span class="d-none d-md-inline">{{'curriculumPage.profile' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#profile" (click)="changeSection('profile',$event)"><i class="fas fa-user-circle"></i><span class="d-none d-md-inline">{{'curriculumPage.profile' | translate }}</span></a>
       </li>
-      <li class="{{section == 'education' ? 'active' : '' }}">
-        <a (click)="changeSection('education')" role="button"><i class="fas fa-user-graduate"></i><span class="d-none d-md-inline">{{'curriculumPage.education' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#education" (click)="changeSection('education', $event)"><i class="fas fa-user-graduate"></i><span class="d-none d-md-inline">{{'curriculumPage.education' | translate }}</span></a>
       </li>
-      <li class="{{section == 'languages' ? 'active' : '' }}">
-        <a (click)="changeSection('languages')" role="button"><i class="fas fa-globe-europe"></i><span class="d-none d-md-inline">{{'curriculumPage.languages' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#languages" (click)="changeSection('languages', $event)"><i class="fas fa-globe-europe"></i><span class="d-none d-md-inline">{{'curriculumPage.languages' | translate }}</span></a>
       </li>
-      <li class="{{section == 'softwareTools' ? 'active' : '' }}">
-        <a (click)="changeSection('softwareTools')" role="button"><i class="fab fa-java"></i><span class="d-none d-md-inline">{{'curriculumPage.softwareTools' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#softwareTools" (click)="changeSection('softwareTools', $event)"><i class="fab fa-java"></i><span class="d-none d-md-inline">{{'curriculumPage.softwareTools' | translate }}</span></a>
       </li>
-      <li class="{{section == 'workExperience' ? 'active' : '' }}">
-        <a (click)="changeSection('workExperience')" role="button"><i class="fas fa-chart-line"></i><span class="d-none d-md-inline">{{'curriculumPage.workExperience' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#workExperience" (click)="changeSection('workExperience', $event)"><i class="fas fa-chart-line"></i><span class="d-none d-md-inline">{{'curriculumPage.workExperience' | translate }}</span></a>
       </li>
-      <li class="{{section == 'trainingCourses' ? 'active' : '' }}">
-        <a (click)="changeSection('trainingCourses')" role="button"><i class="fas fa-book-reader"></i><span class="d-none d-md-inline">{{'curriculumPage.trainingCourses' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#trainingCourses" (click)="changeSection('trainingCourses', $event)"><i class="fas fa-book-reader"></i><span class="d-none d-md-inline">{{'curriculumPage.trainingCourses' | translate }}</span></a>
       </li>
-      <li class="{{section == 'certifications' ? 'active' : '' }}">
-        <a (click)="changeSection('certifications')" role="button"><i class="fas fa-certificate"></i><span class="d-none d-md-inline">{{'curriculumPage.certifications' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#certifications" (click)="changeSection('certifications', $event)"><i class="fas fa-certificate"></i><span class="d-none d-md-inline">{{'curriculumPage.certifications' | translate }}</span></a>
       </li>
-      <li class="{{section == 'publications' ? 'active' : '' }}">
-        <a (click)="changeSection('publications')" role="button"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.publications' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#publications" (click)="changeSection('publications', $event)"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.publications' | translate }}</span></a>
       </li>
       <li>
         <a *ngIf="language == 'en'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_EN.pdf" download="Curriculim_Vitae_Sergio_Asensio_EN"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
@@ -42,6 +42,7 @@
   <main id="main" class="pl-md-2 pt-2 scroller">
 
     <!--  Personal Data -->
+
     <h1 id="personalData" class="lead">{{'curriculumPage.personalData' | translate }}</h1>
     <br>
     <div class="justify-content-center ">
