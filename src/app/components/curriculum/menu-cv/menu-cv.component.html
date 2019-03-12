@@ -1,7 +1,7 @@
-<body class="wrapper" data-spy="scroll" data-target="#sidebar" data-offset="350">
+<body class="wrapper">
   <!-- Sidebar -->
   <nav id="sidebar">
-    <ul class="components">
+    <ul class="components" scroll-spy>
       <li class="nav-item">
         <a class="nav-link active" href="#personalData" (click)="changeSection('personalData', $event)"><i class="fa fa-address-card"></i><span class="d-none d-md-inline">{{'curriculumPage.personalData' | translate }}</span></a>
       </li>
@@ -29,9 +29,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#publications" (click)="changeSection('publications', $event)"><i class="fas fa-paperclip"></i><span class="d-none d-md-inline">{{'curriculumPage.publications' | translate }}</span></a>
       </li>
-      <li>
-        <a *ngIf="language == 'en'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_EN.pdf" download="Curriculim_Vitae_Sergio_Asensio_EN"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
-        <a *ngIf="language == 'es'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_ES.pdf" download="Curriculim_Vitae_Sergio_Asensio_ES"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="language == 'en'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_EN.pdf" download="Curriculim_Vitae_Sergio_Asensio_EN"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
+        <a class="nav-link" *ngIf="language == 'es'" href="/assets/files/Curriculum_Vitae_Sergio_Asensio_ES.pdf" download="Curriculim_Vitae_Sergio_Asensio_ES"><i class="fas fa-file-pdf"></i><span class="d-none d-md-inline">{{'curriculumPage.downloadPdf' | translate }}</span></a>
       </li>
     </ul>
   </nav>
@@ -123,7 +123,6 @@
     <hr>
     <br>
     <div class="center">
-
       <div class="row">
         <div class="col-6">
           <div class="col">

@@ -1,16 +1,14 @@
-import { Component, OnInit, AfterContentChecked } from '@angular/core';
+import { Component, OnInit, AfterContentChecked, HostListener, AfterViewInit } from '@angular/core';
 import * as $ from 'jquery';
 import { TranslateService } from '@ngx-translate/core';
-
 import { UtilsService } from 'src/utils/utils.service';
-
 
 @Component({
   selector: 'app-menu-cv',
   templateUrl: './menu-cv.component.html',
   styleUrls: ['./menu-cv.component.scss']
 })
-export class MenuCvComponent implements OnInit, AfterContentChecked {
+export class MenuCvComponent implements OnInit, AfterContentChecked, AfterViewInit {
   language: string;
   constructor(private translate: TranslateService, private _UtilsService: UtilsService) {
     this.language = !this._UtilsService.isNullOrUndefinedOrBlank(this.translate.currentLang)
@@ -18,7 +16,8 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
 
   }
   ngOnInit() {
-
+  }
+  ngAfterViewInit() {
   }
   ngAfterContentChecked() {
     //  Save language app changed
@@ -30,8 +29,6 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
     $('#sidebar').toggleClass('active');
     $('#sidebarActivator').toggleClass('active');
     $('#main').toggleClass('active');
-
-
   }
   // Menu Section Changing
   changeSection(sectionClicked: string, $event) {
@@ -44,8 +41,6 @@ export class MenuCvComponent implements OnInit, AfterContentChecked {
       scrollTop: $('#' + sectionClicked).position().top
     }, 500);
   }
-
-
 
 
 }

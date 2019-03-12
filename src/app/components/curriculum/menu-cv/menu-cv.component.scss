@@ -2,46 +2,35 @@
 .wrapper {
     display: flex;
     align-items: stretch;
-    padding-bottom:30px; 
+}
 
+//Sidebar Styles
+
+
+#sidebar {
+    background: rgba(66, 23, 10,0.775);
+    color: #fff;
+    transition: all 0.3s;
+    position: fixed;   
+    vertical-align: middle;
+    width: 200px;
 }
 #sidebar i {
     margin-right: 6px;
 }
-.scrollspy-example {
-    height: 360px;
-    }
 #sidebar.active {
     margin-left: -200px;
 }
-#sidebar {
-    width: 200px;
-    background: rgba(66, 23, 10,0.875);
-    color: #fff;
-    transition: all 0.3s;
-    position: fixed;   
-}
 #sidebarActivator {
     position: fixed;   
-    padding-left:200px;
+    margin-left:200px;
     transition: all 0.3s;
+
 }
 #sidebarActivator.active {
-    margin-left: -200px;
-}
-a[data-toggle="collapse"] {
-    position: relative;
+    margin-left:0;
 }
 
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    right: 20px;
-    transform: translateY(-50%);
-}
-/*
-    ADDITIONAL DEMO STYLE, NOT IMPORTANT TO MAKE THINGS WORK BUT TO MAKE IT A BIT NICER :)
-*/
 body {
     font-family: 'Poppins', sans-serif;
     background: #ffffff;
@@ -61,21 +50,18 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #d4d4d4;
-}
 
 #sidebar ul.components {
     padding-left: 0px;
-    padding-top: 40px;
+    padding-top: 10px;
+
 }
 #sidebar ul p {
     color: #fff;
     padding: 10px;
 }
 #sidebar ul li a {
-    padding-bottom: 18px;
+    padding-bottom: 3px;
     padding-left: 25px;
     font-size: 1em;
     display: block;
@@ -95,23 +81,9 @@ ul ul a {
     font-size: 0.9em !important;
 }
 
-#sidebar ul .sub-menu li,
-#sidebar li .sub-menu li {
-  border: none;
-  line-height: 20px;
-  margin-left: 0px;
-  background: rgb(77, 27, 12);
 
-}
-#sidebar ul .sub-menu li a:before,
-#sidebar li .sub-menu li a:before {
-  font-family: FontAwesome;
-  content: "\f105";
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  vertical-align: middle;
-}
+//Curriculum Elements Styles 
+
 .fa-navicon {
     color:#343a40
 }
@@ -185,48 +157,7 @@ ul ul a {
     padding-bottom:15px; 
 }
 
-//Movil Styles
-@media (max-width: 767px) {
-    #sidebar {
-        width: 72px;
-    }
-    #sidebar ul.components {
-        padding-left: 0px;
-        padding-top: 35px;
-        padding-bottom: 20px;
 
-
-    }
-    #sidebar ul li a {
-        padding-bottom: 3px;
-    }
-    #sid
-    #sidebar.active {
-        margin-left: -72px;
-    }
-    #main{
-        margin-left:92px;
-    
-    }
-    #main.active{
-        margin-left:20px;
-    
-    }
-    #sidebarActivator {
-        padding-left:72px;
-    }
-    #sidebarActivator.active {
-        margin-left: -72px;
-    }
-    .lead{
-        font-weight: 800;
-        font-size: 23px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color:rgba(0, 0, 0, 0.65);
-    }
-    
-}
 
 // Timeline Styles
 
@@ -614,4 +545,41 @@ ul ul a {
     }
 
 
+}
+
+//Movil Styles
+@media (max-width: 767px) {
+    #sidebar {
+        width: 68px;
+    }
+
+    #sidebar.active {
+        margin-left: -68px;
+    }
+    #main{
+        margin-left:93px;
+    
+    }
+    #main.active{
+        margin-left:28px;
+    
+    }
+    #sidebarActivator {
+        margin-left:68px;
+        transition: all 0.3s;
+
+    }
+    #sidebar ul li a {
+        padding-bottom: 1px;
+        margin-top: 0px;
+
+    }
+    .lead{
+        font-weight: 800;
+        font-size: 23px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgba(0, 0, 0, 0.65);
+    }
+    
 }
