@@ -8,16 +8,20 @@ html, body {
     align-items: stretch;
 }
 
+
+
 //Sidebar Styles
 
 
 #sidebar {
-    background: rgba(66, 23, 10,0.775);
-    color: #fff;
+    background: #37474F;
+    color: #CFD8DC;
     transition: all 0.3s;
     position: fixed;   
     vertical-align: middle;
     width: 200px;
+    border-bottom-right-radius	:20px;
+
 }
 #sidebar i {
     margin-right: 6px;
@@ -40,11 +44,6 @@ html, body {
 
 #sidebarActivator.active {
     margin-left:0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #ffffff;
 }
 
 p {
@@ -70,22 +69,28 @@ a, a:hover, a:focus {
 #sidebar ul p {
     color: #fff;
     padding: 10px;
+
 }
 #sidebar ul li a {
     padding-bottom: 3px;
     padding-left: 25px;
     font-size: 1em;
     display: block;
+    border-bottom: 1px solid #455A64;
+
 }
+.sidebar-a-top{
+    border-top: 1px solid #455A64;
+
+}
+
 #sidebar ul li a:hover {
-    color: black;
-    background: #fff;
+    color: #fff;
 }
 
 
 #sidebar ul li a.active {
-    color: #FFCA47;
-    background: rgba(66, 23, 10,0.875);
+    color: #fff;
 }
 
 ul ul a {
@@ -250,6 +255,9 @@ ul ul a {
 .main-timeline .timeline-content-c2:before{
     background: purple;
 }
+.main-timeline .timeline-content-c2-1:before{
+    background: rgb(90, 1, 90);
+}
  .main-timeline .circle{
 
     width: 180px;
@@ -262,11 +270,15 @@ ul ul a {
     position: relative;
 
 }
+
 .main-timeline .circle-c1{
     border: 8px solid #2e4557;
 }
 .main-timeline .circle-c2{
     border: 8px solid purple;
+}
+.main-timeline .circle-c2-1{
+    border: 8px solid rgb(90, 1, 90);;
 }
 
 .main-timeline .circle:before{
@@ -286,6 +298,9 @@ ul ul a {
 }
 .main-timeline .circle-c2:before{
     border: 8px solid purple;
+}
+.main-timeline .circle-c2-1:before{
+    border: 8px solid rgb(90, 1, 90);;
 }
 .main-timeline .circle span{
     display: block;
@@ -335,6 +350,9 @@ ul ul a {
 .main-timeline .year-c2{
     background: purple;
 }
+.main-timeline .year-c2-1{
+    background: rgb(90, 1, 90);;
+}
 .main-timeline .title{
     font-size: 22px;
     font-weight: bold;
@@ -345,6 +363,9 @@ ul ul a {
 }
 .main-timeline .title-c2{
     color: purple;
+}
+.main-timeline .title-c2-1{
+    color: rgb(90, 1, 90);;
 }
 .main-timeline .description{
     font-size: 16px;
@@ -366,6 +387,9 @@ ul ul a {
 .main-timeline .icon-c2{
     border: 4px solid purple;
 }
+.main-timeline .icon-c2-1{
+    border: 4px solid rgb(90, 1, 90);;
+}
 .main-timeline .icon:before{
     content: "";
     width: 15px;
@@ -382,6 +406,9 @@ ul ul a {
 }
 .main-timeline .icon-c2:before{
     background: purple;
+}
+.main-timeline .icon-c2-1:before{
+    background: rgb(90, 1, 90);;
 }
 .main-timeline .icon span:before,
 .main-timeline .icon span:after{
@@ -445,20 +472,47 @@ ul ul a {
 .main-timeline .timeline:nth-child(2n) .icon span:after{
     border-radius: 21px 0 0 0;
 }
-.main-timeline .timeline:nth-child(2){
-    margin-top: 180px;
-}
+
 .main-timeline .timeline:nth-child(odd){
-    margin: -175px 0 0 0;
+    margin: -195px 0 0 0;
 }
 .main-timeline .timeline:nth-child(even){
+    margin-top: 80px;
     margin-bottom: 80px;
+
+}
+.main-timeline .timeline:nth-child(2){
+    margin-bottom: 180px;
+    margin-top: 180px;
+
+}
+.main-timeline .timeline:nth-child(4){
+    margin-bottom: 225px;
+    margin-top: 225px;
+
 }
 .main-timeline .timeline:first-child,
 .main-timeline .timeline:last-child:nth-child(even){
     margin: 0;
 }
+@media only screen and (max-width: 1024px){
 
+    .main-timeline .timeline:nth-child(even){
+        margin-top: 125px;
+        margin-bottom: 125px;
+    
+    }
+    .main-timeline .timeline:nth-child(2){
+        margin-bottom: 280px;
+        margin-top: 280px;
+    
+    }
+    .main-timeline .timeline:nth-child(4){
+        margin-bottom: 350px;
+        margin-top: 350px;
+
+    }
+}
 @media only screen and (max-width: 990px){
     .main-timeline:before{ left: 100%; }
     .main-timeline .timeline{
@@ -514,6 +568,7 @@ ul ul a {
     .main-timeline .timeline:nth-child(even){
         margin: 0;
     }
+
 }
 @media only screen and (max-width: 480px){
     .main-timeline:before{ left: 0; }
@@ -563,6 +618,7 @@ ul ul a {
     #sidebar {
         width: 69px;
         margin-left:-20px; 
+        border-radius: 5px;
 
     }
 

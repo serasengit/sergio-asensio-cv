@@ -1,8 +1,10 @@
 /* CSS Document */
+
   html body {
-    background-color:aliceblue;
-  }
-  
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
   .navbar-nav > li{
     margin-left:20px;
     margin-right:20px;
@@ -88,11 +90,11 @@
   @mixin masthead{
     // Movil Style
     @media (max-width: 767px) {
-      padding-top: calc(2rem + 12px);
+      padding-top: calc(4rem + 32px);
     }
     position: relative;
     overflow: hidden;
-    padding-top: calc(7.5rem + 45px);
+    padding-top: calc(8.5rem + 75px);
     padding-bottom: 10rem;
     background-repeat: no-repeat;
     background-position: center center;
@@ -124,3 +126,7 @@
   
   input.novalid {border-color:#f05442;}
 div.novalid {display:block; color:#f05442; margin-top:5px;}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}

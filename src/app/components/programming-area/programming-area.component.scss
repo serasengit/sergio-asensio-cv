@@ -1,0 +1,11 @@
+
+    .maintenance{
+      width: 375px;
+    }
+
+    // Movil Style
+    @media (max-width: 767px) {
+      .maintenance{
+        width: 250px;
+      }
+    }

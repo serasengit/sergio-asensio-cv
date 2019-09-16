@@ -66,12 +66,35 @@
         "workExperienceSection": {
             "developer": "Programador",
             "seniorDeveloper": "Programador Senior",
+            "analystDeveloper": "Analista Programador",
             "company_1": "<b>Nueva experiencia profesional en la empresa: DxD Applications & IT Solutions</b>",
-            "company_2": "<b>Nueva experiencia profesional en la empresa: Grupo Oesía</b>",
+            "company_2": "<b>Nueva experiencia profesional en la empresa: Grupo Oesía</b><br><br><br><br><br><br><br><br><br><br>",
+            "company_2_1": "<b>Promoción a Analista Programador : Grupo Oesía</b><br><br><br><br><br><br><br><br><br><br>",
+            "contentAnalystDeveloper": {
+                "date": "Mayo 2019 ",
+                "proyect_1": {
+                    "date": "Mayo 2019 - Actualidad",
+                    "name": "Projecto: AST Residuos (Regreso)",
+                    "description": [
+                        "<b>Tecnología principal:</b><br><br>",
+                        "FRONTEND : Angular 6<br>",
+                        "BACKEND : Java (JPA)<br><br>",
+                        "<b> Tareas / Responsabilidades: </b>  Analista técnico del proyecto.<br>",
+                        "Mis tareas a desempeñar se focalizaban en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto:<br><br>",
+                        "- Definición de los scripts de creación de las nuevas tablas de Oracle a implementar, relación entre las mismas y clases java Bean y Dto asociadas.<br>",
+                        "- Desarrollo de los componentes Angular requeridos por la aplicación.<br>",
+                        "- Implementación  de los servicios REST del BACKEND.<br>",
+                        "- Importación de librerías del cliente para poder consultar sus diferentes servicios API mediante SOAP.<br>",
+                        "- Generación de entregables tanto de la parte FRONTEND como  BACKEND.<br>",
+                        "- Formación y transferencia de conocimientos a los programadores del equipo.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Angular 6, JPA,Spring Boot,  API REST, SOAP, Oracle, Dockers, Apache ANT, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                    ]
+                }
+            },
             "contentSeniorDeveloper": {
                 "date": "Marzo 2018 ",
                 "proyect_1": {
-                    "date": "Junio 2018 - Actualidad",
+                    "date": "Junio 2018 - Mayo 2019",
                     "name": "Proyecto: Aplicacion Personal Ayuntamiento Zaragoza",
                     "description": [
                         "<b>Tecnología principal: </b><br><br>",
@@ -89,8 +112,8 @@
                         "FRONTEND : Angular 6<br>",
                         "BACKEND : Java (JPA)<br><br>",
                         "<b> Tareas / Responsabilidades: </b>  Desarrollo de un sistema de gestión de calidad ambiental y gestión de residuos, sistema para el control por parte de la administración autonómica y central de todos los residuos peligrosos y no peligrosos producidos por el sector industrial.<br>",
-                        "Mi papel se focalizó en el análisis técnico y desarrollo de los componentes y módulos funcionales tanto en la parte FRONTEND como BACKEND que se requierían dentro de la evolución del proyecto.<br><br>",
-                        "<b> Arquitectura del proyecto: </b> Angular 5, JPA, API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                        "Mi papel se focalizó en el análisis técnico y desarrollo de los distintos componentes Angular (FRONTEND) y los servicios REST (BACKEND) que se requierían dentro de la evolución del proyecto.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Angular 6, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
                     ]
                 }
             },
@@ -131,7 +154,7 @@
                     "description": [
                         "<b>Tecnología principal: </b>Salesforce<br><br>",
                         "<b> Tareas / Responsabilidades: </b> Mantenimiento y desarrollo de una aplicación de concesionario de coches tanto a nivel de administrador como desarrollo de código.<br>",
-                        "Dentro de este proyecto también se desarrolló una aplicación en Angular que aportaba la parte visual del proyecto:(fotografías de los coches, descripciones, precios, ...).<br>",
+                        "Dentro de este proyecto también se desarrolló una aplicación en Angular que aportaba la parte visual del proyecto: (fotografías de los coches, descripciones, precios, ...).<br>",
                         "Dicha aplicación se publicó en Heroku y se conectó con Salesforce vía REST api<br><br>",
                         "<b> Arquitectura del proyecto: </b> SAP, Fuse, Heroku, Salesforce.<br><br>"
                     ]

@@ -72,7 +72,7 @@ export class SkillsComponent implements OnInit {
             padding: 20,
             fontSize: '32',
             fontColor: 'black',
-            fontFamily: 'Serif'
+            fontFamily: 'Poppins, sans-serif'
           },
           scales: {
             xAxes: [{
@@ -246,7 +246,7 @@ export class SkillsComponent implements OnInit {
             fontSize: '32',
             fontColor: 'black',
             padding: 20,
-            fontFamily: 'Serif'
+            fontFamily: 'Poppins, sans-serif'
 
           },
           maintainAspectRatio: false

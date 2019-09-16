@@ -66,12 +66,35 @@
         "workExperienceSection": {
             "developer": "Developer",
             "seniorDeveloper": "Senior Developer",
+            "analystDeveloper": "Analyst Developer",
             "company_1": "<b>New professional experience into the company: DxD Applications & IT Solutions</b>",
-            "company_2": "<b>New professional experience into the company: Grupo Oesía</b>",
+            "company_2": "<b>New professional experience into the company: Grupo Oesía</b><br><br>",
+            "company_2_1": "<b>Promotion to Analyst Developer : Grupo Oesía</b><br><br>",
+            "contentAnalystDeveloper": {
+                "date": "May 2019 ",
+                "proyect_1": {
+                    "date": "May 2019 - Currently",
+                    "name": "Project: AST Residuos",
+                    "description": [
+                        "<b>Main Techonology:</b><br><br>",
+                        "FRONTEND : Angular 6<br>",
+                        "BACKEND : Java (JPA)<br><br>",
+                        "<b> Tasks / Responsibilities: </b>  Technical analyst of the project.<br>",
+                        "My role was focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project:<br><br>",
+                        "- Definition of creation scripts of the new Oracle tables, relation between them and Bean and Dto java classes related.<br>",
+                        "- Development of different Angular app components.<br>",
+                        "- Implementation of BACKEND REST services.<br>",
+                        "- Import of several client libraries in order to consult their API services by SOAP.<br>",
+                        "- Automation and building of FRONTEND and BACKEND project code into different environment variables.<br>",
+                        "- Knowledge transfer and support to team programmers.<br><br>",
+                        "<b> Proyect Structure: </b> Angular 6, JPA,Spring Boot,  API REST, SOAP, Oracle, Dockers, Apache ANT, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                    ]
+                }
+            },
             "contentSeniorDeveloper": {
                 "date": "March 2018 ",
                 "proyect_1": {
-                    "date": "June 2018 - Currently",
+                    "date": "June 2018 - May 2019",
                     "name": "Project: Civil Service Application",
                     "description": [
                         "<b>Main Techonology: </b> <br>",
@@ -89,8 +112,8 @@
                         "FRONTEND : Angular 6<br>",
                         "BACKEND : Java (JPA)<br><br>",
                         "<b> Tasks / Responsibilities: </b>  Development of a management system for environmental quality and waste management, a system for the control by the autonomous and central administration of all hazardous and non-hazardous waste produced by the industrial sector.<br>",
-                        "My role was focused on the technical analysis and development of the components and functional modules in the FRONTEND and BACKEND part that were required within the evolution of the project.<br><br>",
-                        "<b> Proyect Structure: </b> Angular 5, JPA, API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                        "My role was focused on the technical analysis and development of different Angular components (FRONTEND) and REST services (BACKEND) that were required within the evolution of the project.<br><br>",
+                        "<b> Proyect Structure: </b> Angular 6, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
                     ]
                 }
             },
@@ -172,6 +195,8 @@
                     "name": "Project: AM Bergé-Transforma",
                     "description": [
                         "<b>Main Techonology: </b>Salesforce<br><br>",
+                        "<b> Tasks / Responsibilities: </b>Maintenance Service, our responsabilities are solving indicents related to the Salesforce platform existing functionalities or managing users and grants, either configurations issues or Apex developments.<br><br>",
+                        "<b> Proyect Structure: </b>Salesforce, Identity Connect.<br><br>",
                         "<b> Tasks / Responsibilities: </b>Maintenance Service, our responsabilities are solving indicents related to the Salesforce platform existing functionalities or managing users and grants, either configurations issues or Apex developments.<br><br>",
                         "<b> Proyect Structure: </b>Salesforce, Identity Connect.<br><br>"
                     ]
