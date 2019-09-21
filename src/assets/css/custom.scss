@@ -78,13 +78,13 @@
     }  
     .icons .gmail-icon{
 
-      font-size:16px;  
+      font-size:18px;  
     }
     .icons .linkedin-icon{
-      font-size:16px;  
+      font-size:18px;  
     }
     .icons .facebook-icon{
-      font-size:16px;  
+      font-size:18px;  
     }
   }
   @mixin masthead{
@@ -92,6 +92,21 @@
     @media (max-width: 767px) {
       padding-top: calc(4rem + 32px);
     }
+    @media (max-width: 1440px) {
+      padding-top: calc(5.5rem + 45px);
+
+    }
+    @media (max-width: 1024px) {
+      padding-top: calc(5.5rem + 45px);
+
+    }
+    @media (max-width: 480px) {
+      padding-top: calc(4rem + 12px);
+    }
+
+
+
+
     position: relative;
     overflow: hidden;
     padding-top: calc(8.5rem + 75px);

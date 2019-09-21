@@ -42,5 +42,4 @@ export class MenuCvComponent implements OnInit, AfterContentChecked, AfterViewIn
     }, 500);
   }
 
-
 }

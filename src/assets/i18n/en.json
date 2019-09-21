@@ -19,13 +19,17 @@
         "downloadPdf": "Download PDF",
         "personalDataSection": {
             "name": "Name:",
-            "address": "Address:",
+            "nameValue": "Sergio Asensio Puyuelo",
             "city": "City:",
+            "cityValue": "Zaragoza",
             "phone": "Phone Number:",
+            "phoneValue": "678-154-765",
             "birthdate": "Birthdate:",
-            "postalCode": "Postal Code:",
+            "birthdateValue": "12-2-1992",
             "age": "Age:",
-            "email": "Email:"
+            "ageValue": "27",
+            "email": "Email:",
+            "emailValue": "maserasen@gmail.com"
         },
         "profileSection": {
             "content": [
