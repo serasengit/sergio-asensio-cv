@@ -1,0 +1,147 @@
+/* CSS Document */
+
+  html body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+  .navbar-nav > li{
+    margin-left:20px;
+    margin-right:20px;
+  }
+  .navbar-nav > li{
+    padding-left:15px;
+    padding-right:15px;
+  }
+  .icons .facebook-icon{
+    margin-right:15px;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+  }
+  .icons .linkedin-icon{
+    margin-right:15px;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+
+  }
+  .icons .gmail-icon{
+    margin-right:15px;
+    color:white;
+    font-size:20px;
+    margin-top:10px;
+  }
+  .vertical_line{border-left: 2px solid white;height:35px; width:35px;}
+
+  .icons .gmail-icon:hover {
+    color: #dd4b39;
+  }
+  .icons .linkedin-icon:hover {
+    color: #0077b5;
+  }
+  .icons .facebook-icon:hover {
+    color: #3b5998;
+  }
+  .icons{
+    margin-left:35px;
+  }
+  .icons .english{
+    width:24px;
+    margin-bottom:5px;
+  }
+  .icons .spanish{
+    width:26px;
+    margin-bottom:5px;
+  }
+  .myspiner /deep/ .black-overlay{
+    position: fixed;
+  }
+  .mydiv {
+    height: 1000px;
+  }
+
+  [role="button"] { 
+    cursor: pointer;
+  }
+  [role="default"] { 
+    cursor: default;
+  }
+  @media (max-width: 767px) {
+    .icons .english{
+      width:21.5px;
+
+    }
+    .icons .spanish{
+      width:23px;
+      
+    }  
+    .icons .gmail-icon{
+
+      font-size:18px;  
+    }
+    .icons .linkedin-icon{
+      font-size:18px;  
+    }
+    .icons .facebook-icon{
+      font-size:18px;  
+    }
+  }
+  @mixin masthead{
+    // Movil Style
+    @media (max-width: 767px) {
+      padding-top: calc(4rem + 32px);
+    }
+    @media (max-width: 1440px) {
+      padding-top: calc(5.5rem + 45px);
+
+    }
+    @media (max-width: 1024px) {
+      padding-top: calc(5.5rem + 45px);
+
+    }
+    @media (max-width: 480px) {
+      padding-top: calc(4rem + 12px);
+    }
+
+
+
+
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(8.5rem + 75px);
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+  }
+  header.mastheadPortada {
+    background-image:url('/assets/img/headerMain.jpg');
+    @include masthead;
+  }
+  header.mastheadSkills {
+    background: url("/assets/img/headerSkills.jpg") center center no-repeat;
+    @include masthead;
+  } 
+  header.mastheadCurriculum {
+    background: url("/assets/img/headerCurriculum.jpg") center center no-repeat;
+    @include masthead;
+  } 
+  header.mastheadProgramming {
+    background: url("/assets/img/headerProgramming.jpg") center center no-repeat;
+    @include masthead;
+  } 
+  header.mastheadContact{
+    background: url("/assets/img/headerContact.jpg") center center no-repeat;
+    @include masthead;
+  }
+  
+  input.novalid {border-color:#f05442;}
+div.novalid {display:block; color:#f05442; margin-top:5px;}
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}

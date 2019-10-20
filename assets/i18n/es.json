@@ -1,0 +1,271 @@
+{
+    "mainPage": {
+        "home": "Inicio",
+        "cv": "Curriculum Vitae",
+        "skills": "Habilidades",
+        "programmingArea": "Espacio de Programación",
+        "contact": "Contacto"
+    },
+    "curriculumPage": {
+        "personalData": "Datos Personales",
+        "profile": "Perfil técnico",
+        "education": "Educación",
+        "languages": "Idiomas",
+        "softwareTools": "Conocimientos Informáticos",
+        "workExperience": "Experiencia Profesional",
+        "trainingCourses": "Cursos de Formación",
+        "certifications": "Certificaciones",
+        "publications": "Publicaciones",
+        "downloadPdf": "Descargar PDF",
+        "personalDataSection": {
+            "name": "Nombre y Apellidos:",
+            "nameValue": "Sergio Asensio Puyuelo",
+            "city": "Localidad:",
+            "cityValue": "Zaragoza",
+            "phone": "Teléfono:",
+            "phoneValue": "678-154-765",
+            "birthdate": "Fecha de nacimiento:",
+            "birthdateValue": "12-2-1992",
+            "age": "Edad:",
+            "ageValue": "27",
+            "email": "Correo Electrónico:",
+            "emailValue": "maserasen@gmail.com"
+        },
+        "profileSection": {
+            "content": [
+                "Tras iniciarme en el mundo de la programación en Marzo del 2016 he asistido a tres cursos de formación de las competencias SAP (modalidad ABAP), Java y Salesforce.<br><br>",
+                "Durante mis dos años de experiencia, he estado envuelto en diversos proyectos de mantenimiento y desarrollo en Salesforce en los cuales he podido formarme tanto a nivel de desarrollador de codigo como de administrador de la plataforma.<br><br>",
+                "En Junio de 2016   formé parte de un proyecto de energía focalizado en la creación de una aplicación Java  Web que replicase ciertas funcionalidades de Salesforce como la creación de casos de emergencias. La aplicación fue desarrollada en Java,Spring MVC,Hibernate y publicada en la plataforma Heroku junto con la ayuda de PostgresSQL y HerokuConnect (herramienta encargada de volcar la BBDD de Salesforce en el Postgres de Heroku).<br><br> ",
+                "Gracias a este proyecto y al equipo que me rodeaba pude aprender y navegar por el abanico de herramientas que ofrece el diseño de una aplicación Java Web tales como: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX...,el estudio de la plataforma Heroku y su sincronización con Salesforce y el manejo de la herramienta Talend para la migración masiva de datos (ETL).<br><br>",
+                "En Octubre del 2017, estuve a cargo del desarrollo y publicación en Heroku de un servicio web en una aplicación NodeJS cuya finalidad era el envío masivo de datos de usuarios a una companía de envío de SMS´es así como la recuperación y almacenamiento de las respuestas en PostgresSQL. <br><br>",
+                "Este fue mi primer proyecto en solitario el cual supuso un reto muy importante para mí debido al desconocimiento de la tecnología, sin embargo mi experiencia anterior en Java y la búsqueda constante de información me sirvió para aprender cada día un poco más de NodeJS y así adquirir experiencia en el desarrollo de funciones asíncronas y creación de servicios REST.<br><br>",
+                "En Marzo de 2018, inicié una nueva aventura profesional como programador senior en la empresa IA SOFT en Zaragoza, siendo mi primer proyecto en la empresa una aplicación de gestión de calidad ambiental y de residuos en Angular 6 y Java (JPA) . <br><br>",
+                "En Junio de 2018 la empresa me destinó a trabajar como externo en el Seminario de Zaragoza para responsabilizarme de la aplicación de personal del funcionariado de Zaragoza (Java Server Faces) y llevar a cabo una serie de nuevos módulos y funcionalidades.<br><br>",
+                "En Mayo del 2019, fui promocionado a analista técnico y me destinaron de vuelta a mi primer proyecto donde mi rol principal consistía en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto, así como la formación y transferencia de conocimientos a los programadores del equipo."
+            ]
+        },
+        "educationSection": {
+            "degree": "Titulación:",
+            "university": "Graduado en Matemáticas por la Universidad de Zaragoza (Sept 2011 – Feb 2016)."
+        },
+        "languageSection": {
+            "spanish": "Español",
+            "spanish_s1": "Lengua materna",
+            "english": "Inglés",
+            "english_s1": "Nivel upper-intermediate demostrable en speaking y writting",
+            "english_s2": "Experiencia y calls diarias en inglés en proyectos internacionales y como auto formación"
+        },
+        "softwareToolsSection": {
+            "java": "Java:",
+            "salesforce": "Salesforce:",
+            "angular": "Angular:",
+            "nodejs": "NodeJS:",
+            "webDesign": "Diseño Páginas Web:",
+            "webServices": "Web Services:",
+            "bbdd": "BBDD:",
+            "etl": "ETL:",
+            "codeEditor": "Editores de Código:",
+            "versionControl": "Control de Versiones:",
+            "continuousIntegration": "Integsración Continua:"
+        },
+        "workExperienceSection": {
+            "developer": "Programador",
+            "seniorDeveloper": "Programador Senior",
+            "analystDeveloper": "Analista Programador",
+            "company_1": "<b>Nueva experiencia profesional en la empresa: DxD Applications & IT Solutions</b>",
+            "company_2": "<b>Nueva experiencia profesional en la empresa: Grupo Oesía</b><br><br><br><br><br><br><br><br><br><br>",
+            "company_2_1": "<b>Promoción a Analista Programador : Grupo Oesía</b><br><br><br><br><br><br><br><br><br><br>",
+            "contentAnalystDeveloper": {
+                "date": "Mayo 2019 ",
+                "proyect_1": {
+                    "date": "Mayo 2019 - Actualidad",
+                    "name": "Projecto: AST Residuos (Regreso)",
+                    "description": [
+                        "<b>Tecnología principal:</b><br><br>",
+                        "FRONTEND : Angular 6<br>",
+                        "BACKEND : Java (JPA)<br><br>",
+                        "<b> Tareas / Responsabilidades: </b>  Analista técnico del proyecto.<br>",
+                        "Mis tareas a desempeñar se focalizaban en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto:<br><br>",
+                        "- Definición de los scripts de creación de las nuevas tablas de Oracle a implementar, relación entre las mismas y clases java Bean y Dto asociadas.<br>",
+                        "- Desarrollo de los componentes Angular requeridos por la aplicación.<br>",
+                        "- Implementación  de los servicios REST del BACKEND.<br>",
+                        "- Importación de librerías del cliente para poder consultar sus diferentes servicios API mediante SOAP.<br>",
+                        "- Generación de entregables tanto de la parte FRONTEND como  BACKEND.<br>",
+                        "- Formación y transferencia de conocimientos a los programadores del equipo.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Angular 6, JPA,Spring Boot,  API REST, SOAP, Oracle, Dockers, Apache ANT, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                    ]
+                }
+            },
+            "contentSeniorDeveloper": {
+                "date": "Marzo 2018 ",
+                "proyect_1": {
+                    "date": "Junio 2018 - Mayo 2019",
+                    "name": "Proyecto: Aplicacion Personal Ayuntamiento Zaragoza",
+                    "description": [
+                        "<b>Tecnología principal: </b><br><br>",
+                        "FRONTEND : JSPX <br>",
+                        "BACKEND : Java (Primefaces)<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Desarrollo y extension de una serie de funcionalidades de la aplicación de personal del ayuntamiento de Zaragoza que permita la correcta y eficiente gestión de toda la informacion del funcionariado.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> PrimeFaces, JSPX, SQL, Tomahawk, CVS.<br><br>"
+                    ]
+                },
+                "proyect_2": {
+                    "date": "Marzo 2018 - Junio 2018",
+                    "name": "Proyecto: AST Residuos",
+                    "description": [
+                        "<b>Tecnología principal:</b><br><br>",
+                        "FRONTEND : Angular 6<br>",
+                        "BACKEND : Java (JPA)<br><br>",
+                        "<b> Tareas / Responsabilidades: </b>  Desarrollo de un sistema de gestión de calidad ambiental y gestión de residuos, sistema para el control por parte de la administración autonómica y central de todos los residuos peligrosos y no peligrosos producidos por el sector industrial.<br>",
+                        "Mi papel se focalizó en el análisis técnico y desarrollo de los distintos componentes Angular (FRONTEND) y los servicios REST (BACKEND) que se requierían dentro de la evolución del proyecto.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Angular 6, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                    ]
+                }
+            },
+            "contentDeveloper": {
+                "date": "Marzo 2016 ",
+                "proyect_1": {
+                    "date": "Enero 2018 - Marzo 2018",
+                    "name": "Proyecto: ACNUR",
+                    "description": [
+                        "<b>Tecnología principal: </b> Salesforce<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Desarrollo y mantenimiento de las integraciones (Rest Api) de la plataforma Salesforce con la página Web de Acnur y la Pasarela de pago.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Salesforce, Rest API, Bitbucket, Jenkins.<br><br>"
+                    ]
+                },
+                "proyect_2": {
+                    "date": "Diciembre 2017",
+                    "name": "Proyecto: Grupo Alava",
+                    "description": [
+                        "<b>Tecnología principal: </b> Salesforce<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Estructuramiento desarrollo y organización del modelo de codigo APEX, principalmente Triggers, Visualforces, botones en codigo Javascript y clases Test.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Salesforce.<br><br>"
+                    ]
+                },
+                "proyect_3": {
+                    "date": "Octubre 2017",
+                    "name": "Proyecto: Deloitte Norway SMS",
+                    "description": [
+                        "<b>Tecnología principal: </b> NodeJS<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Desarrollo de un servicio web en una aplicación NodeJS desplegada en la plataforma Heroku e integrada con Eloqua (Oracle).<br>",
+                        "La aplicación se centraba en recibir los datos de los usuarios que enviaba Eloqua mediante la construcción y activación de campañas, tratar y enviar estos datos a una compañía de envio de SMS (REST en NodeJS), recibir las respuestas enviada por dicha companía mediante la construcción",
+                        "de un Servicio Web y almacenarlas en la BBDD (PostgresSQL) para finalmente recuperar estas respuestas y notificarlas a Eloqua mediante procesos batch.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> NodeJS, Eloqua, Heroku.<br><br>"
+                    ]
+                },
+                "proyect_4": {
+                    "date": "Abril 2017 – Marzo 2018",
+                    "name": "Proyecto: AM Bergé-Driber",
+                    "description": [
+                        "<b>Tecnología principal: </b>Salesforce<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Mantenimiento y desarrollo de una aplicación de concesionario de coches tanto a nivel de administrador como desarrollo de código.<br>",
+                        "Dentro de este proyecto también se desarrolló una aplicación en Angular que aportaba la parte visual del proyecto: (fotografías de los coches, descripciones, precios, ...).<br>",
+                        "Dicha aplicación se publicó en Heroku y se conectó con Salesforce vía REST api<br><br>",
+                        "<b> Arquitectura del proyecto: </b> SAP, Fuse, Heroku, Salesforce.<br><br>"
+                    ]
+                },
+                "proyect_5": {
+                    "date": "Mayo 2017 – Junio 2018",
+                    "name": "Proyecto: Enel- Notificaciones SMS",
+                    "description": [
+                        "<b>Tecnología principal: </b>Java<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Investigación y uso coordinado de las herramientas Java, NodeJs, Marketing Cloud, Salesforce y Talend con objetivo de crear un workflow que importe datos de usuarios con Talend a Salesforce, Marketing Cloud los reciba y los envie mediante peticion",
+                        "REST a una aplicación Nodejs que esta a su vez llame a una aplicación Java que finalmente envie mediante REST api los datos de usuario a una compañía de envio de SMS. <br><br>",
+                        "<b> Arquitectura del proyecto: </b> Talend, Salesforce, Marketing Cloud, Heroku, Java, Rest, NodeJS.<br><br>"
+                    ]
+                },
+                "proyect_6": {
+                    "date": "Julio 2016 – Junio 2017",
+                    "name": "Proyecto: Enel- Mantenimiento",
+                    "description": [
+                        "<b>Tecnología principal: </b>Salesforce<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Mantenimiento y desarrollo de evolutivos de una aplicación de multipaís tanto a nivel de admin como de desarrollador de código.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Talend, Salesforce.<br><br>"
+                    ]
+                },
+                "proyect_7": {
+                    "date": "Julio 2016 – Mayo 2017",
+                    "name": "Proyecto: Enel – Emergencia Chile - Heroku",
+                    "description": [
+                        "<b>Tecnología principal: </b>Java<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Este proyecto estuvo centrado en la creación de una aplicación Java Web y su despliegue en la plataforma Heroku.<br>",
+                        "Su objetivo principal era ayudar a Salesforce en la creación de nuevos casos cuando la ciudad vivia situaciones de emergencia y era necesaria la creación de nuevos usuarios Salesforce, sin embargo el número de licencias no eran suficientes para todos ellos.Esta aplicacion trata de ",
+                        "replicar la funcionalidad de creación de casos de Salesforce. Para llevar a cabo este propósito, se hizo uso de las herramientas: PostresSql(BBDD), Heroku Connect para sincronizar la BBDD de Salesforce con PostresSQL, REST API para enviar los datos a Salesforce en tiempo real, Spring",
+                        "MVC, Hibernate, Quarz, ...<br><br>",
+                        "Tambien cabe destacar el manejo y aprendizaje de las siguientes herramientas: <br><br>",
+                        "- Desarrollo de una aplicación Web Java.<br> - Estudio de la plataforma Heroku y su sincronización con Salesforce.<br> - Replicar la BBDD de Salesforce en PostgresSQL mediante las herramientas Heroku Connect y Quarz.<br> - Uso de la herramienta Talend para la migración de datos.<br><br>",
+                        "<b> Arquitectura del proyecto: </b>Spring MVC, PostgresSQL, Maven, Quarz, Heroku, Hibernate, Git, Apache Tomcat.<br><br>"
+                    ]
+                },
+                "proyect_8": {
+                    "date": "Abril 2016 – Marzo 2018",
+                    "name": "Proyecto: AM Bergé-Transforma",
+                    "description": [
+                        "<b>Tecnología principal: </b>Salesforce<br><br>",
+                        "<b> Tareas / Responsabilidades: </b>Servicio de Mantenimiento focalizado en la resolución de incidencias con la plataforma Salesforce tanto a nivel de administrador como de desarrollador de codigo APEX.<br><br>",
+                        "<b> Arquitectura del proyecto: </b>Salesforce, Identity Connect.<br><br>"
+                    ]
+                }
+            }
+        },
+        "trainingCoursesSection": {
+            "courses": "Cursos",
+            "course_1": "Curso de formación de Java (Abril 2016).",
+            "course_2": "Curso de formación de Salesforce (Abril 2016).",
+            "course_3": "Curso de formacion de SAP modalidad AVAP (Marzo 2016).",
+            "course_4": "Curso de formacion de Angular 6 (Abril 2018).",
+            "presentations": "Presentaciones",
+            "presentation_1": "Instructor curso de Salesforce (Oct 2016).",
+            "presentation_2": "Instructor curso de Java (Oct 2017)."
+        },
+        "certificationsSection": {
+            "oracleCert": "Java Standard Edition 6 Programmer Certified Professional (Score: 93%)"
+        },
+        "publicationsSection": {
+            "tfg": "Ecuaciones Diferenciales Implícitas y Clasificación de sus Singularidades."
+        }
+    },
+    "skillsSection": {
+        "personalSkills": {
+            "title": "Habilidades Personales",
+            "analytical": "Analítico",
+            "problemSolving": "Resolutivo",
+            "determinationPersistence": "Determinación y persistencia",
+            "communication": "Comunicativo",
+            "decisionMaking": "Decisivo",
+            "timeManagement": "Gestión del Tiempo",
+            "selfMotivation": "Motivación",
+            "adaptability": "Adaptabilidad",
+            "teamwork": "Trabajo en equipo",
+            "creativity": "Creativo"
+        }
+    },
+    "programmingAreaSection": {
+        "maintenance": "En desarrollo..."
+    },
+    "contactSection": {
+        "contactForm": "Formulario de contacto",
+        "name": "Nombre",
+        "subject": "Asunto",
+        "email": "E-mail",
+        "file": "Adjuntar archivos",
+        "chooseFiles": "Choose files...",
+        "deleteFiles": "Borrar archivos",
+        "message": "Mensaje",
+        "send": "Enviar"
+    },
+    "validationMessages": {
+        "contactSection": {
+            "name": "Nombre no válido",
+            "subject": "Asunto no válido",
+            "email": "Email no válido",
+            "message": "Mensaje no válido"
+        }
+    },
+    "resultMessages": {
+        "contactSection": {
+            "contactForm": "Formulario de contacto",
+            "mailOK": "Mensaje enviado correctamente!"
+        }
+    }
+}
