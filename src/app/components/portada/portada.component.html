@@ -27,7 +27,9 @@
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
             <h2 class="display-4">{{'home.introduction.title' | translate }}</h2><br>
-            <p [innerHTML]="'home.introduction.content'| translate | noComma">
+            <p [innerHTML]="'home.introduction.content'| translate | noComma"></p>
+            <a routerLink='skills'>{{'home.introduction.skillsLink' | translate }}</a>
+
           </div>
         </div>
       </div>
@@ -68,6 +70,7 @@
             <h2 class="display-4">{{'home.aboutMe.title' | translate }}</h2><br>
             <p [innerHTML]="'home.aboutMe.content'| translate | noComma">
             </p>
+            <a routerLink='contact'>{{'home.aboutMe.contactLink' | translate }}</a>
           </div>
         </div>
       </div>

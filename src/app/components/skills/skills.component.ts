@@ -15,7 +15,7 @@ import { APP_SECTION_SKILLS } from 'src/app/config/config.constants';
 })
 export class SkillsComponent implements OnInit {
   constructor(private spinnerService: Ng4LoadingSpinnerService, private _UtilsService: UtilsService,
-    private cabeceraService: CabeceraService) {
+    public cabeceraService: CabeceraService) {
 
     this.cabeceraService.setSection(APP_SECTION_SKILLS);
 

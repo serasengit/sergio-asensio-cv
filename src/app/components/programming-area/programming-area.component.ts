@@ -10,7 +10,7 @@ import { APP_SECTION_PROGRAMMING_AREA } from 'src/app/config/config.constants';
 })
 export class ProgrammingAreaComponent implements OnInit {
 
-  constructor(private cabeceraService: CabeceraService) {
+  constructor(public cabeceraService: CabeceraService) {
     this.cabeceraService.setSection(APP_SECTION_PROGRAMMING_AREA);
 
   }

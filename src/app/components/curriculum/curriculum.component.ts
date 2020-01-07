@@ -9,7 +9,7 @@ import { APP_SECTION_CV } from 'src/app/config/config.constants';
 })
 export class CurriculumComponent implements OnInit, AfterViewInit {
 
-  constructor(private spinnerService: Ng4LoadingSpinnerService, private cabeceraService: CabeceraService) {
+  constructor(private spinnerService: Ng4LoadingSpinnerService, public cabeceraService: CabeceraService) {
     this.cabeceraService.setSection(APP_SECTION_CV);
 
   }

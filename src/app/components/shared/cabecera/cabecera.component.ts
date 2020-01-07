@@ -11,7 +11,7 @@ import { CabeceraService } from 'src/app/services/cabecera.service';
 export class CabeceraComponent implements OnInit {
 
 
-  constructor(private translate: TranslateService, private router: Router, private cabeceraService: CabeceraService) {
+  constructor(private translate: TranslateService, private router: Router, public cabeceraService: CabeceraService) {
     translate.setDefaultLang('en');
   }
   ngOnInit() {

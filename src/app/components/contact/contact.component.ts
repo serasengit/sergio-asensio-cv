@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
 
   constructor(public _EmailService: EmailService, public _UtilsService: UtilsService, private spinnerService: Ng4LoadingSpinnerService,
     private formBuilder: FormBuilder, private translate: TranslateService, private cd: ChangeDetectorRef,
-    private translateService: TranslateService, private cabeceraService: CabeceraService
+    private translateService: TranslateService, public cabeceraService: CabeceraService
   ) {
     this.cabeceraService.setSection(APP_SECTION_CONTACT);
     this.translate.get('contactSection.chooseFiles')
