@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CabeceraService } from 'src/app/services/cabecera.service';
 
 
 @Component({
@@ -8,12 +9,10 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './cabecera.component.html'
 })
 export class CabeceraComponent implements OnInit {
-  section: string;
 
 
-  constructor(private translate: TranslateService, private router: Router) {
+  constructor(private translate: TranslateService, private router: Router, private cabeceraService: CabeceraService) {
     translate.setDefaultLang('en');
-    this.section = '';
   }
   ngOnInit() {
   }
@@ -27,7 +26,6 @@ export class CabeceraComponent implements OnInit {
 
   // Section Changing
   changeSection(sectionClicked: string) {
-    this.section = sectionClicked;
     this.router.navigate([sectionClicked]);
   }
 

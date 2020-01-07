@@ -20,6 +20,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './TokenInterceptor';
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import { ScrollSpyModule } from './config/directives/scrollSpy/ng-scroll-spy.module';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -36,6 +37,7 @@ import { ScrollSpyModule } from './config/directives/scrollSpy/ng-scroll-spy.mod
     NoComma
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     SharedModule,

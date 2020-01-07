@@ -6,6 +6,8 @@ import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 import { FormGroup, AbstractControl, Validators, FormBuilder } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import * as $ from 'jquery';
+import { CabeceraService } from 'src/app/services/cabecera.service';
+import { APP_SECTION_CONTACT } from 'src/app/config/config.constants';
 
 
 @Component({
@@ -32,8 +34,9 @@ export class ContactComponent implements OnInit {
 
   constructor(public _EmailService: EmailService, public _UtilsService: UtilsService, private spinnerService: Ng4LoadingSpinnerService,
     private formBuilder: FormBuilder, private translate: TranslateService, private cd: ChangeDetectorRef,
-    private translateService: TranslateService,
+    private translateService: TranslateService, private cabeceraService: CabeceraService
   ) {
+    this.cabeceraService.setSection(APP_SECTION_CONTACT);
     this.translate.get('contactSection.chooseFiles')
       .subscribe((resp: any) => {
         this.filesToUploadNameValue = resp;

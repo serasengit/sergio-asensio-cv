@@ -6,6 +6,37 @@
         "programmingArea": "Programming Area",
         "contact": "Contact"
     },
+    "home": {
+        "introduction": {
+            "title": "Sergio Asensio Puyuelo",
+            "content": [
+                "Welcome to my Website!!!<br><br>",
+                "I am a mathematician and programmer analyst with a solid background knowledge in web applications development and several programming areas such as: Full Stack Developer (FRONTEND , BACKEND), Web Designer, Web Services Implementation (REST/SOAP),Database Management ...<br><br>",
+                "During my 4 work experienced years, i have attended multiple projects managed by different technologies both alone as well as member of various teams helping  me out in my professional growth and development .<br><br>",
+                "By <a href='skills'>this</a> link you can find out more information about all the programming languages that I have dealt with as well as my skill matrix level ;)"
+            ]
+        },
+        "currentJob": {
+            "title": "Current Job",
+            "content": [
+                "I currently work as Technical Analyst in Grupo Oesía company in a project related with residues management for Aragón government.My main role is focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project.Some of my main tasks are:<br><br>",
+                "- Creation of BBDD tables and relation between them by scripts.<br>",
+                "- Development and implementation of the architecture of different modules where FRONTEND is based on.<br>",
+                "- Management and implementation of BACKEND REST services.<br>",
+                "- Import of several SOAP client libraries.<br>",
+                "- Automation and building of the project code.<br>",
+                "- Knowledge transfer and support to team programmers.<br>"
+            ]
+        },
+        "aboutMe": {
+            "title": "About me...",
+            "content": [
+                "I consider myself a so persistent person with my objectives and this is precisely the aspect that I like most about my work, I see my day by day as challenges to defeat and the bigger and more innovative they are much better to me.<br><br>",
+                "Two of the most relevant aspects in a project to me are its foundations, and its structure, its foundations because they are its main template and we are able to develop the rest of the modules through them and its structure, because without a competent and well-organized team where the role and task of each member are well-defined, chaos quick appears.<br><br>",
+                "I hope this website help you to know me a little bit and enjoy it as much as I have enjoyed developing it, if you want to contact me in order to find out more information about my work and experience, do not hesitate to do so through the following link:  <a href='contact'>Contact.</a>"
+            ]
+        }
+    },
     "curriculumPage": {
         "personalData": "Personal Data",
         "profile": "Technical Profile",

@@ -4,6 +4,8 @@ import { Chart } from 'chart.js';
 import * as $ from 'jquery';
 import { UtilsService } from 'src/utils/utils.service';
 import { isNullOrUndefined } from 'util';
+import { CabeceraService } from 'src/app/services/cabecera.service';
+import { APP_SECTION_SKILLS } from 'src/app/config/config.constants';
 
 @Component({
   selector: 'app-skills',
@@ -12,7 +14,12 @@ import { isNullOrUndefined } from 'util';
 
 })
 export class SkillsComponent implements OnInit {
-  constructor(private spinnerService: Ng4LoadingSpinnerService, private _UtilsService: UtilsService) { }
+  constructor(private spinnerService: Ng4LoadingSpinnerService, private _UtilsService: UtilsService,
+    private cabeceraService: CabeceraService) {
+
+    this.cabeceraService.setSection(APP_SECTION_SKILLS);
+
+  }
 
   private softWareChart: any;
   private ctxSoftWareChart: any;

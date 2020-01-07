@@ -21,18 +21,13 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
-            <img class="img-fluid " src="/assets/img/profile.png" alt="">
+            <img class="img-fluid" src="/assets/img/profile.png" alt="">
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2 class="display-4">Sergio Asensio Puyuelo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste
-              esse assumenda
-              amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci,
-              beatae
-              obcaecati.
-            </p>
+            <h2 class="display-4">{{'home.introduction.title' | translate }}</h2><br>
+            <p [innerHTML]="'home.introduction.content'| translate | noComma">
           </div>
         </div>
       </div>
@@ -44,16 +39,14 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="p-5">
+            <img class="img-fluid " src="/assets/img/homeComputerIcon.png" alt="">
+
           </div>
         </div>
         <div class="col-lg-6">
           <div class="p-5">
-            <h2 class="display-4">We salute you!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste
-              esse assumenda
-              amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci,
-              beatae
-              obcaecati.
+            <h2 class="display-4">{{'home.currentJob.title' | translate }}</h2><br>
+            <p [innerHTML]="'home.currentJob.content'| translate | noComma">
             </p>
           </div>
         </div>
@@ -66,16 +59,14 @@
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
           <div class="p-5">
+            <img class="img-fluid " src="/assets/img/bocadillo-icon.jpg" alt="">
+
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="p-5">
-            <h2 class="display-4">Let there be rock!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste
-              esse assumenda
-              amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci,
-              beatae
-              obcaecati.
+            <h2 class="display-4">{{'home.aboutMe.title' | translate }}</h2><br>
+            <p [innerHTML]="'home.aboutMe.content'| translate | noComma">
             </p>
           </div>
         </div>

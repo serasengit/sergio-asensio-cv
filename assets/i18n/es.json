@@ -6,6 +6,37 @@
         "programmingArea": "Espacio de Programación",
         "contact": "Contacto"
     },
+    "home": {
+        "introduction": {
+            "title": "Sergio Asensio Puyuelo",
+            "content": [
+                "Bienvenido a mi Web!!!<br><br>",
+                "Soy un mátemático y analista programador con un amplio abanico de conocimientos en el desarrollo de aplicaciones web así como en múltiples ramas de la programación tales como: Full Stack Developer (FRONTEND , BACKEND), Web Designer, Web Services Implementation (REST/SOAP),Database Management ...<br><br>",
+                "A lo largo de mis 4 años carrera profesional he participidado en numeros proyectos gestionados por diferentes tecnologías, tanto en solitario como formando parte de diversos equipos ayudándome todos ellos en mi crecimiento  y desarrollo profesional.<br><br>",
+                "A través de <a href='skills'>este</a>  link podrás descubrir mucha más información sobre todos lenguajes programación a los que me he enfrentado y mi nivel de habilidad en cada uno de ellos ;)."
+            ]
+        },
+        "currentJob": {
+            "title": "Trabajo actual",
+            "content": [
+                "Actualmente ejerzo el cargo de Analista Programador en la empresa Grupo Oesía en un proyecto de gestión de residuos para el Gobierno de Aragón. Mi rol principal consiste en la implementación de la arquitectura y funcionalidades de los nuevos módulos requeridos tanto del FRONTEND como BACKEND del proyecto. Entre mis tareas cabe destacar:<br><br>",
+                "- Creación de tablas de BBDD y relación entre las mismas mediante scripts.<br>",
+                "- Definición e implementación de la arquitectura de los diferentes módulos del FRONTEND.<br>",
+                "- Gestión e implementación de servicios REST del BACKEND.<br>",
+                "- Importación de librerías SOAP del cliente al proyecto.<br>",
+                "- Generación de entregables.<br>",
+                "- Formación y transferencia de conocimientos a los programadores del equipo.<br>"
+            ]
+        },
+        "aboutMe": {
+            "title": "Sobre mi...",
+            "content": [
+                "Me considero una persona muy persistente con los objetivos que persigue y éste es el aspecto que más me gusta de mi trabajo, veo mi día a día como retos a batir y cuanto más grandes y novedosos sean mucho mejor.<br><br>",
+                "Uno de los aspectos que más valoro en un proyecto son sus cimientos y su estructura; sus cimientos, ya que son los que nos sirven como ejemplo para poder construir el resto de módulos requeridos dentro del proyecto de la manera más óptima y eficiente posible, y su estructura, ya que sin un equipo competente, bien organizado, con el rol y tareas de cada miembro bien definidos, el caos no tarda en aparecer.<br><br>",
+                "Espero que esta página web sirva para que me conozcas un poco y disfrutes de ella tanto como yo he disfrutado programándola, si quieres ponerte en contacto conmigo para conocer más a fondo mi trabajo y experiencia, no dudes en hacerlo a través del siguiente enlace: <a href='contact'>Contacto.</a>"
+            ]
+        }
+    },
     "curriculumPage": {
         "personalData": "Datos Personales",
         "profile": "Perfil técnico",

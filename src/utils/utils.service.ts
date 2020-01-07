@@ -7,7 +7,7 @@ import { isNullOrUndefined } from 'util';
 
 @Injectable({
   providedIn: 'root'
-})
+}) 
 export class UtilsService {
 
   constructor(private translate: TranslateService, private router: Router) { }

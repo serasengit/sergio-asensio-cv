@@ -8,21 +8,21 @@
 
       <ul class="navbar-nav mx-auto my-2 order-0 order-md-1 position-center">
         <li class="nav-item">
-          <a class="{{section == '' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('')">{{'mainPage.home' | translate }}
+          <a class="{{(this.cabeceraService.getSection()| async)  == 'home' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('')">{{'mainPage.home' | translate }}
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="{{section == 'cv' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('cv')">{{'mainPage.cv' | translate }}</a>
+          <a class="{{(this.cabeceraService.getSection()| async)  == 'cv' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('cv')">{{'mainPage.cv' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="{{section == 'skills' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('skills')">{{'mainPage.skills' | translate }}</a>
+          <a class="{{(this.cabeceraService.getSection()| async)  == 'skills' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('skills')">{{'mainPage.skills' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="{{section == 'programmingArea' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('programmingArea')">{{'mainPage.programmingArea' | translate }}</a>
+          <a class="{{(this.cabeceraService.getSection()| async)  == 'programmingArea' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('programmingArea')">{{'mainPage.programmingArea' | translate }}</a>
         </li>
         <li class="nav-item ">
-          <a class="{{section == 'contact' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('contact')">{{ 'mainPage.contact' | translate }}</a>
+          <a class="{{(this.cabeceraService.getSection() | async) == 'contact' ? 'nav-link active' : 'nav-link' }}" role="button" (click)="changeSection('contact')">{{ 'mainPage.contact' | translate }}</a>
         </li>
       </ul>
     </div>
