@@ -33,7 +33,7 @@
             "title": "Sobre mi...",
             "content": [
                 "Me considero una persona muy persistente con los objetivos que persigue y éste es el aspecto que más me gusta de mi trabajo, veo mi día a día como retos a batir y cuanto más grandes y novedosos sean mucho mejor.<br><br>",
-                "Uno de los aspectos que más valoro en un proyecto son sus cimientos y su estructura; sus cimientos, ya que son los que nos sirven como ejemplo para poder construir el resto de módulos requeridos dentro del proyecto de la manera más óptima y eficiente posible, y su estructura, ya que sin un equipo competente, bien organizado, con el rol y tareas de cada miembro bien definidos, el caos no tarda en aparecer.<br><br>",
+                "Uno de los aspectos que más valoro en un proyecto son sus cimientos y su estructura; sus cimientos, ya que son los que nos sirven como ejemplo para poder construir el resto de módulos requeridos dentro del mismo de la manera más óptima y eficiente posible, y su estructura, ya que sin un equipo competente, bien organizado, con el rol y tareas de cada miembro bien definidos, el caos no tarda en aparecer.<br><br>",
                 "Espero que esta página web sirva para que me conozcas un poco y disfrutes de ella tanto como yo he disfrutado programándola, si quieres ponerte en contacto conmigo para conocer más a fondo mi trabajo y experiencia, no dudes en contactar conmigo a través del siguiente enlace: "
             ],
             "contactLink": "Contacto"
@@ -147,11 +147,11 @@
                     "name": "Proyecto: AST Residuos",
                     "description": [
                         "<b>Tecnología principal:</b><br><br>",
-                        "FRONTEND : Angular 6<br>",
+                        "FRONTEND : Angular 7<br>",
                         "BACKEND : Java (JPA)<br><br>",
                         "<b> Tareas / Responsabilidades: </b>  Desarrollo de un sistema de gestión de calidad ambiental y gestión de residuos, sistema para el control por parte de la administración autonómica y central de todos los residuos peligrosos y no peligrosos producidos por el sector industrial.<br>",
                         "Mi papel se focalizó en el análisis técnico y desarrollo de los distintos componentes Angular (FRONTEND) y los servicios REST (BACKEND) que se requierían dentro de la evolución del proyecto.<br><br>",
-                        "<b> Arquitectura del proyecto: </b> Angular 6, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                        "<b> Arquitectura del proyecto: </b> Angular 7, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
                     ]
                 }
             },

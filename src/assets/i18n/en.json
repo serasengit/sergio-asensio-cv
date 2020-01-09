@@ -147,11 +147,11 @@
                     "name": "Project: AST Residuos",
                     "description": [
                         "<b>Main Techonology:</b><br><br>",
-                        "FRONTEND : Angular 6<br>",
+                        "FRONTEND : Angular 7<br>",
                         "BACKEND : Java (JPA)<br><br>",
                         "<b> Tasks / Responsibilities: </b>  Development of a management system for environmental quality and waste management, a system for the control by the autonomous and central administration of all hazardous and non-hazardous waste produced by the industrial sector.<br>",
                         "My role was focused on the technical analysis and development of different Angular components (FRONTEND) and REST services (BACKEND) that were required within the evolution of the project.<br><br>",
-                        "<b> Proyect Structure: </b> Angular 6, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
+                        "<b> Proyect Structure: </b> Angular 7, JPA,Spring Boot,  API REST, Oracle, Dockers, Arquitectura de Microservicios, HTML5, Jira, ...<br><br>"
                     ]
                 }
             },
