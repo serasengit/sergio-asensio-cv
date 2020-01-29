@@ -14,7 +14,7 @@ html, body {
 
 
 #sidebar {
-    background: #37474F;
+    background: rgba(55, 71, 79,0.85);
     color: #CFD8DC;
     transition: all 0.3s;
     position: fixed;   
@@ -32,7 +32,9 @@ html, body {
 #sidebarActivator {
     position: fixed;   
     margin-left:200px;
+    margin-top:-290px;
     transition: all 0.3s;
+    color:black;
 }
 .fa-caret-right {
     opacity: 0.5;
@@ -43,7 +45,7 @@ html, body {
 }
 
 #sidebarActivator.active {
-    margin-left:0;
+    margin-left:200;
 }
 
 p {
@@ -76,13 +78,9 @@ a, a:hover, a:focus {
     padding-left: 25px;
     font-size: 1em;
     display: block;
-    border-bottom: 1px solid #455A64;
 
 }
-.sidebar-a-top{
-    border-top: 1px solid #455A64;
 
-}
 
 #sidebar ul li a:hover {
     color: #fff;
@@ -618,16 +616,16 @@ ul ul a {
 @media (max-width: 767px) {
     #sidebar {
         width: 69px;
-        margin-left:-20px; 
+        margin-left:-15px; 
         border-radius: 5px;
 
     }
 
     #sidebar.active {
-        margin-left: -69px;
+        margin-left: -70px;
     }
     #main{
-        margin-left:76px;
+        margin-left:80px;
     
     }
     #main.active{
@@ -635,7 +633,7 @@ ul ul a {
     
     }
     #sidebarActivator {
-        margin-left:50px;
+        margin-left:70px;
         transition: all 0.3s;
 
     }

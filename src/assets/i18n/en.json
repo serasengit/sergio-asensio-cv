@@ -11,8 +11,8 @@
             "title": "Sergio Asensio Puyuelo",
             "content": [
                 "Welcome to my Website!!!<br><br>",
-                "I am a mathematician and programmer analyst with a solid background knowledge in web applications development and several programming areas such as: Full Stack Developer (FRONTEND , BACKEND), Web Designer, Web Services Implementation (REST/SOAP),Database Management ...<br><br>",
-                "During my 4 work experienced years, i have attended multiple projects managed by different technologies both alone as well as member of various teams helping  me out in my professional growth and development .<br><br>",
+                "I am a mathematician and programmer analyst with a solid background in web applications development and several programming areas such as: Full Stack Developer (FRONTEND , BACKEND), Web Designer, Web Services Implementation (REST/SOAP),Database Management ...<br><br>",
+                "During my 4 years of experience, I have attended multiple projects managed by different technologies such as Java, Angular, Salesforce and NodeJS, both alone as well as member of qualified teams helping me all of them in my professional growth and development .<br><br>",
                 "By the follow link you can find out more information about all the programming languages that I have dealt with as well as my skill matrix level ;)"
             ],
             "skillsLink": "Skill Matrix"
@@ -20,19 +20,18 @@
         "currentJob": {
             "title": "Current Job",
             "content": [
-                "I currently work as Technical Analyst in Grupo Oesía company in a project related with residues management for Aragón government.My main role is focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project.Some of my main tasks are:<br><br>",
-                "- Creation of BBDD tables and relation between them by scripts.<br>",
-                "- Development and implementation of the architecture of different modules where FRONTEND is based on.<br>",
-                "- Management and implementation of BACKEND REST services.<br>",
-                "- Import of several SOAP client libraries.<br>",
+                "I currently work as Technical Analyst in Grupo Oesía company in a project related with the residues management for Aragón government.As a full stack technical analyst, some of my main tasks are: <br><br>",
+                "- Analysis and implementation of the FRONTEND and BACKEND functionalities in the most simple and efficient way.<br>",
+                "- Define the database tables structure as well as the relation between them.<br>",
+                "- Establish the code architecture of main project modules in order to take them as referents to develop new ones.<br>",
                 "- Automation and building of the project code.<br>",
-                "- Knowledge transfer and support to team programmers.<br>"
+                "- Support and knowledge transfer to team´s software developers.<br>"
             ]
         },
         "aboutMe": {
             "title": "About me...",
             "content": [
-                "I consider myself a so persistent person with my objectives and this is precisely the aspect that I like most about my work, I see my day by day as challenges to defeat and the bigger and more innovative they are much better to me.<br><br>",
+                "I am a so persistent person with my objectives and this is precisely the aspect that I like most about my work, I see my day by day as challenges to defeat the more innovative and challenging they are the more motivated I am.<br><br>",
                 "Two of the most relevant aspects in a project to me are its foundations, and its structure, its foundations because they are its main template and we are able to develop the rest of the modules through them in in the most optimal and efficient way, and its structure, because without a competent and well-organized team where the role and task of each member are well-defined, chaos quick appears.<br><br>",
                 "I hope this website help you to know me a little bit and enjoy it as much as I have enjoyed developing it, if you want to contact me in order to find out more information about my work and experience, do not hesitate to do so through the following link"
             ],
@@ -66,15 +65,15 @@
         },
         "profileSection": {
             "content": [
-                "After joining Deloitte in March (2016), I have attended three courses related to the following competences: SAP (ABAP modality), Java and Salesforce.<br><br>",
-                "During my work experience, I have been involved in several maintenance and development Salesforce projects where I could grow up as code developer and platform admin.<br><br>",
-                "In June of 2016, I was involved in a project for energy market. In there, we developed an aplication to help salesforce to create cases in emergency peaks.This app was developed in Java, Spring, Hibernate and published in Heroku, with Postgres and HerokuConnect(tool to connect SFDC and fill the data in Postgres).<br><br>",
-                "Thanks to this project and my work team, I could learn and explore the set of tools that a Java Web application offer as: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX..., the study of the Heroku platform and its synchronization with Salesforce and the use of Talend tool for massive data migration (ETL).<br><br>",
-                "In October of 2017, I was in charge of the development and publishment in Heroku of a NodeJS Web service app which purpose was massive user data sending to a SMS sending data Company and recovery and storage of responses received in PostgresSQL.<br><br>",
+                "After joining Deloitte in March (2016), I attended three courses related to the following competences: SAP (ABAP modality), Java and Salesforce.<br><br>",
+                "During my first two years of work experience, I was involved in several maintenance and development Salesforce projects where I grew up as code developer and platform admin.<br><br>",
+                "In June of 2016, I was involved in a project for energy market. In there, we developed an aplication to help salesforce to create cases in emergency peaks.This app was developed in Java, Spring, Hibernate and published in Heroku, with PostgreSQL and HerokuConnect (tool to connect SFDC and fill the data in Postgres).<br><br>",
+                "Thanks to this project and my work team, I learnt and explore the set of tools that a Java Web application offer as: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX..., the study of the Heroku platform and its synchronization with Salesforce and the use of Talend tool for massive data migration (ETL).<br><br>",
+                "In October of 2017, I was the responsible of the development and publishment in Heroku of a NodeJs Web service app which purpose was the massive user data sending to a SMS sending data Company as well as the  storage of the responses received in PostgresSQL. .<br><br>",
                 "This was the first time I carried out a project on my own, and it became an important challenge due to my lack of knowledge about this particular technology. However, my previous experience in Java and constant search for information helped me to learn more about NodeJS, thus gaining experience about asynchronous development methods and creation of REST services.<br><br>",
                 "In March of 2018, I started a new professional adventure as senior developer in IA SOFT company, being my first project an environmental quality and waste management application in Angular 6 and Java (JPA).<br><br>",
                 "In June of 2018 the company sent me to work as external professional in the Seminario of Zaragoza in order to take the responsability of the civil service application (Java Server Faces) and carry out some new modules and functionalities on it.<br><br>",
-                "In May 2019, I was promoted to technical analyst and I was assigned back to my first project where my main role was focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project, as well as the training and knowledge transfer to team programmers."
+                "In May 2019, I was promoted to technical analyst and I was assigned back to my first project where my main role is focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project, as well as the training and knowledge transfer to team programmers."
             ]
         },
         "educationSection": {
@@ -138,7 +137,7 @@
                         "<b>Main Techonology: </b> <br>",
                         "FRONTEND : JSPX <br>",
                         "BACKEND : Java (Primefaces)<br><br>",
-                        "<b> Tasks / Responsibilities: </b> Development and expansion of several functionalities related to the application of the city hall of Zaragoza that allows the correct and efficient management of civil service information.<br><br>",
+                        "<b> Tasks / Responsibilities: </b> Main and only responsible of a final client proyect where I was in charge of the expansion of several functionalities related to Zaragoza´s civil service app (PrimeFaces – JSPX - SQL).<br><br>",
                         "<b> Proyect Structure: </b> PrimeFaces, JSPX, SQL, Tomahawk, CVS.<br><br>"
                     ]
                 },
@@ -171,7 +170,7 @@
                     "name": "Project: Grupo Alava",
                     "description": [
                         "<b>Main Techonology: </b> Salesforce<br><br>",
-                        "<b> Tasks / Responsibilities: </b> Structuring, development and APEX code management, mainly Triggers, Visualforces, Javascript buttons and Test classes.<br><br>",
+                        "<b> Tasks / Responsibilities: </b> Structuring, development and APEX code management, mainly triggers, visualforces, workflows and test classes.<br><br>",
                         "<b> Proyect Structure: </b> Salesforce.<br><br>"
                     ]
                 },
@@ -180,8 +179,7 @@
                     "name": "Project: Deloitte Norway SMS",
                     "description": [
                         "<b>Main Techonology: </b> NodeJS<br><br>",
-                        "<b> Tasks / Responsibilities: </b> Development of a NodeJS application that received Eloqua data by campaigns activation in order to process and send them to a sms´es sending company by a REST service.<br>",
-                        "We also developed a Web Service wich received the responses and stored them into Heroku BBDD to finally recover them into sets and notify them to Eloqua by batch processes.<br><br> ",
+                        "<b> Tasks / Responsibilities: </b> Main responsible of the development and publishment in Heroku of a NodeJs Web service app which purpose was the massive user data sending to a SMSes sending data Company as well as the  storage of the responses received in PostgresSQL. <br><br>",
                         "<b> Proyect Structure: </b> NodeJS, Eloqua, Heroku.<br><br>"
                     ]
                 },
@@ -189,11 +187,9 @@
                     "date": "April 2017 – March 2018",
                     "name": "Project: AM Bergé-Driber",
                     "description": [
-                        "<b>Main Techonology: </b>Salesforce<br><br>",
-                        "<b> Tasks / Responsibilities: </b>  Maintenance and development car’s concessionaire app functionalities either at administrator level or code developer.<br>",
-                        "Into this project also was developed an Angular app in order to build the visual part of the project (Car´s description, photos, prizes, ...).<br>",
-                        "This app is published in Heroku platform and connected with Salesforce via REST API<br><br>",
-                        "<b> Proyect Structure: </b> SAP, Fuse, Heroku, Salesforce.<br><br>"
+                        "<b>Main Techonology: </b>Angular<br><br>",
+                        "<b> Tasks / Responsibilities: </b>  Maintenance and creation of  new Angular modules for a car’s concessionaire app<br><br>",
+                        "<b> Proyect Structure: </b> Angular.<br><br>"
                     ]
                 },
                 "proyect_5": {
@@ -201,8 +197,7 @@
                     "name": "Project: Enel-SMS Notifications",
                     "description": [
                         "<b>Main Techonology: </b>Java<br><br>",
-                        "<b> Tasks / Responsibilities: </b> Diving and developing in Java, NodeJS, Marketing cloud, SFDC and Talend in order to create a workflow that import users data to SFDC with Talend, Marketing cloud get this data, send a request to a NodeJS app, this Nodejs app call to a Java app that invoke a REST service for sending SMS to users.",
-                        "These two apps are published in Heroku platform.  <br><br>",
+                        "<b> Tasks / Responsibilities: </b> Diving, development and publishment in Heroku of a Java SMSes data sending app integrated with NodeJs, Marketing cloud, SFDC and Talend platforms by REST services.<br><br>",
                         "<b> Proyect Structure: </b> Talend, Salesforce, Marketing Cloud, Heroku, Java, Rest, NodeJS.<br><br>"
                     ]
                 },
@@ -220,11 +215,9 @@
                     "name": "Project: Enel – Emergency Chile - Heroku",
                     "description": [
                         "<b>Main Techonology: </b>Java<br><br>",
-                        "<b> Tasks / Responsibilities: </b> This project was focused in the creation of a Java aplication and it publishment into Heroku platform.<br>",
-                        "This app helps to Salesforce to create new cases when they raise a peak. When the country lives an emergency situation, more call center users are needed, but there aren’t enough licenses for them.",
-                        "This application try to replicate Salesforce and give them the same functionality that call center users need. For this purpouse, we use Postgres(BBDD), Heroku connect to share data with salesforce, REST api to send data to salesforce in real time, Java, Spring and we published the app in Heroku.<br><br>",
-                        "Learning and development to highlight: <br><br>",
-                        "- Development of a Java Web Application.<br> - Diving in Heroku platform and its sincronization with Salesforce .<br> - Heroku data bases and how to replicate in local server.<br> - Talend to migrate initial data from SFDC to Heroku DDBB.<br><br>",
+                        "<b> Tasks / Responsibilities: </b> ",
+                        "Full stack  developer in an energy market project to simulate some Salesforce functionalities through a Java Web application.<br><br>",
+                        "Thanks to this project, I  learnt and explored several set of tools such as: Spring MVC, Spring Hibernate, HTML, CSS, jQuery, JSP, Javascript, SQL, REST, AJAX..., the study of the Heroku platform and its synchronization with Salesforce and the use of Talend tool for massive data migration (ETL)..<br><br>",
                         "<b> Proyect Structure: </b>Spring MVC, PostgresSQL, Maven, Quarz, Heroku, Hibernate, Git, Apache Tomcat.<br><br>"
                     ]
                 },
@@ -233,9 +226,7 @@
                     "name": "Project: AM Bergé-Transforma",
                     "description": [
                         "<b>Main Techonology: </b>Salesforce<br><br>",
-                        "<b> Tasks / Responsibilities: </b>Maintenance Service, our responsabilities are solving indicents related to the Salesforce platform existing functionalities or managing users and grants, either configurations issues or Apex developments.<br><br>",
-                        "<b> Proyect Structure: </b>Salesforce, Identity Connect.<br><br>",
-                        "<b> Tasks / Responsibilities: </b>Maintenance Service, our responsabilities are solving indicents related to the Salesforce platform existing functionalities or managing users and grants, either configurations issues or Apex developments.<br><br>",
+                        "<b> Tasks / Responsibilities: </b> Maintenance service focused on the resolution of incidents with the Salesforce platform both as administrator and APEX code developer level.<br><br>",
                         "<b> Proyect Structure: </b>Salesforce, Identity Connect.<br><br>"
                     ]
                 }

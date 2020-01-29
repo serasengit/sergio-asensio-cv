@@ -12,7 +12,7 @@
             "content": [
                 "Bienvenido a mi Web!!!<br><br>",
                 "Soy un mátemático y analista programador con un amplio abanico de conocimientos en el desarrollo de aplicaciones web así como en múltiples ramas de la programación tales como: Full Stack Developer (FRONTEND , BACKEND), Web Designer, Web Services Implementation (REST/SOAP),Database Management ...<br><br>",
-                "A lo largo de mis 4 años carrera profesional he participidado en numeros proyectos gestionados por diferentes tecnologías, tanto en solitario como formando parte de diversos equipos ayudándome todos ellos en mi crecimiento  y desarrollo profesional. <br><br>",
+                "A lo largo de mis 4 años carrera profesional he participidado en numeros proyectos gestionados por diferentes tecnologías tales como Java, Angular, Salesforce y NodeJS, tanto en solitario como formando parte de equipos cualificados ayudándome todos ellos en mi crecimiento  y desarrollo profesional. <br><br>",
                 "A través del siguiente link podrás descubrir mucha más información sobre todos lenguajes programación a los que me he enfrentado y mi nivel de habilidad en cada uno de ellos ;)."
             ],
             "skillsLink": "Matriz habilidades"
@@ -20,11 +20,10 @@
         "currentJob": {
             "title": "Trabajo actual",
             "content": [
-                "Actualmente ejerzo el cargo de Analista Programador en la empresa Grupo Oesía en un proyecto de gestión de residuos para el Gobierno de Aragón. Mi rol principal consiste en la implementación de la arquitectura y funcionalidades de los nuevos módulos requeridos tanto del FRONTEND como BACKEND del proyecto. Entre mis tareas cabe destacar:<br><br>",
-                "- Creación de tablas de BBDD y relación entre las mismas mediante scripts.<br>",
-                "- Definición e implementación de la arquitectura de los diferentes módulos del FRONTEND.<br>",
-                "- Gestión e implementación de servicios REST del BACKEND.<br>",
-                "- Importación de librerías SOAP del cliente al proyecto.<br>",
+                "Actualmente ejerzo el cargo de Analista Programador en la empresa Grupo Oesía en un proyecto de gestión de residuos para el Gobierno de Aragón. Como analista programador full stack, alguna de mis principales tareas son: <br><br>",
+                "- Analizar e implementar las funcionalidades FRONTEND y BACKEND de la manera más simple y eficiente posible.<br>",
+                "- Definir las tablas de base de datos así como la relación entre las mismas.<br>",
+                "- Establecer la arquitectura del código de los principales módulos del proyecto con el objetivo de tomarlos como referencia a la hora de desarrollar nuevos requisitos.<br>",
                 "- Generación de entregables.<br>",
                 "- Formación y transferencia de conocimientos a los programadores del equipo.<br>"
             ]
@@ -32,7 +31,7 @@
         "aboutMe": {
             "title": "Sobre mi...",
             "content": [
-                "Me considero una persona muy persistente con los objetivos que persigue y éste es el aspecto que más me gusta de mi trabajo, veo mi día a día como retos a batir y cuanto más grandes y novedosos sean mucho mejor.<br><br>",
+                "Soy  persona muy persistente con los objetivos que persigue y éste es el aspecto que más me gusta de mi trabajo, veo mi día a día como retos a batir y cuanto más retadores y novedosos sean, mayor es mi motivación.<br><br>",
                 "Uno de los aspectos que más valoro en un proyecto son sus cimientos y su estructura; sus cimientos, ya que son los que nos sirven como ejemplo para poder construir el resto de módulos requeridos dentro del mismo de la manera más óptima y eficiente posible, y su estructura, ya que sin un equipo competente, bien organizado, con el rol y tareas de cada miembro bien definidos, el caos no tarda en aparecer.<br><br>",
                 "Espero que esta página web sirva para que me conozcas un poco y disfrutes de ella tanto como yo he disfrutado programándola, si quieres ponerte en contacto conmigo para conocer más a fondo mi trabajo y experiencia, no dudes en contactar conmigo a través del siguiente enlace: "
             ],
@@ -66,15 +65,15 @@
         },
         "profileSection": {
             "content": [
-                "Tras iniciarme en el mundo de la programación en Marzo del 2016 he asistido a tres cursos de formación de las competencias SAP (modalidad ABAP), Java y Salesforce.<br><br>",
-                "Durante mis dos años de experiencia, he estado envuelto en diversos proyectos de mantenimiento y desarrollo en Salesforce en los cuales he podido formarme tanto a nivel de desarrollador de codigo como de administrador de la plataforma.<br><br>",
-                "En Junio de 2016   formé parte de un proyecto de energía focalizado en la creación de una aplicación Java  Web que replicase ciertas funcionalidades de Salesforce como la creación de casos de emergencias. La aplicación fue desarrollada en Java,Spring MVC,Hibernate y publicada en la plataforma Heroku junto con la ayuda de PostgresSQL y HerokuConnect (herramienta encargada de volcar la BBDD de Salesforce en el Postgres de Heroku).<br><br> ",
-                "Gracias a este proyecto y al equipo que me rodeaba pude aprender y navegar por el abanico de herramientas que ofrece el diseño de una aplicación Java Web tales como: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX...,el estudio de la plataforma Heroku y su sincronización con Salesforce y el manejo de la herramienta Talend para la migración masiva de datos (ETL).<br><br>",
-                "En Octubre del 2017, estuve a cargo del desarrollo y publicación en Heroku de un servicio web en una aplicación NodeJS cuya finalidad era el envío masivo de datos de usuarios a una companía de envío de SMS´es así como la recuperación y almacenamiento de las respuestas en PostgresSQL. <br><br>",
+                "Tras iniciarme en el mundo de la programación en Marzo del 2016 asistí a tres cursos de formación de las competencias SAP (modalidad ABAP), Java y Salesforce.<br><br>",
+                "Durante mis dos primeros años de experiencia, estuve envuelto en diversos proyectos de mantenimiento y desarrollo en Salesforce en los cuales me formé tanto a nivel de desarrollador de codigo como de administrador de la plataforma.<br><br>",
+                "En Junio de 2016  formé parte de un proyecto de energía focalizado en la creación de una aplicación Java  Web que replicase ciertas funcionalidades de Salesforce como la creación de casos de emergencias. La aplicación fue desarrollada en Java,Spring MVC,Hibernate y publicada en la plataforma Heroku junto con la ayuda de PostgresSQL y HerokuConnect (herramienta encargada de volcar la BBDD de Salesforce en el PostgreSQL de Heroku).<br><br> ",
+                "Gracias a este proyecto y al equipo que me rodeaba aprendí a navegar por el abanico de herramientas que ofrece el diseño de una aplicación Java Web tales como: HTML,CSS,jQuery, JSP, Javascript, SQL, REST, AJAX...,el estudio de la plataforma Heroku y su sincronización con Salesforce y el manejo de la herramienta Talend para la migración masiva de datos (ETL).<br><br>",
+                "En Octubre del 2017, estuve a cargo del desarrollo y publicación en Heroku de un servicio web en una aplicación NodeJs cuya finalidad era el envío masivo de datos de usuarios a una companía de envío de SMS´es así como la recuperación y almacenamiento de las respuestas en PostgresSQL. <br><br>",
                 "Este fue mi primer proyecto en solitario el cual supuso un reto muy importante para mí debido al desconocimiento de la tecnología, sin embargo mi experiencia anterior en Java y la búsqueda constante de información me sirvió para aprender cada día un poco más de NodeJS y así adquirir experiencia en el desarrollo de funciones asíncronas y creación de servicios REST.<br><br>",
                 "En Marzo de 2018, inicié una nueva aventura profesional como programador senior en la empresa IA SOFT en Zaragoza, siendo mi primer proyecto en la empresa una aplicación de gestión de calidad ambiental y de residuos en Angular 6 y Java (JPA) . <br><br>",
                 "En Junio de 2018 la empresa me destinó a trabajar como externo en el Seminario de Zaragoza para responsabilizarme de la aplicación de personal del funcionariado de Zaragoza (Java Server Faces) y llevar a cabo una serie de nuevos módulos y funcionalidades.<br><br>",
-                "En Mayo del 2019, fui promocionado a analista técnico y me destinaron de vuelta a mi primer proyecto donde mi rol principal consistía en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto, así como la formación y transferencia de conocimientos a los programadores del equipo."
+                "En Mayo del 2019, fui promocionado a analista técnico y me destinaron de vuelta a mi primer proyecto donde mi rol principal consiste en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto, así como la formación y transferencia de conocimientos a los programadores del equipo."
             ]
         },
         "educationSection": {
@@ -138,7 +137,7 @@
                         "<b>Tecnología principal: </b><br><br>",
                         "FRONTEND : JSPX <br>",
                         "BACKEND : Java (Primefaces)<br><br>",
-                        "<b> Tareas / Responsabilidades: </b> Desarrollo y extension de una serie de funcionalidades de la aplicación de personal del ayuntamiento de Zaragoza que permita la correcta y eficiente gestión de toda la informacion del funcionariado.<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Principal y único responsable de un proyecto en cliente final donde estuve a cargo del mantenimiento y extension de varias funcionalidades de la aplicación de personal del ayuntamiento de Zaragoza (PrimeFaces - JSPX - SQL).<br><br>",
                         "<b> Arquitectura del proyecto: </b> PrimeFaces, JSPX, SQL, Tomahawk, CVS.<br><br>"
                     ]
                 },
@@ -171,7 +170,7 @@
                     "name": "Proyecto: Grupo Alava",
                     "description": [
                         "<b>Tecnología principal: </b> Salesforce<br><br>",
-                        "<b> Tareas / Responsabilidades: </b> Estructuramiento desarrollo y organización del modelo de codigo APEX, principalmente Triggers, Visualforces, botones en codigo Javascript y clases Test.<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Estructuramiento desarrollo y organización del modelo de codigo APEX, principalmente triggers, visualforces, workflows y clases test.<br><br>",
                         "<b> Arquitectura del proyecto: </b> Salesforce.<br><br>"
                     ]
                 },
@@ -180,9 +179,7 @@
                     "name": "Proyecto: Deloitte Norway SMS",
                     "description": [
                         "<b>Tecnología principal: </b> NodeJS<br><br>",
-                        "<b> Tareas / Responsabilidades: </b> Desarrollo de un servicio web en una aplicación NodeJS desplegada en la plataforma Heroku e integrada con Eloqua (Oracle).<br>",
-                        "La aplicación se centraba en recibir los datos de los usuarios que enviaba Eloqua mediante la construcción y activación de campañas, tratar y enviar estos datos a una compañía de envio de SMS (REST en NodeJS), recibir las respuestas enviada por dicha companía mediante la construcción",
-                        "de un Servicio Web y almacenarlas en la BBDD (PostgresSQL) para finalmente recuperar estas respuestas y notificarlas a Eloqua mediante procesos batch.<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Principal responsable del desarrollo y publicación en Heroku de un servicio web en NodeJs para gestionar el envío de datos de usuario a una empresa de envío masivo de SMSes, así como el almacenamiento de las respuestas recibidas en PostgresSQL.<br><br>",
                         "<b> Arquitectura del proyecto: </b> NodeJS, Eloqua, Heroku.<br><br>"
                     ]
                 },
@@ -190,11 +187,9 @@
                     "date": "Abril 2017 – Marzo 2018",
                     "name": "Proyecto: AM Bergé-Driber",
                     "description": [
-                        "<b>Tecnología principal: </b>Salesforce<br><br>",
-                        "<b> Tareas / Responsabilidades: </b> Mantenimiento y desarrollo de una aplicación de concesionario de coches tanto a nivel de administrador como desarrollo de código.<br>",
-                        "Dentro de este proyecto también se desarrolló una aplicación en Angular que aportaba la parte visual del proyecto: (fotografías de los coches, descripciones, precios, ...).<br>",
-                        "Dicha aplicación se publicó en Heroku y se conectó con Salesforce vía REST api<br><br>",
-                        "<b> Arquitectura del proyecto: </b> SAP, Fuse, Heroku, Salesforce.<br><br>"
+                        "<b>Tecnología principal: </b>Angular<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Mantenimiento y desarrollo de nuevos módulos en una aplicación Angular para un concesionario de coches.<br><br>",
+                        "<b> Arquitectura del proyecto: </b> Angular.<br><br>"
                     ]
                 },
                 "proyect_5": {
@@ -202,8 +197,7 @@
                     "name": "Proyecto: Enel- Notificaciones SMS",
                     "description": [
                         "<b>Tecnología principal: </b>Java<br><br>",
-                        "<b> Tareas / Responsabilidades: </b> Investigación y uso coordinado de las herramientas Java, NodeJs, Marketing Cloud, Salesforce y Talend con objetivo de crear un workflow que importe datos de usuarios con Talend a Salesforce, Marketing Cloud los reciba y los envie mediante peticion",
-                        "REST a una aplicación Nodejs que esta a su vez llame a una aplicación Java que finalmente envie mediante REST api los datos de usuario a una compañía de envio de SMS. <br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Investigación,desarrollo y publicación en Heroku de una aplicación Java de envío masivo de SMSes e integrada con las plataformas NodeJs, Marketing cloud, SFDC y Talend mediante servicios REST  <br><br>",
                         "<b> Arquitectura del proyecto: </b> Talend, Salesforce, Marketing Cloud, Heroku, Java, Rest, NodeJS.<br><br>"
                     ]
                 },
@@ -221,12 +215,8 @@
                     "name": "Proyecto: Enel – Emergencia Chile - Heroku",
                     "description": [
                         "<b>Tecnología principal: </b>Java<br><br>",
-                        "<b> Tareas / Responsabilidades: </b> Este proyecto estuvo centrado en la creación de una aplicación Java Web y su despliegue en la plataforma Heroku.<br>",
-                        "Su objetivo principal era ayudar a Salesforce en la creación de nuevos casos cuando la ciudad vivia situaciones de emergencia y era necesaria la creación de nuevos usuarios Salesforce, sin embargo el número de licencias no eran suficientes para todos ellos.Esta aplicacion trata de ",
-                        "replicar la funcionalidad de creación de casos de Salesforce. Para llevar a cabo este propósito, se hizo uso de las herramientas: PostresSql(BBDD), Heroku Connect para sincronizar la BBDD de Salesforce con PostresSQL, REST API para enviar los datos a Salesforce en tiempo real, Spring",
-                        "MVC, Hibernate, Quarz, ...<br><br>",
-                        "Tambien cabe destacar el manejo y aprendizaje de las siguientes herramientas: <br><br>",
-                        "- Desarrollo de una aplicación Web Java.<br> - Estudio de la plataforma Heroku y su sincronización con Salesforce.<br> - Replicar la BBDD de Salesforce en PostgresSQL mediante las herramientas Heroku Connect y Quarz.<br> - Uso de la herramienta Talend para la migración de datos.<br><br>",
+                        "<b> Tareas / Responsabilidades: </b> Desarrollador full stack en un proyecto de energía focalizado en la creación de una aplicación Java Web que replicase ciertas funcionalidades de Salesforce.<br><br>",
+                        "Gracias a este proyecto aprendí y navegué  por un amplio abanico de herramientas como : Spring MVC, Spring Hibernate, HTML, CSS, jQuery, JSP, Javascript, SQL, REST, AJAX..., el estudio de la plataforma Heroku y su sincronización con Salesforce y el manejo de la herramienta Talend para la migración masiva de datos (ETL).<br><br>",
                         "<b> Arquitectura del proyecto: </b>Spring MVC, PostgresSQL, Maven, Quarz, Heroku, Hibernate, Git, Apache Tomcat.<br><br>"
                     ]
                 },

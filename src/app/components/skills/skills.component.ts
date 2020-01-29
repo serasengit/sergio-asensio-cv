@@ -109,7 +109,8 @@ export class SkillsComponent implements OnInit {
               label: function (tooltipItem, data) {
                 let tooltip = [];
                 if (tooltipItem.xLabel === 'Java') {
-                  tooltip = [' Spring MVC', ' Hibernate', ' Maven', ' JSF', ' JPA', ' Javascript', ' AJAX', ' Quarz', ' Apache', ' Tomcat'];
+                  tooltip = [' Spring MVC', ' Spring Hibernate', ' Spring Boot',
+                    ' Maven', ' JSF', ' JPA', ' Javascript', ' AJAX', ' Quarz', ' Apache', ' Tomcat'];
                 } else if (tooltipItem.xLabel === 'Salesforce') {
                   tooltip = [' Apex', ' Visualforce', ' Heroku', ' Marketing Cloud', ' Schedule Jobs'];
                 } else if (tooltipItem.xLabel === 'Angular 7') {
@@ -121,7 +122,7 @@ export class SkillsComponent implements OnInit {
                 } else if (tooltipItem.xLabel === 'Web Services') {
                   tooltip = [' REST', ' SOAP'];
                 } else if (tooltipItem.xLabel === 'BBDD') {
-                  tooltip = [' PostgresSQL', ' Oracle', ' SQL'];
+                  tooltip = [' PostgreSQL', ' Oracle', ' SQL'];
                 } else if (tooltipItem.xLabel === 'ETL') {
                   tooltip = [' Talend'];
                 } else if (tooltipItem.xLabel === 'Version Control') {
@@ -147,7 +148,7 @@ export class SkillsComponent implements OnInit {
             backgroundColor: [
               '#4169E1',
               '#87CEFA',
-              '#FFFAFA',
+              '#D3D3D3',
               '#e6e6e6',
               '#DC3912',
               '#ff9999'
@@ -155,7 +156,7 @@ export class SkillsComponent implements OnInit {
             hoverBackgroundColor: [
               '#4169E1',
               '#87CEFA',
-              '#FFFAFA',
+              '#D3D3D3',
               '#e6e6e6',
               '#DC3912',
               '#ff9999'
@@ -172,7 +173,7 @@ export class SkillsComponent implements OnInit {
             backgroundColor: [
               '#4169E1',
               '#87CEFA',
-              '#FFFAFA',
+              '#D3D3D3',
               '#e6e6e6',
               '#DC3912',
               '#ff9999'
@@ -180,7 +181,7 @@ export class SkillsComponent implements OnInit {
             hoverBackgroundColor: [
               '#4169E1',
               '#87CEFA',
-              '#FFFAFA',
+              '#D3D3D3',
               '#e6e6e6',
               '#DC3912',
               '#ff9999'
@@ -198,7 +199,7 @@ export class SkillsComponent implements OnInit {
             backgroundColor: [
               '#4169E1',
               '#87CEFA',
-              '#FFFAFA',
+              '#D3D3D3',
               '#e6e6e6',
               '#DC3912',
               '#ff9999'
@@ -206,7 +207,7 @@ export class SkillsComponent implements OnInit {
             hoverBackgroundColor: [
               '#4169E1',
               '#87CEFA',
-              '#FFFAFA',
+              '#D3D3D3',
               '#e6e6e6',
               '#DC3912',
               '#ff9999'

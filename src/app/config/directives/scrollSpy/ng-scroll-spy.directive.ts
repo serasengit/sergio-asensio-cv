@@ -2,6 +2,7 @@ import { AfterContentInit, Directive, ElementRef, HostListener, Inject, Renderer
 import { DOCUMENT } from '@angular/platform-browser';
 import { extractElementPosition } from 'ng-html-util';
 import { UtilsService } from 'src/utils/utils.service';
+import * as $ from 'jquery';
 
 @Directive({
     selector: '[scroll-spy]'
@@ -119,6 +120,31 @@ export class ScrollSpyDirective implements AfterContentInit {
                 }
             }
 
+        }
+        //
+        this.sidebarScrolling($('#sidebar'));
+
+
+    }
+
+    private sidebarScrolling(htmlElement): void {
+        const offset = htmlElement.offset();
+        const headerWidth = document.getElementById('header').offsetHeight;
+        const topPadding = headerWidth - 100;
+        if ($(window).scrollTop() <= headerWidth) {
+            if ($(window).scrollTop() === 0) {
+                htmlElement.stop().animate({
+                    marginTop: $(window).scrollTop()
+                });
+            } else {
+                htmlElement.stop().animate({
+                    marginTop: $(window).scrollTop() - offset.top + topPadding
+                });
+            }
+        } else {
+            htmlElement.stop().animate({
+                marginTop: topPadding - headerWidth
+            });
         }
     }
 
