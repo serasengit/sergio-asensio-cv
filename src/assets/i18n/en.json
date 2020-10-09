@@ -20,19 +20,20 @@
         "currentJob": {
             "title": "Current Job",
             "content": [
-                "I currently work as Technical Analyst in Grupo Oesía company in a project related with the residues management for Aragón government.As a full stack technical analyst, some of my main tasks are: <br><br>",
+                "I currently work in the development of an hospital application at UST Global company. Some of the most important tasks I have faced through my professional experience are: <br><br>",
+                "- Improvement and optimization of the project architecture.<br>",
                 "- Analysis and implementation of the FRONTEND and BACKEND functionalities in the most simple and efficient way.<br>",
                 "- Define the database tables structure as well as the relation between them.<br>",
                 "- Establish the code architecture of main project modules in order to take them as referents to develop new ones.<br>",
                 "- Automation and building of the project code.<br>",
-                "- Support and knowledge transfer to team´s software developers.<br>"
+                "- Support and knowledge transfer to team´s software developers as well as PR´s reviews.<br>"
             ]
         },
         "aboutMe": {
             "title": "About me...",
             "content": [
-                "I am a so persistent person with my objectives and this is precisely the aspect that I like most about my work, I see my day by day as challenges to defeat the more innovative and challenging they are the more motivated I am.<br><br>",
-                "Two of the most relevant aspects in a project to me are its foundations, and its structure, its foundations because they are its main template and we are able to develop the rest of the modules through them in in the most optimal and efficient way, and its structure, because without a competent and well-organized team where the role and task of each member are well-defined, chaos quick appears.<br><br>",
+                "I am a so persistent person with my objectives and this is precisely the aspect that I like most about my work, I see my day by day as challenges to defeat and the more innovative and challenging these are, the more motivated I feel.<br><br>",
+                "Two of the most relevant aspects in a project to me are its foundations, and its structure, its foundations because these are the template through we are able to develop the rest of project modules in the most optimal and efficient way, and its structure, because without a competent and well-organized team where the role and task of each member are well-defined, chaos quick appears.<br><br>",
                 "I hope this website help you to know me a little bit and enjoy it as much as I have enjoyed developing it, if you want to contact me in order to find out more information about my work and experience, do not hesitate to do so through the following link"
             ],
             "contactLink": "Contact"
@@ -73,7 +74,9 @@
                 "This was the first time I carried out a project on my own, and it became an important challenge due to my lack of knowledge about this particular technology. However, my previous experience in Java and constant search for information helped me to learn more about NodeJS, thus gaining experience about asynchronous development methods and creation of REST services.<br><br>",
                 "In March of 2018, I started a new professional adventure as senior developer in IA SOFT company, being my first project an environmental quality and waste management application in Angular 6 and Java (JPA).<br><br>",
                 "In June of 2018 the company sent me to work as external professional in the Seminario of Zaragoza in order to take the responsability of the civil service application (Java Server Faces) and carry out some new modules and functionalities on it.<br><br>",
-                "In May 2019, I was promoted to technical analyst and I was assigned back to my first project where my main role is focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project, as well as the training and knowledge transfer to team programmers."
+                "In May 2019, I was promoted to technical analyst and I was assigned back to my first project where my main role was focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project, as well as the training and knowledge transfer to team programmers.<br><br>",
+                "In April of 2020, I joined UST Global company as member of a multiskill team involved in the development of an Angular and Node hospital application.This experience has let me share my professional experience with my workmates as well as increase considerably the level of my Angular (NgRx framework), Node (TypeORM framework) and web designer skills."
+
             ]
         },
         "educationSection": {
@@ -104,13 +107,33 @@
             "developer": "Developer",
             "seniorDeveloper": "Senior Developer",
             "analystDeveloper": "Analyst Developer",
+            "seniorAnalystDeveloper": "Senior Analyst Developer",
             "company_1": "<b>New professional experience into the company: DxD Applications & IT Solutions</b>",
             "company_2": "<b>New professional experience into the company: Grupo Oesía</b><br><br>",
             "company_2_1": "<b>Promotion to Analyst Developer : Grupo Oesía</b><br><br>",
+            "company_3": "<b>New professional experience into the company: UST Global</b><br><br>",
+            "contentSeniorAnalystDeveloper": {
+                "date": "April 2020 ",
+                "proyect_1": {
+                    "date": "April 2020 - Currently",
+                    "name": "Project: GreenCube",
+                    "description": [
+                        "<b>Main Techonology:</b><br><br>",
+                        "FRONTEND : Angular 8 (NgRx)<br>",
+                        "BACKEND : Node 10 (TypeORM)<br><br>",
+                        "<b> Tasks / Responsibilities: </b> Study and development of different FRONTEND and BACKEND functionalities of an hospital application. Some of my main tasks are:<br><br>",
+                        "- Estimation and development of new modules requested by the client.<br>",
+                        "- Improvement and optimization of the project architecture, both BACKEND and FRONTEND.<br>",
+                        "- Pull request reviews.<br>",
+                        "- Knowledge transfer and support to team programmers.<br><br>",
+                        "<b> Proyect Structure: </b> Angular 8 (NgRx), Node 10 (TypeORM), SQL Server, API Rest, HTML ,Bootstrap, SASS ...<br><br>"
+                    ]
+                }
+            },
             "contentAnalystDeveloper": {
                 "date": "May 2019 ",
                 "proyect_1": {
-                    "date": "May 2019 - Currently",
+                    "date": "May 2019 - April 2020",
                     "name": "Project: AST Residuos",
                     "description": [
                         "<b>Main Techonology:</b><br><br>",

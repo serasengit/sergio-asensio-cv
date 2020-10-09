@@ -20,12 +20,13 @@
         "currentJob": {
             "title": "Trabajo actual",
             "content": [
-                "Actualmente ejerzo el cargo de Analista Programador en la empresa Grupo Oesía en un proyecto de gestión de residuos para el Gobierno de Aragón. Como analista programador full stack, alguna de mis principales tareas son: <br><br>",
+                "Actualmente trabajo en el desarrollo de una aplicación hospitalaria en la empresa UST Global. Algunas de las tareas más importantes a las que me he enfrentado a lo largo de mi carrera profesional son: <br><br>",
+                "- Mejora y optimización de la arquitectura del proyecto.<br>",
                 "- Analizar e implementar las funcionalidades FRONTEND y BACKEND de la manera más simple y eficiente posible.<br>",
                 "- Definir las tablas de base de datos así como la relación entre las mismas.<br>",
                 "- Establecer la arquitectura del código de los principales módulos del proyecto con el objetivo de tomarlos como referencia a la hora de desarrollar nuevos requisitos.<br>",
                 "- Generación de entregables.<br>",
-                "- Formación y transferencia de conocimientos a los programadores del equipo.<br>"
+                "- Formación y transferencia de conocimientos a los programadores del equipo así como revisión de PR´s.<br>"
             ]
         },
         "aboutMe": {
@@ -73,7 +74,8 @@
                 "Este fue mi primer proyecto en solitario el cual supuso un reto muy importante para mí debido al desconocimiento de la tecnología, sin embargo mi experiencia anterior en Java y la búsqueda constante de información me sirvió para aprender cada día un poco más de NodeJS y así adquirir experiencia en el desarrollo de funciones asíncronas y creación de servicios REST.<br><br>",
                 "En Marzo de 2018, inicié una nueva aventura profesional como programador senior en la empresa IA SOFT en Zaragoza, siendo mi primer proyecto en la empresa una aplicación de gestión de calidad ambiental y de residuos en Angular 6 y Java (JPA) . <br><br>",
                 "En Junio de 2018 la empresa me destinó a trabajar como externo en el Seminario de Zaragoza para responsabilizarme de la aplicación de personal del funcionariado de Zaragoza (Java Server Faces) y llevar a cabo una serie de nuevos módulos y funcionalidades.<br><br>",
-                "En Mayo del 2019, fui promocionado a analista técnico y me destinaron de vuelta a mi primer proyecto donde mi rol principal consiste en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto, así como la formación y transferencia de conocimientos a los programadores del equipo."
+                "En Mayo del 2019, fui promocionado a analista técnico y me destinaron de vuelta a mi primer proyecto donde mi rol principal consiste en la definición e implementación de la arquitectura y funcionalidades de los nuevos módulos tanto del FRONTEND como BACKEND del proyecto, así como la formación y transferencia de conocimientos a los programadores del equipo.<br><br>",
+                "En Abril de 2020 me incorporé a la empresa UST Global como miembro de un equipo polivalente involucrado en el desarrollo de una aplicación hospitalaria de Angular y Node.Esta experiencia ha permitido compartir mi experiencia profesional con mis compañeros de trabajo así como incrementar considerablemente mi nivel de Angular (NgRx framework), Node (TypeORM framework) y diseñador web."
             ]
         },
         "educationSection": {
@@ -104,13 +106,34 @@
             "developer": "Programador",
             "seniorDeveloper": "Programador Senior",
             "analystDeveloper": "Analista Programador",
+            "seniorAnalystDeveloper": "Analista Programador Senior",
             "company_1": "<b>Nueva experiencia profesional en la empresa: DxD Applications & IT Solutions</b>",
             "company_2": "<b>Nueva experiencia profesional en la empresa: Grupo Oesía</b><br><br><br><br><br><br><br><br><br><br>",
             "company_2_1": "<b>Promoción a Analista Programador : Grupo Oesía</b><br><br><br><br><br><br><br><br><br><br>",
+            "company_3": "<b>Nueva experiencia profesional en la empresa: UST Global</b><br><br>",
+            "contentSeniorAnalystDeveloper": {
+                "date": "Abril 2020 ",
+                "proyect_1": {
+                    "date": "Abril 2020 - Actualidad",
+                    "name": "Projecto: GreenCube",
+                    "description": [
+                        "<b>Tecnología principal:</b><br><br>",
+                        "FRONTEND : Angular 8 (NgRx)<br>",
+                        "BACKEND : Node 10 (TypeORM)<br><br>",
+                        "<b> Tareas / Responsabilidades: </b>", 
+                        "Estudio y desarrollo de diferentes funcionalidades FRONTEND y BACKEND de una aplicación hospitalaria. Algunas de mis tareas más relevantes son:<br><br>",
+                        "- Estimación y desarrollo de nuevos módulos solicitados por el cliente.<br>",
+                        "- Mejora y optimización de la arquitectura del proyecto tanto a nivel FRONTEND como BACKEND.<br>",
+                        "- Revisión de PR´s.<br>",
+                        "- Formación y transferencia de conocimientos a los programadores del equipo.<br><br>",
+                        "<b> Proyect Structure: </b> Angular 8 (NgRx), Node 10 (TypeORM), SQL Server, API Rest, HTML ,Bootstrap, SASS ...<br><br>"
+                    ]
+                }
+            },
             "contentAnalystDeveloper": {
                 "date": "Mayo 2019 ",
                 "proyect_1": {
-                    "date": "Mayo 2019 - Actualidad",
+                    "date": "Mayo 2019 - Abril 2020",
                     "name": "Projecto: AST Residuos (Regreso)",
                     "description": [
                         "<b>Tecnología principal:</b><br><br>",

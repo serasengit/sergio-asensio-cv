@@ -114,9 +114,9 @@ export class SkillsComponent implements OnInit {
                 } else if (tooltipItem.xLabel === 'Salesforce') {
                   tooltip = [' Apex', ' Visualforce', ' Heroku', ' Marketing Cloud', ' Schedule Jobs'];
                 } else if (tooltipItem.xLabel === 'Angular 7') {
-                  tooltip = [' Typescript', ' Npm', ' Reactive Forms', ' NgModules', ' Observables & Promises'];
+                  tooltip = [' Typescript', ' Npm', ' Reactive Forms', ' NgRx', ' Presentational and Container Components', ' Smart Components'];
                 } else if (tooltipItem.xLabel === 'NodeJS') {
-                  tooltip = [' Express.js', ' Nodemon', ' Babel-Node', ' Knex.js', ' Objection.js'];
+                  tooltip = [' Express.js', ' Nodemon', ' Babel-Node', ' Knex.js', ' Objection.js', ' TypeORM'];
                 } else if (tooltipItem.xLabel === 'Web Design') {
                   tooltip = [' HTML', ' HTML5', ' JSP', ' JSPX', ' CSS', ' SCSS', ' Bootstrap 4', ' Font-Awesome 4', ' ChartJS'];
                 } else if (tooltipItem.xLabel === 'Web Services') {
