@@ -21,7 +21,7 @@
             "title": "Current Job",
             "content": [
                 "I currently work in the development of an hospital application at UST Global company. Some of the most important tasks I have faced through my professional experience are: <br><br>",
-                "- Improvement and optimization of the project architecture.<br>",
+                "- Improvement and optimization of projects architecture.<br>",
                 "- Analysis and implementation of the FRONTEND and BACKEND functionalities in the most simple and efficient way.<br>",
                 "- Define the database tables structure as well as the relation between them.<br>",
                 "- Establish the code architecture of main project modules in order to take them as referents to develop new ones.<br>",
@@ -75,7 +75,7 @@
                 "In March of 2018, I started a new professional adventure as senior developer in IA SOFT company, being my first project an environmental quality and waste management application in Angular 6 and Java (JPA).<br><br>",
                 "In June of 2018 the company sent me to work as external professional in the Seminario of Zaragoza in order to take the responsability of the civil service application (Java Server Faces) and carry out some new modules and functionalities on it.<br><br>",
                 "In May 2019, I was promoted to technical analyst and I was assigned back to my first project where my main role was focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project, as well as the training and knowledge transfer to team programmers.<br><br>",
-                "In April of 2020, I joined UST Global company as member of a multiskill team involved in the development of an Angular and Node hospital application which has let me share my professional experience with my workmates as well as increase considerably the level of my Angular (NgRx framework), Node (TypeORM framework) and web designer skills."
+                "In April of 2020, I joined UST Global company as member of a multiskill team involved in the development of an Angular and Node hospital application which has let me share my professional experience with my workmates as well as increase considerably the level of my Angular (NgRx framework), Node (TypeORM framework) and Web Designer skills."
 
             ]
         },
@@ -104,10 +104,10 @@
             "continuousIntegration": "Continuous Integration:"
         },
         "workExperienceSection": {
-            "developer": "Developer",
-            "seniorDeveloper": "Senior Developer",
-            "analystDeveloper": "Analyst Developer",
-            "seniorAnalystDeveloper": "Senior Analyst Developer",
+            "developer": "Full Stack Engineer",
+            "seniorDeveloper": "Full Stack Senior Engineer",
+            "analystDeveloper": "Full Stack Analyst Engineer",
+            "seniorAnalystDeveloper": "Full Stack  Senior Analyst Engineer",
             "company_1": "<b>New professional experience into the company: DxD Applications & IT Solutions</b>",
             "company_2": "<b>New professional experience into the company: Grupo Oesía</b><br><br>",
             "company_2_1": "<b>Promotion to Analyst Developer : Grupo Oesía</b><br><br>",
@@ -122,7 +122,7 @@
                         "FRONTEND : Angular 8 (NgRx)<br>",
                         "BACKEND : Node 10 (TypeORM)<br><br>",
                         "<b> Tasks / Responsibilities: </b> Study and development of different FRONTEND and BACKEND functionalities of an hospital application. Some of my main tasks are:<br><br>",
-                        "- Estimation and development of new modules requested by the client.<br>",
+                        "- Estimation, development and demo´s preparing of new modules requested by the client.<br>",
                         "- Improvement and optimization of the project architecture, both BACKEND and FRONTEND.<br>",
                         "- Pull request reviews.<br>",
                         "- Knowledge transfer and support to team programmers.<br><br>",
@@ -139,7 +139,7 @@
                         "<b>Main Techonology:</b><br><br>",
                         "FRONTEND : Angular 6<br>",
                         "BACKEND : Java (JPA)<br><br>",
-                        "<b> Tasks / Responsibilities: </b>  Technical analyst of the project.<br>",
+                        "<b> Tasks / Responsibilities: </b> Full stack analyst engineer  of the project.<br>",
                         "My role was focused on the definition and implementation of the architecture and functionalities of the new FRONTEND and BACKEND modules of the project:<br><br>",
                         "- Definition of creation scripts of the new Oracle tables, relation between them and Bean and Dto java classes related.<br>",
                         "- Development of different Angular app components.<br>",
