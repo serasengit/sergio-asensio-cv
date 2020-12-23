@@ -1,1 +1,1 @@
-web: node server/server.ts
+worker: node server/server.ts
